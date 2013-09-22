@@ -1,0 +1,218 @@
+.search-supplier-unit {
+	padding: 0;
+	background: #fff;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	
+	// Search Unit Title - Company Name
+	// --------------------------------------
+	> .title {
+		padding: 8px 10px 3px;
+		font-size: 16px;
+		display: inline-block;
+		max-width: 450px;
+		height: 24px;
+		line-height: 24px;
+		overflow: hidden;
+		a {
+			color: rgb(40,40,40);
+		}
+	}
+	
+	// Search Unit - Location
+	// --------------------------------------
+	.location {
+		font-weight: normal;
+		float: right;
+		margin: 15px 20px 0 0;
+		color: rgb(140,140,140);
+		font-size: 12px;
+	}
+	// Primary Product
+	// --------------------------------------
+	.first_product {
+		.media {
+			height: 100px;
+			margin: 0;
+			.img {
+				border-width: 0;
+				margin-bottom: 0;
+				.img_box img {
+					width: auto;
+					overflow: hidden;
+					display: block;
+					margin: 0 auto;
+					white-space: nowrap;
+					max-width: 100px;
+				}
+			}
+			.bd {
+				float: left;
+				width: 250px;
+			}
+		}
+		.first_product_title {
+			height: 20px;
+			font-weight: bold;
+			a {  
+			}
+		}
+		.description {
+			word-wrap: break-word;
+			max-width: 214px;
+			margin-left: 0px;
+			font-size: 12px;
+			line-height: 18px;
+			height: 80px;
+			color: rgb(140,140,140); 
+		}
+	}
+	// Secondary Product
+	// --------------------------------------
+	.secondary-prod {
+		li {
+			float: left; 
+			width:100px;
+			margin-left: 10px;
+			text-align: center;
+			.media-desc-below {
+				height: 142px;
+				.img {
+					display: block;
+					margin: 0 auto;
+					white-space: nowrap;
+					width: inherit;
+					.img_box {
+						background-color: #F0F0F0;
+						text-align: center;
+						display: table-cell;
+    					overflow: hidden;
+    					text-align: center;
+    					vertical-align: middle;
+						img {   						
+    						overflow: hidden;
+							display: block;
+							margin: 0 auto;
+							white-space: nowrap;
+							max-width: 100px;
+						}
+					}
+				}
+				.bd {
+					display: block;
+					width: 100px;
+				}
+			}
+			
+			.prod-title {
+				font-size: 11px;
+				word-wrap: break-word;
+				line-height: 15px;
+			}
+		}    
+	}
+	// Product Columns
+	// --------------------------------------
+	#one {
+		width: 360px;
+		float:left;
+		padding: 0 0 0 10px;
+		overflow: hidden;     
+	}
+	#two {
+		width: 340px;
+		float: left;
+	}
+
+	// Product Columns
+	// --------------------------------------
+	.search-table {
+		height: 80px;
+		.search-table-row {
+			height: 18px;
+			overflow: hidden;
+			word-wrap: break-word;
+			> span {
+				display: inline;
+				margin-right: 2px;
+				font-size: 12px;
+				line-height: 18px; 
+				color: rgb(140,140,140);
+			}
+		}
+	}
+	// Inquire Now Button
+	// --------------------------------------
+	.send_message {
+		width: 98px;
+		padding: 0;
+		font-size: 11px;
+		text-align: center;
+		margin: 10px 0 3px;
+	}
+}
+
+// User Block
+// --------------------------------------	
+.media_s_user {
+	background-color: #fff;
+	border-radius:0 0 4px 4px;
+	padding: 5px 5px 0 5px;
+	margin-top: 0;
+	.img {
+		margin-right: 5px;
+	}
+	.bd {
+		margin-top: 2px;
+		.name {
+			font-weight: bold;
+			display: block;
+			margin-top: 3px;
+		}
+		.details {
+			font-size: 12px;
+			line-height: 15px;
+			margin-bottom: 0;
+			a {
+				color: rgb(140,140,140);
+			}
+		}
+	}
+}
+
+// Supplier Search Page Sidebar
+// --------------------------------------	
+.section-sidebar {
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.7);
+	padding: 15px;
+	margin-bottom: 5px;
+	color: rgb(100,100,100);
+	font-size: 11px;
+	line-height: 15px;
+	.hd {
+		margin-bottom: 10px;
+		font-size: 12px;
+		color: rgb(70,70,70);
+	}
+	ul.sidebar-list {
+		padding-left: 0;
+		margin-bottom: 0;
+		li {
+			margin-bottom: 7px;
+			a {
+				font-weight: bold;
+			}
+		}
+	}
+}
+.sidebar-amounts {
+	font-size: 12px;
+	line-height: 18px;
+}
+// Footer Text
+// --------------------------------------	
+.footer-content {
+	padding: 20px;
+	font-size: 11px;
+}

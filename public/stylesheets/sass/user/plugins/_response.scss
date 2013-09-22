@@ -1,0 +1,197 @@
+.vip_container {
+	padding:10px;
+	.hd {
+		h1 {
+			width:440px;
+			color:#000;
+			padding:10px 0;
+			margin:0 auto;
+			font-weight:bold;
+		}
+		p {
+			width:440px;
+			padding:10px 0;
+			margin:0 auto;
+		}
+	}
+}
+.vip1, .vip2, .vip3, .vip4 { 
+	float:none;
+	width:100%;
+}
+.improved_sch {
+	max-width: 480px;
+}
+.stat_list .inner {
+ 	.bd {
+		padding-top:10px;
+	}
+	.media .bd {
+		padding:0;
+	}
+}
+.estimated_no {
+	width:440px;
+	height:100px;
+	font-size:380%;
+	font-weight:bold;
+	text-align:center;
+	background-color:#fff;
+	line-height:220%;
+	margin:10px auto;
+	background-color:#E2F7FF;
+}
+.gaurantee {
+	width:330px;
+	margin:0 auto;
+	text-align:left;
+	font-weight:bold;
+	.text {
+		width: 240px;
+		margin:10px 0 0 0;
+	}
+	img {
+		margin:0 10px 0 0;
+	}
+}
+a.btn_landing {
+	background-color:rgb(255,210,0);
+	border-radius:20px;
+	color:black !important;
+	padding:25px 0;
+	width:438px;
+	border-radius:10px;
+	&:hover {
+		color:black !important;
+		background-color:rgb(255,155,0);
+	}
+}
+.package {
+	table {
+		.total_line {
+			border-bottom:1px solid rgb(190,190,190);
+		}
+		.limited td {
+			color:rgb(255,0,0);
+		}
+		td {
+			padding:5px 0;
+		}
+	}
+}
+.signup_input {
+	input {
+		width:300px;
+		height:30px;
+		padding:10px 20px;
+		font-size:120%;
+		
+	}
+}
+@media screen and (min-width: 1100px) {
+	/* footer->terms_conditions,privacy_policy */
+	.longlist .column {
+		width:50%; 
+		float:left;
+	}
+	.vip1 { 
+		float:left;
+		width:60%;
+		.mod {
+			padding:0 10px;
+			margin:0;
+		}
+	}
+	.vip2 {
+		float:right;
+		width:40%;
+		.mod {
+			padding:0 10px;
+			margin:0;
+		}
+	}
+	.s_size1of2 {
+		width:100%;
+		float:none;
+	}
+	.vip3 { 
+		float:left;
+		width:60%;
+	}
+	.vip4 {
+		float:right;
+		width:40%;
+		.hd { 
+			padding:40px 0 0 0;
+			h3 {
+				padding:0 10px;
+			}
+		}
+	}
+	.vip_container {
+		.hd {
+			h1 {
+				width:380px;
+				padding:10px 0;
+				margin:0 auto;
+			}
+			p {
+				width:380px;
+				padding:10px 0;
+				margin:0 auto;
+			}
+		}
+	}
+	.gaurantee {
+		width:280px;
+		.text{
+			width:190px;
+		}
+	}
+	.estimated_no {
+		width:280px;
+		height:100px;
+		font-size:280%;
+		line-height:280%;
+		margin:10px auto;
+	}
+	a.btn_landing {
+		padding:25px 0;
+		width:350px;
+		margin:10px auto;
+	}
+}
+@media screen and (min-width: 1250px) {
+
+	.vip4 {
+		.hd { 
+			padding:30px 0 0 0;
+		}
+	}
+	.vip_container {
+		width:900px;
+		margin:0 auto;
+		.hd {
+			h1 {
+				width:500px;
+			}
+			p {
+				width:500px;
+				padding:10px 0;
+				margin:0 auto;
+			}
+		}
+	}
+	.gaurantee {
+		width:340px;
+		.text{
+			width:230px;
+			margin:10px 0 0 0;
+		}
+	}
+	.estimated_no {
+		width:340px;
+		font-size:320%;
+		line-height:260%;
+	}
+}

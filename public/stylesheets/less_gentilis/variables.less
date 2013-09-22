@@ -1,0 +1,277 @@
+// Variables.less
+// Variables to customize the look and feel of Bootstrap
+// -----------------------------------------------------
+
+
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+
+// Grays
+// -------------------------
+@black:                 #000;
+@grayDarker:            #2D2D2D;
+@grayDark:              #333;
+@gray:                  #777;
+@grayLight:             #bbb;
+@grayLighter:           #eee;
+@white:                 #fff;
+@grayMedium:		 	#434343;
+@offWhite:              #fffdf6;
+
+// for upsell
+@upsell-logo-pannel-color: #f4f4f4;
+
+
+// Accent colors
+// -------------------------
+@blue:                  #3A87AD;
+@blueDark:              #405A6A;
+@green:                 #819E37;
+@red:                   #CD0200;
+@yellow:                #F4CA00;
+@orange:                #D47500;
+@pink:                  #F44B8C;
+@purple:                #405A6A;
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground:        @white;
+@textColor:             @black;
+@mainBackground:		#e5e5e5;
+
+
+// Links
+// -------------------------
+@linkColor:             #08c;
+@linkColorHover:        darken(@linkColor, 15%);
+
+
+// Typography
+// -------------------------
+@baseFontSize:          14px;
+@baseSmallFont:         @baseFontSize - 20%;
+@baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@baseFontFamilyCN:      STXihei, "华文细黑", "microsoft YaHei", '微软雅黑体', STHeiTi, sans-serif;
+@baseLineHeight:        21px;
+@baseLineHeightS:       @baseLineHeight - 4;
+@altFontFamily:         Georgia, "Times New Roman", Times, serif;
+
+@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsColor:         inherit; // empty to use BS default, @textColor
+
+// Upsells
+// -------------------------
+@upsell-background: 	@white; 
+
+
+// Tables
+// -------------------------
+@tableBackground:                   transparent; // overall background-color
+@tableBackgroundAccent:             #f9f9f9; // for striping
+@tableBackgroundHover:              #f5f5f5; // for hover
+@tableBorder:                       #ddd; // table and cell border
+
+
+// Buttons
+// -------------------------
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            @grayLighter;
+@btnBorder:                         darken(@btnBackground, 20%);
+
+@btnPrimaryBackground:              lighten(@linkColor, 15%);
+@btnPrimaryBackgroundHighlight:     @linkColor;
+
+@btnInfoBackground:                 lighten(@grayLight, 15%);
+@btnInfoBackgroundHighlight:        @grayLight;
+
+@btnSuccessBackground:              lighten(@green, 15%);
+@btnSuccessBackgroundHighlight:     @green;
+
+@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackgroundHighlight:     @orange;
+
+@btnDangerBackground:               lighten(@red, 15%);
+@btnDangerBackgroundHighlight:      @red;
+
+@btnInverseBackground:              lighten(@navbarInverseBackground, 15%);
+@btnInverseBackgroundHighlight:     @navbarInverseBackground;
+
+
+
+// Forms
+// -------------------------
+@inputBackground:               @white;
+@inputBorder:                   #ccc;
+@inputDisabledBackground:       @grayLighter;
+
+
+// Dropdowns
+// -------------------------
+@dropdownBackground:            @white;
+@dropdownBorder:                rgba(0,0,0,.2);
+@dropdownDividerTop:            #e5e5e5;
+@dropdownDividerBottom:         @white;
+
+@dropdownLinkColor:             @grayDark;
+
+@dropdownLinkColorHover:        @white;
+@dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
+
+@dropdownLinkColorActive:       @dropdownLinkColor;
+@dropdownLinkBackgroundActive:  @linkColor;
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+@zindexDropdown:          1000;
+@zindexPopover:           1053;
+@zindexTooltip:           1020;
+@zindexFixedNavbar:       1030;
+@zindexModalBackdrop:     1040;
+@zindexModal:             1050;
+
+
+// Sprite icons path
+// -------------------------
+@iconSpritePath:          "../../img/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "../../img/glyphicons-halflings-white.png";
+
+
+// Input placeholder text color
+// -------------------------
+@placeholderText:         @grayLight;
+
+
+// Hr border color
+// -------------------------
+@hrBorder:                @grayLighter;
+
+
+
+// Navbar
+// -------------------------
+@navbarHeight:                    60px;
+@navbarBackground:                @white; // darken(@grayLighter, 10%);
+@navbarBackgroundHighlight:       @white;
+
+@navbarText:                      @black;
+@navbarLinkColor:                 @grayDark;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:           @white;
+@navbarLinkBackgroundHover:       @gray;
+@navbarLinkBackgroundActive:      lighten(@linkColor, 15%);
+@navbarLinkBackgroundActiveHighlight:	@linkColor;
+
+@navbarSearchBackground:          lighten(@navbarBackground, 25%);
+@navbarSearchBackgroundFocus:     @white;
+@navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
+@navbarSearchPlaceholderColor:    #ccc;
+
+// Inverted navbar
+@navbarInverseBackground:                #6C737E;
+@navbarInverseBackgroundHighlight:       lighten(@navbarInverseBackground, 25%);
+@navbarInverseBorder:                    darken(@navbarInverseBackground, 5%);
+
+@navbarInverseText:                      @grayLighter;
+@navbarInverseLinkColor:                 @grayLighter;
+@navbarInverseLinkColorHover:            @white;
+@navbarInverseLinkColorActive:           @white;
+@navbarInverseLinkBackgroundHover:       transparent;
+@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
+
+@navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
+@navbarInverseSearchBackgroundFocus:     @white;
+@navbarInverseSearchBorder:              @navbarInverseBackground;
+@navbarInverseSearchPlaceholderColor:    @grayLighter;
+
+@navbarInverseBrandColor:                @navbarInverseLinkColor;
+
+
+
+// Hero unit
+// -------------------------
+@heroUnitBackground:              @grayLighter;
+@heroUnitHeadingColor:            inherit;
+@heroUnitLeadColor:               inherit;
+
+
+// Form states and alerts
+// -------------------------
+@warningText:             @orange;
+@warningBackground:       lighten(@orange, 40%);
+@warningBorder:           @orange;
+
+@errorText:               @red;
+@errorBackground:         lighten(@red, 35%);
+@errorBorder:             @red;
+
+@successText:             darken(@green, 10%);
+@successBackground:       lighten(@green, 30%);
+@successBorder:           @green;
+
+@infoText:                @blue;
+@infoBackground:          lighten(@blue, 45%);
+@infoBorder:              lighten(@blue, 20%);
+
+@tutorialText:			  @grayDark;
+@tutorialBackground:      #fff0a1;
+@tutorialBorder:          #ffd600;
+
+
+
+// GRID
+// --------------------------------------------------
+
+// Default 940px grid
+// -------------------------
+@gridColumns:             12;
+@gridColumnWidth:         60px;
+@gridGutterWidth:         20px;
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+
+// Fluid grid
+// -------------------------
+@fluidGridColumnWidth:    6.382978723%;
+@fluidGridGutterWidth:    2.127659574%;
+
+// POPOVER
+@popoverBackground:       #fff;
+@popoverArrowWidth:       10px;
+@popoverArrowColor:       #fff;
+@popoverTitleBackground:  darken(@popoverBackground, 3%);
+
+// Special enhancement for popovers
+@popoverArrowOuterWidth:  @popoverArrowWidth + 1;
+@popoverArrowOuterColor:  rgba(0,0,0,.25);
+
+
+// Upsell Boxes Values
+// Variables for Upsell box ----------------------
+@upsell-box-color:#3d3d3d; //upsell box text colro
+@upsell-btn-textshadow: #005fb5; // textshadow for white button text on blue background
+@upsell-btn-normal-color:#0078ff; // upsell-btn-normal-color
+@upsell-btn-hover-color:#006eea; // upsell-hover-color 
+@upsell-btn-active-color:#0078ff; //upsell-active-color
+@upsell-alert-box-bg:#c6da93; // the color for upsell-box alert success bg color
+@upsell-alert-box-border:#5d8100; //the corlor for upsell-box alert success border color
+@upsell-logo-pannel-color:#f4f4f4;
+@upsell-logo-pannel-color-inset:#e9e9e9;
+@upsell-logo-pannel-color-shadow:#dfdfdf;
+@upsell-box-width:434px;
+@upsell-border-width:5px;
+@upsell-border-color:@upsell-logo-pannel-color;
+@upsell-z-index:1000;
+@upsell-bottom:68px;
+//Gradients top-color & bottom-color for upsell-box's small-button
+//if you aren't like the button color , only change two values is ok!
+@tc:#0094ff;
+@bc:#0060ff;

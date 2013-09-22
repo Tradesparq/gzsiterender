@@ -1,0 +1,339 @@
+// SOCIAL MEDIA ICONS
+// CSS3 ICONS 
+// -------------------------------------------
+
+// All icons receive the styles of the <i> tag with a base class 
+// of .i and are then given a unique class to add width, height, 
+// and background-position. Your resulting HTML will look like
+// <i class="icon-sm facebook"></i>.
+.sm-group {
+	a {
+		float:left;
+		margin:0 20px 20px 0;
+	}
+}
+
+.sm-icon {
+	/* Hover and Active States for All Button Styles */
+	&:link { opacity: 1; }
+	&:hover { 
+		opacity: 0.9;
+		text-decoration:none;
+		color:@white;
+	}
+	&:active { opacity: 0.75; }	
+	/* General */
+	display: block; 
+	text-decoration: none;
+	/* Text */
+	font-family: 'SocialGlyphs';
+	text-align: center;
+	color: @white;
+	font-weight: 100;
+	text-shadow:0px -1px 0px rgba(0,0,0,0.35);
+	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#40ffffff,Positive=true)";zoom:1;
+	//filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#40ffffff,Positive=true);
+	/* Background */
+	width:44px;
+	height:44px;
+	.border-radius(3px);
+	.box-shadow(0px 1px 1px rgba(0,0,0,0.25));
+}
+// Sizes //		
+.facebook {	
+	font-size:32px;
+	line-height:1.6;
+	text-indent: 8px;
+	font-weight: regular;
+}
+.twitter {
+	font-size:26px;
+	line-height:1.8;	
+}
+.google {
+	font-size:26px;
+	line-height:1.8;	
+}
+.myspace {
+	font-size:34px;
+	line-height:1.2;	
+}
+.linkedin {
+	font-size:26px;
+	line-height:1.8;
+}
+.feed {
+	font-size:30px;
+	line-height:1.5;
+}
+.lastfm {
+	font-size:28px;
+	text-indent: -2px;
+	line-height:1.6;	
+}
+.vimeo {
+	font-size:26px;
+	line-height:1.8;
+}
+.youtube {
+	font-size:26px;
+	line-height:1.7;
+}
+.dribbble {
+	font-size:30px;
+	line-height:1.5;
+}
+.forrst {
+	font-size:34px;
+	line-height:1.4;
+}
+.gowalla {
+	font-size:30px;
+	text-indent: -2px;
+	line-height:1.6;
+}
+.skype {
+	font-size:30px;
+	line-height:1.5;	
+}
+.tumblr {
+	font-size:26px;
+	line-height:1.8;
+}
+.wordpress {
+	font-size:36px;
+	line-height:1.3;
+}
+.blogger {
+	font-size:26px;
+	line-height:1.8;
+}
+.digg {
+	font-size:34px;
+	line-height:1.2;
+}
+.stumbleupon {
+	font-size:28px;
+	line-height:1.5;
+}
+.pinterest {
+	font-size:26px;
+	line-height:1.8;
+}
+.flickr {
+	font-size:26px;
+	line-height:1.5;
+	border: 1px solid #ddd;
+	height:42px;
+	width:42px;
+}
+.yahoo {
+	font-size:26px;
+	line-height:1.6;
+}
+.deviantart {
+	font-size:34px;
+	text-indent: 2px;
+	line-height:1.1;
+}
+.behance {
+	font-size:26px;
+	line-height:1.5;
+}
+.sharethis {
+	font-size:26px;
+	line-height:1.8;
+}
+.www {
+	font-size:13px;
+	line-height:3.4;
+	letter-spacing:0.5px;
+	text-indent:2px;
+	font-family: @baseFontFamily;
+	text-transform:uppercase;
+}
+
+// Backgrounds //
+.facebook {	
+	background-color: #5D83BA;
+	.sm-gradient(#7192c2, #4873b1);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff7192c2,endColorstr=#ff4873b1,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff7192c2,endColorstr=#ff4873b1,GradientType=0);
+	&:after {content: "A";}
+}
+.twitter {	
+	background-color: #37afd7;
+	.sm-gradient(#6dc5e2, #079cce);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff6dc5e2,endColorstr=#ff079cce,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff6dc5e2,endColorstr=#ff079cce,GradientType=0);
+	&:after {content: "B";}
+}
+.google {	
+	background-color: #404040;
+	.sm-gradient(#515151,#353535);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff515151,endColorstr=#ff353535,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff515151,endColorstr=#ff353535,GradientType=0);
+	&:after {content: "C";}
+}
+.myspace {	
+	background-color: #404040;
+	.sm-gradient(#515151,#353535);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff515151,endColorstr=#ff353535,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff515151,endColorstr=#ff353535,GradientType=0);
+	&:after {content: "D";}
+}
+.linkedin {
+	background-color: #4B9DCA;
+	.sm-gradient(#63aad1,#3691c4);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff63aad1,endColorstr=#ff3691c4,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff63aad1,endColorstr=#ff3691c4,GradientType=0);
+	&:after {content: "E";}
+}
+.feed {
+	background-color: #FEBB2F;
+	.sm-gradient(#fec651,#feaf0c);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#fffec651,endColorstr=#fffeaf0c,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#fffec651,endColorstr=#fffeaf0c,GradientType=0);
+	&:after {content: "F";}
+}
+.lastfm {
+	background-color: #D3230A;
+	.sm-gradient(#db4a36,#d11a00);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffdb4a36,endColorstr=#ffd11a00,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffdb4a36,endColorstr=#ffd11a00,GradientType=0);
+	&:after {content: "G";}
+}
+.vimeo {
+	background-color: #95B93E;
+	.sm-gradient(#a2c156,#89b12a);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffa2c156,endColorstr=#ff89b12a,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffa2c156,endColorstr=#ff89b12a,GradientType=0);
+	&:after {content: "H";}
+}
+.youtube {
+	background-color: #D3230A;
+	.sm-gradient(#dc4f3b,#d11a00);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffdc4f3b,endColorstr=#ffd11a00,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffdc4f3b,endColorstr=#ffd11a00,GradientType=0);
+	&:after {content: "I";}
+}
+.dribbble {
+	background-color: #E06192;
+	.sm-gradient(#e4749f,#db4780);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffe4749f,endColorstr=#ffdb4780,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffe4749f,endColorstr=#ffdb4780,GradientType=0);
+	&:after {content: "J";}
+}
+.forrst {
+	background-color: #538950;
+	.sm-gradient(#719e6e,#4f864b);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff719e6e,endColorstr=#ff4f864b,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff719e6e,endColorstr=#ff4f864b,GradientType=0);
+	&:after {content: "K";}
+}
+.gowalla {
+	background-color: #EC7B31;
+	.sm-gradient(#ef9254,#eb7223);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffef9254,endColorstr=#ffeb7223,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffef9254,endColorstr=#ffeb7223,GradientType=0);
+	&:after {content: "L";}
+}
+.skype {	
+	background-color: #37afd7;
+	.sm-gradient(#4dd4fb,#1ac8fa);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff4dd4fb,endColorstr=#ff1ac8fa,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff4dd4fb,endColorstr=#ff1ac8fa,GradientType=0);
+	&:after {content: "M";}
+}
+.tumblr {
+	background-color: #466684;
+	.sm-gradient(#6a839c,#3d5e7e);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff6a839c,endColorstr=#ff3d5e7e,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff6a839c,endColorstr=#ff3d5e7e,GradientType=0);
+	&:after {content: "N";}
+}
+.wordpress {
+	background-color: #337EA1;
+	.sm-gradient(#4d8ead,#227399);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff4d8ead,endColorstr=#ff227399,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff4d8ead,endColorstr=#ff227399,GradientType=0);
+	&:after {content: "O";}
+}
+.blogger {
+	background-color: #EC7B31;
+	.sm-gradient(#ef8f51,#eb7223);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffef8f51,endColorstr=#ffeb7223,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffef8f51,endColorstr=#ffeb7223,GradientType=0);
+	&:after {content: "P";}
+}
+.digg {
+	background-color: #3F7AB2;
+	.sm-gradient(#588bbc,#2a6baa);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff588bbc,endColorstr=#ff2a6baa,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff588bbc,endColorstr=#ff2a6baa,GradientType=0);
+	&:after {content: "Q";}
+}
+.stumbleupon {
+	background-color: #EC7B31;
+	.sm-gradient(#ef734e,#eb4b1b);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffef734e,endColorstr=#ffeb4b1b,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffef734e,endColorstr=#ffeb4b1b,GradientType=0);
+	&:after {content: "R";}
+}
+.pinterest {
+	background-color: #D3230A;
+	.sm-gradient(#d23f45,#cb1f27);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd23f45,endColorstr=#ffcb1f27,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd23f45,endColorstr=#ffcb1f27,GradientType=0);
+	&:after {content: "S";}
+}
+.flickr {
+	background-color: #EEEEEE;
+	.sm-gradient(#ffffff,#dddddd);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff,endColorstr=#ffdddddd,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff,endColorstr=#ffdddddd,GradientType=0);
+	.cyan { 
+		color:rgb(11,109,217); 
+		text-shadow:0px 1px 0px rgba(255,255,255,0.65);
+		&:after {content: "T";}	
+	}
+	.magenta { 
+		color:rgb(226,58,125); 
+		text-shadow:0px 1px 0px rgba(255,255,255,0.65);
+		&:after {content: "T";}
+	}
+}
+.yahoo {
+	background-color: #96429B;
+	.sm-gradient(#a359a7,#8a2b8f);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffa359a7,endColorstr=#ff8a2b8f,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffa359a7,endColorstr=#ff8a2b8f,GradientType=0);
+	&:after {content: "U";}
+}
+.deviantart {
+	background-color: #5D7163;
+	.sm-gradient(#728377,#54685a);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff728377,endColorstr=#ff54685a,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff728377,endColorstr=#ff54685a,GradientType=0);
+	&:after {content: "V";}
+}
+.behance {
+	background-color: #1B97F7;
+	.sm-gradient(#3aa5f8,#018bf6);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff3aa5f8,endColorstr=#ff018bf6,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff3aa5f8,endColorstr=#ff018bf6,GradientType=0);
+	&:after {content: "W";}
+}
+.sharethis {
+	background-color: #38AA59;
+	.sm-gradient(#54b570,#27a24b);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff54b570,endColorstr=#ff27a24b,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff54b570,endColorstr=#ff27a24b,GradientType=0);
+	&:after {content: "X";}
+}
+.www {
+	background-color: #38AA59;
+	.sm-gradient(#54b570,#27a24b);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff54b570,endColorstr=#ff27a24b,GradientType=0)";
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff54b570,endColorstr=#ff27a24b,GradientType=0);
+}

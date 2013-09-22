@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";/* Product upload section */
+.upload {
+	.icon { width:60px; height:60px; margin-bottom:10px; background:#FFFFFF; float:left; }
+	ul.upload-box { margin:0; padding:0 0 0 5px; height:320px; }
+	ul.upload-box li { zoom:1; width:60px; background:#ccc; position:relative; }
+	.icon div { width:60px; height:60px; overflow:hidden; }	
+}
+.big_poo { z-index: 1; width: 350px; height: 395px; background-color: #fff; position: relative; border: 1px solid #B2B2B2; border-right: 0px; }
+.upload-container { background-color:#fff; }
+.upload-icon-area { height: 385px; width: 70px; padding: 5px; background: url(images/add_img_bg.gif) no-repeat; display: block; border: 1px solid #B2B2B2; border-left: 0px; }
+.plupload input { cursor:pointer; }
+.upload-drop { border:1px solid #CC00FF; background:#33FFFF; }
+.upload-icon-area form { margin:0; }
+
+.upload div.deleteImg { 
+	background-image:url(images/delimage.png); position:absolute; display:block; width:14px; height:14px; top:1px; left:45px; 
+	&:hover { background-image:url(images/delimage_hover.png); }
+}

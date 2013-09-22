@@ -1,0 +1,393 @@
+/* // 1. RESET STYLES */
+/* ################################################################ */
+.meganizr-container {
+	border-bottom: 2px solid #fff;
+	box-shadow: 0px 3px 3px @grayLight;
+	background: @white;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index: @zindexFixedNavbar;
+	// background: -webkit-linear-gradient(top, #fefefe 0%, #ededed 100%);
+	// background: -moz-linear-gradient(top, #fefefe 0%, #ededed 100%);
+	// background: -o-linear-gradient(top, #fefefe 0%, #ededed 100%);
+	// background: -ms-linear-gradient(top, #fefefe 0%, #ededed 100%);
+	// background: linear-gradient(top, #fefefe 0%, #ededed 100%);
+}
+.meganizr {
+	margin:0 auto;
+	padding:1px 0;
+} 
+.meganizr {
+	ul, li, a, img, div, p, form, input, textarea, h3, h4, h5 { margin: 0; padding: 0; }
+	a { text-decoration: none; }
+	li { list-style: none; }
+	input, textarea, img {}
+}
+
+/* // 2. NAVIGATION BAR STYLES */
+/* ################################################################ */
+.meganizr {
+	position: relative;
+	clear: both;
+	width: 100%;
+	min-width: 860px;
+	max-width:1440px;
+	height: 45px;
+	&:before, &:after {
+		content: '';
+		clear: both;
+	}
+	
+	> li {
+		position: relative;
+		display: block;
+		float: left;
+		height: 45px;
+		// border-right: 1px dotted #ccc;
+		
+		/* Brand Logo */
+		> .brand {
+			padding:2px 20px 10px 20px;
+			margin-left:0;
+			width: 110px;
+		}
+		
+		/* Nav Links */
+		> a {
+			position: relative;
+			z-index: 550;
+			display: block;
+			padding: 7px 12px 6px 12px;
+			line-height: 35px;
+			font-size: 13px;
+			color: @grayDark;
+			font-weight:bold;
+			text-shadow: 0px 1px 1px white;
+			-webkit-transition: color .15s ease-in, background-image .2s linear .15s;
+			-moz-transition: color .15s ease-in, background-image .2s linear .15s;
+			-o-transition: color .15s ease-in, background-image .2s linear .15s;
+			-ms-transition: color .15s ease-in, background-image .2s linear .15s;
+			transition: color .15s ease-in, background-image .2s linear .15s;
+			
+			&:hover { 
+				color: #000000; 
+			}
+			
+			&:active {
+				color: #525252;
+				-webkit-transition: color 1ms;
+				-moz-transition: color 1ms;
+				-o-transition: color 1s;
+				-ms-transition: color 1s;
+				transition: color 1s;
+			}
+		}
+		
+		// For badges in links	
+		.mzr-links .badge {
+			margin-left:10px;
+			float:right;
+			line-height:14px;
+		}
+		> ul > li > a .badge {
+			margin-top:10px;
+			float:right;
+			line-height:14px;
+		}
+	}
+	
+	// stats
+	.mzr-stat-no, .mzr-stat-txt {
+		display: table-cell;
+		vertical-align: top;
+		padding-bottom: 10px;
+	} 
+	.mzr-stat-no {
+		padding-right:10px;
+	}
+	
+	> li.mzr-align-right {
+			float: right;
+			border-right: none;
+			border-left: 1px dotted #ccc;
+		}
+	
+	/* Drop Down */
+	> li.mzr-drop:hover > a:after,
+	> li.mzr-drop > a.mzr-click:after {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 46px;
+		background: transparent url(../img/drop-arrow.png) no-repeat bottom center;
+	}
+	> li.mzr-drop:hover > a,
+	> li.mzr-drop > a.mzr-click { z-index: 650; }
+	
+	/* Home Icon */
+	> li.mzr-home-dark > a,
+	> li.mzr-home-light > a {
+		text-indent: -9999px;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	> li.mzr-home-dark > a { background-image: url(../img/home_dark.png); }
+	> li.mzr-home-light > a { background-image: url(../img/home_light.png); }
+}
+
+/* // 4. DROPDOWN */
+/* ################################################################ */
+.meganizr > li {
+	> div, > ul, > ul li > ul {
+		position: absolute;
+		z-index: 600;
+		padding: 0 0 10px;
+		top: 45px;
+		left: -1px;
+
+		opacity: 0;
+		overflow: hidden;
+		visibility: hidden;
+
+		background-color: #ffffff;
+		border: 1px solid #e1e1e1;
+	
+		.box-shadow(inset 0px 1px 1px 1px rgba(255, 255, 255, 0.7));
+		.border-radius(3);
+	}
+}
+
+.meganizr > li.mzr-align-right > div {
+	left: auto;
+	right: -1px;
+}
+
+/* Transitions */
+.mzr-slide > li > div,
+.mzr-slide > li > ul,
+.mzr-slide > li > ul li > ul,
+.mzr-fade > li > div,
+.mzr-fade > li > ul,
+.mzr-fade > li > ul li > ul {
+	-webkit-transition: all .05s linear .05s;
+	-moz-transition: all .05s linear .05s;
+	-o-transition: all .05s linear .05s;
+	-ms-transition: all .05s linear .05s;
+	transition: all .05s linear .05s;
+}
+
+.mzr-slide > li > div,
+.mzr-slide > li > ul,
+.mzr-slide > li > ul li > ul { top: 100px; }
+
+.mzr-slide > li.mzr-drop:hover > div,
+.mzr-slide > li.mzr-drop:hover > ul,
+.mzr-slide > li > ul li.mzr-drop:hover > ul {
+	top: 37px;
+
+	opacity: 1;
+	overflow: visible;
+	visibility: visible;
+}
+
+.mzr-fade > li.mzr-drop:hover > div,
+.mzr-fade > li.mzr-drop:hover > ul,
+.mzr-fade > li > ul li.mzr-drop:hover > ul,
+.meganizr > li.mzr-drop:hover > div,
+.meganizr > li.mzr-drop:hover > ul,
+.meganizr > li > ul li.mzr-drop:hover > ul {
+	opacity: 1;
+	overflow: visible;
+	visibility: visible;
+}
+
+/* Dropdown Columns */
+.meganizr .drop-two-columns { width: 320px; }
+.meganizr .drop-three-columns { width: 480px; }
+.meganizr .drop-four-columns { width: 640px; }
+.meganizr .drop-five-columns { width: 800px; }
+.meganizr .drop-six-columns { width: 960px; }
+
+/* Content Columns */
+.meganizr .one-col { width: 140px; }
+.meganizr .two-col { width: 300px; }
+.meganizr .three-col { width: 460px; }
+.meganizr .four-col { width: 620px; }
+.meganizr .five-col { width: 780px; }
+.meganizr .six-col { width: 940px; }
+
+.meganizr .one-col, .meganizr .two-col, .meganizr .three-col, .meganizr .four-col, .meganizr .five-col, .meganizr .six-col {
+	float: left;
+	margin: 10px;
+}
+
+/* Dropdown Levels */
+
+.meganizr > li {
+	> ul, 
+	> ul li > ul {
+		width: 160px;
+		padding: 10px;
+	}
+}
+
+.meganizr > li > ul li.mzr-drop:hover > ul,
+.meganizr.mzr-fade > li > ul li.mzr-drop > ul { top: -11px; }
+
+.meganizr > li > ul li { position: relative; }
+
+.meganizr > li > ul li > ul {
+	position: absolute;
+	left: 100%;
+}
+
+.meganizr > li.mzr-align-right > ul {
+	left: auto;
+	right: 0;
+}
+
+.meganizr > li > ul li.mzr-align-left > ul {
+	position: absolute;
+	left: auto;
+	right: 105%;
+}
+
+.meganizr > li > ul {
+	li:last-child a { 
+		border: none; 
+	}
+	li.mzr-drop > a { 
+		background: url(../img/arrow.png) no-repeat 140px 16px; 
+	}
+	li.mzr-align-left.mzr-drop > a { 
+		background: url(../img/arrow-inverse.png) no-repeat 140px 16px; 
+	}
+	a {
+		display: block;
+		line-height: 38px;
+		border-bottom: 1px dotted #e1e1e1;
+		font-size: @baseFontSize + 1;
+		color:@linkColor;
+		-webkit-transition: color .15s ease-in;
+		-moz-transition: color .15s ease-in;
+		-o-transition: color .15s ease-in;
+		-ms-transition: color .15s ease-in;
+		transition: color .15s ease-in;
+	
+		&:hover { color: @linkColorHover; }
+	}
+}
+
+/* // 5. CONTENT STYLES */
+/* ################################################################ */
+
+/* Images */
+.mzr-content img {
+	max-width: 100%;
+	opacity: 0.9;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	&:hover {
+		opacity: 1;
+	}	
+}
+
+.mzr-content {
+	cursor: default;
+	
+	/* Links */
+	.mzr-links a {
+		display: block;
+		padding: 5px 0;
+		line-height: 28px;
+		border-bottom: 1px dotted #e1e1e1;
+	}
+	.mzr-links li:last-child a { border: none; }
+	
+	/* Floats */
+	.fl { float: left; }
+	.fr { float: right; }
+	.cb { clear: both; }
+	.cl { clear: left; }
+	.cr { clear: right; }
+	.block { display: block; margin-top: 10px;}
+	
+	/* Forms */
+	input[type=text], input[type=email], textarea {
+		display: block;
+		width: 250px;
+		padding: 4px 10px 4px 10px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	
+		background-color: #f6f6f6;
+		background-repeat: no-repeat;
+		background-position: 10px 9px;
+
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+
+		-webkit-transition: box-shadow linear 0.2s;
+		-moz-transition: box-shadow linear 0.2s;
+		-ms-transition: box-shadow linear 0.2s;
+		-o-transition: box-shadow linear 0.2s;
+		transition: box-shadow linear 0.2s;
+
+		border: 1px solid transparent;
+		
+		&:hover { background-color: #f0f0f0; }
+		&:focus {
+			background-color: #f0f0f0;
+			outline: none;
+		}
+	}
+	
+	textarea { width: 250px; max-width: 250px; height: 100px; }
+	#name { background-image: url(../img/user.png); }
+	#email { background-image: url(../img/mail.png); }
+	#message { background-image: url(../img/baloon.png); }
+}
+
+/* // 6. RESPONSIVE */
+/* ################################################################ */
+
+
+
+/* // 7. EXTRA COLOR STYLES */
+/* ################################################################ */
+
+.mzr-content{
+	.btn { padding: 4px 10px 4px; } 
+	.btn-large { padding: 9px 14px; }
+	.btn-small { padding: 3px 9px; }
+	.btn-mini { padding: 2px 6px; }
+}
+
+//Language flags add class selector
+//Todo: put the flags to the language swither's front
+.mzr-drop .language-flag-chinese,.mzr-drop .language-flag-english, .mzr-drop .mzr-blank{
+	background:url(./img/language/Language_flag_chinese.jpg) top center no-repeat;
+	height:14px;
+	width:20px;
+	display:block;
+	float:left;
+	margin:11px 2px 0px 0px;
+}
+.mzr-drop .language-flag-english{
+	background:url(./img/language/Language_flag_english.jpg) top center no-repeat;
+}
+.mzr-drop .mzr-blank{
+	background:none;
+}

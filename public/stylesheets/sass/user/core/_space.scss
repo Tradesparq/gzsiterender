@@ -1,0 +1,153 @@
+/* ====== Default spacing ====== */
+h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote { padding:10px; }
+h1, h2, h3, h4, h5, h6, img { padding-bottom:0; }
+pre { margin:10px; }
+table h1, table h2, table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl { padding:0; }
+/* ====== Padding ======*/
+.pan { padding:0 }
+.pas { padding:5px }
+.pam, .mod_bd_pam .inner .bd { padding:10px }
+.pal { padding:20px }
+.ptn { padding-top:0 }
+.pts { padding-top:5px }
+.ptm { padding-top:10px }
+.ptl { padding-top:20px }
+.prn { padding-right:0 }
+.prs { padding-right:5px }
+.prm { padding-right:10px }
+.prl { padding-right:20px }
+.pbn { padding-bottom:0 }
+.pbs { padding-bottom:5px }
+.pbm { padding-bottom:10px }
+.pbl { padding-bottom:20px }
+.pln { padding-left:0 }
+.pls { padding-left:5px }
+.plm { padding-left:10px }
+.pll { padding-left:20px }
+.phn { padding-left:0; padding-right:0 }
+.phs { padding-left:5px; padding-right:5px }
+.phm { padding-left:10px; padding-right:10px }
+.phl { padding-left:20px; padding-right:20px }
+.pvn { padding-top:0; padding-bottom:0 }
+.pvs { padding-top:5px; padding-bottom:5px }
+.pvm { padding-top:10px; padding-bottom:10px }
+.pvl { padding-top:20px; padding-bottom:20px }
+/* ====== Margins ====== */
+.man, .li_man li { margin:0 }
+.mas, .li_mas li { margin:5px }
+.mam, .li_mam li { margin:10px }
+.mal, .li_mal li { margin:20px }
+.mtn, .li_mtn li { margin-top:0 }
+.mtxs, .li_mtxs li { margin-top:2px; }
+.mts, .li_mts li { margin-top:5px }
+.mtm, .li_mtm li { margin-top:10px }
+.-mtm, .li_-mtm li { margin-top:-10px }
+.mtl, .li_mtl li { margin-top:20px }
+.mrn, .li_mrn li { margin-right:0 }
+.mrs, .li_mrs li { margin-right:5px }
+.mrm, .li_mrm li { margin-right:10px }
+.mrl, .li_mrl li { margin-right:20px }
+.mbn, .li_mbn li { margin-bottom:0 !important;}
+.mbs, .li_mbs li { margin-bottom:5px }
+.mbm, .li_mbm li { margin-bottom:10px }
+.mbl, .li_mbl li { margin-bottom:20px }
+.mln, .li_mln li { margin-left:0 !important;}
+.mls, .li_mls li { margin-left:5px }
+.mlm, .li_mlm li { margin-left:10px }
+.mll, .li_mll li { margin-left:20px }
+.mhn, .li_mhn li { margin-left:0; margin-right:0 }
+.mhs, .li_mhs li { margin-left:5px; margin-right:5px }
+.mhm, .li_mhm li { margin-left:10px; margin-right:10px }
+.mhl, .li_mhl li { margin-left:20px; margin-right:20px }
+.mvn, .li_mvn li { margin-top:0; margin-bottom:0 }
+.mvs, .li_mvs li { margin-top:5px; margin-bottom:5px }
+.mvm, .li_mvm li { margin-top:10px; margin-bottom:10px }
+.mvl, .li_mvl li { margin-top:20px; margin-bottom:20px }
+.auto {margin:auto;}
+/* ====== Widths ====== */
+.w11XL { width:750px; }
+.w10XL { width:690px; }
+.w9bXL { width:570px; }
+.w9aXL { width:560px; }
+.w9aeXL{ width:556px; }
+.w9XL { width:550px; }
+.w8cXL { width:545px; }
+.w8bXL { width:445px; }
+.w8XL { width:455px; }
+.w7XL { width:450px; }
+.w6dXL { width:442px; }
+.w6cXL { width:440px; }
+.w6bXL { width:430px; }
+.w6aXL { width:420px; }
+.w6XL { width:400px; }
+.w5dXL { width:370px; }
+.mw5XL { max-width:350px; word-wrap: break-word; }
+.w5cXL { width:350px; }
+.w5bXL { width:340px; }
+.w5aXL { width:330px; }
+.w5XL { width:320px; }
+.w4bXL { width:295px; }
+.w4XL { width:280px; }
+.w3bXL { width:260px; }
+.w3XL { width:240px; }
+.w2bXL { width:220px; }
+.wXXL { width:200px; }
+.wXL { width:180px; }
+.wL { width:160px; }
+.wM { width:150px; }
+.wS { width:140px; }
+.wXSb { width:120px; }
+.wXS { width:110px; }
+.wXXS { width:100px; }
+.w3XS { width:90px; }
+.w4XS { width:70px; }
+.w1px { width:1px; }
+.wAuto { width:auto; }
+/* ====== Field Heights ====== */
+.fldh2XL { height:30px; }
+.fldhXL { height:24px; }
+.fldhL { height:22px; }
+.fldhM { height:20px; }
+.fldhS { height:18px; }
+/* ====== Text Rows ====== */
+.row1 { height:18px; }
+.row2 { height:36px; }
+.row3 { height:54px; }
+.row4 { height:72px; }
+.row5 { height:90px; }
+.row6 { height:108px; }
+.row7 { height:126px; }
+.row8 { height:144px; }
+.row9 { height:162px; }
+.row10 { height:180px; }
+.row11 { height:198px; }
+.row12 { height:216px; }
+/* ====== Border Radius ====== */
+.bn { border:0 none !important; }
+.bsS { border:1px solid $c_br_grey3; }
+.bsbS { border-bottom:1px solid $c_br_grey3; }
+/* --- Border Radius All --- */ 
+.brN { -moz-border-radius:0; -webkit-border-radius:0; border-radius:0; }
+.brS { -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; }
+.brM { -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; }
+.brL { -moz-border-radius:20px; -webkit-border-radius:20px; border-radius:20px; }
+/* --- Border Radius Top Left --- */ 
+.brtlN, .brlN, .brtN { -moz-border-radius-topleft:0; -webkit-border-radius-topleft:0; border-top-left-radius:0; }
+.brtlS, .brlS, .brtS { -moz-border-radius-topleft:5px; -webkit-border-radius-topleft:5px; border-top-left-radius:5px; }
+.brtlM, .brlM, .brtM { -moz-border-radius-topleft:10px; -webkit-border-radius-topleft:10px; border-top-left-radius:10px; }
+.brtlL, .brlL, .brtL { -moz-border-radius-topleft:20px; -webkit-border-radius-topleft:20px; border-top-left-radius:20px; }
+/* --- Border Radius Top Right --- */ 
+.brtrN, .brrN, .brtN { -moz-border-radius-topright:0; -webkit-border-radius-topright:0; border-top-right-radius:0; }
+.brtrS, .brrS, .brtS { -moz-border-radius-topright:5px; -webkit-border-radius-topright:5px; border-top-right-radius:5px; }
+.brtrM, .brrM, .brtM { -moz-border-radius-topright:10px; -webkit-border-radius-topright:10px; border-top-right-radius:10px; }
+.brtrL, .brrL, .brtL { -moz-border-radius-topright:20px; -webkit-border-radius-topright:20px; border-top-right-radius:20px; }
+/* --- Border Radius Bottom Left --- */ 
+.brblN, .brlN, .brbN { -moz-border-radius-bottomleft:0; -webkit-border-radius-bottomleft:0; border-bottom-left-radius:0; }
+.brblS, .brlS, .brbS { -moz-border-radius-bottomleft:5px; -webkit-border-radius-bottomleft:5px; border-bottom-left-radius:5px; }
+.brblM, .brlM, .brbM { -moz-border-radius-bottomleft:10px; -webkit-border-radius-bottomleft:10px; border-bottom-left-radius:10px; }
+.brblL, .brlL, .brbL { -moz-border-radius-bottomleft:20px; -webkit-border-radius-bottomleft:20px; border-bottom-left-radius:20px; }
+/* --- Border Radius Bottom Right --- */ 
+.brbrN, .brrN, .brbN { -moz-border-radius-bottomright:0; -webkit-border-radius-bottomright:0; border-bottom-right-radius:0; }
+.brbrS, .brrS, .brbS { -moz-border-radius-bottomright:5px; -webkit-border-radius-bottomright:5px; border-bottom-right-radius:5px; }
+.brbrM, .brrM, .brbM { -moz-border-radius-bottomright:10px; -webkit-border-radius-bottomright:10px; border-bottom-right-radius:10px; }
+.brbrL, .brrL, .brbL { -moz-border-radius-bottomright:20px; -webkit-border-radius-bottomright:20px; border-bottom-right-radius:20px; }

@@ -1,0 +1,45 @@
+// PORTRAIT TABLET TO DEFAULT DESKTOP
+// ----------------------------------
+
+// @media (min-width: 768px) and (max-width: 979px) {
+@media (max-width: 979px) {
+
+	// Fixed grid
+  #grid > .core(42px, 20px);
+
+  // Fluid grid
+  #grid > .fluid(5.801104972%, 2.762430939%);
+
+  // Input grid
+  #grid > .input(42px, 20px);
+
+  
+	.contentBlocks .section .inner .hd { 
+		padding:10px; 
+	}
+	.slogan {
+		font-size:16px;
+		line-height:22px;
+	}
+	.homepage .heroSection .inner {
+		.heroImage {
+			padding:20px;
+			margin-top:20px;
+			.buyerPic img{ 
+				display:none;
+			}
+			.heroTitle { 
+				width:50%;
+				float: left;
+				h1 {
+					margin:0 20px 0 0;
+					padding:0;
+				}
+			}
+			.heroJoinUnit {
+				width:50%;
+				float:left;
+			}
+		}
+	}
+}

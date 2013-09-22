@@ -1,0 +1,161 @@
+.dash_pro_wid{ 
+	width:217px; overflow:hidden;
+}
+/* Leeke:media */
+.feed_groups_bd { 
+	width:361px; 
+}
+
+.ad_list { 
+	height:475px; 
+	overflow-x:hidden; 
+	overflow-y:scroll; 
+}
+
+
+/* Leeke:img */
+.picholder59, .refe_div { 
+	background:url(images/img_bg.gif) no-repeat scroll 0% 0% transparent; 
+}
+
+/* Leeke:js */
+/* used in ad/my.js */
+.working_area { 
+	border:solid 1px yellow; background-color:yellow; 
+}
+
+/* Leeke:ul */
+
+/* Leeke:div */
+.tab_cont { 
+	padding:10px; 
+	background-color:rgb(208,242,255); 
+	border-top:1px solid rgb(29,155,204); 
+}
+
+/* Leeke:ul */
+/* ====== Random styles ====== */
+/* References */
+.reference_box li.ui-sortable-helper { 
+	border:2px dashed rgb(255,155,0); 
+	background-color:rgb(255,245,245); 
+}
+
+/*Leeke:div*/
+.topline { 
+	height:120px; 
+}
+.jtmpl_proA_demo_bd { 
+	max-width:238px; 
+	overflow:hidden; 
+	float:left; 
+	max-height:90px; 
+}
+
+/* ========= VIP Landing page =========== */
+.stat_user_list {
+	min-height:280px;
+}
+.stat_time { 
+	padding:0 0 5px 0;
+	margin:0 10px 10px 10px;
+	display:block;
+	font-style:italic;
+	font-size:90%;
+	border-bottom:1px dotted rgb(180,180,180); 
+}
+.file_preview {
+	width: 500px;
+	height: auto;
+	min-height: 100px;
+	background-color:#fff;
+	border: 1px solid #AAAAAA;
+	padding:5px;
+	overflow-x: scroll;
+}
+.fix_dashboard_filter{ 
+	select,input,button,textarea{float:left;}
+}
+.wid_dash_prof {
+	width:187px;
+}
+.wid_dash_prod {
+	width:230px;
+}
+.email_hd{
+	background-color:#317fa8;
+	vertical-align:bottom;
+	color:#fff;
+	font-size:40px;
+	line-height:50px;
+}
+.email_text {
+	color: #323232; 
+	margin: 0; 
+	line-height: 22px; 
+	font-size: 14px; 
+}
+.email_text_s {
+	color: #989898; 
+	line-height: 20px; 
+	font-size: 12px; 
+	text-align:left;
+	a {
+		color: #0eb6ce; 
+		text-decoration: underline;
+	}
+}
+.border_column {
+	border-right:2px solid #000;
+}
+.textarea_emial {
+	line-height: 22px;
+	font-size:14px;
+	padding:10px;
+	vertical-align:middle;
+	border:1px dashed rgb(180,180,180); 
+	background-color:rgb(255,255,255); 
+	height:140px;
+	border-radius:0;
+	margin-bottom:20px;
+}
+.textarea_emial_focuse{
+	background-color: #EBFBFF;
+    border: 1px dashed #AAAAAA;
+}
+.border_dashed_o {
+	border:1px dashed rgb(255,155,0); 
+	background-color:rgb(255,245,245); 
+}
+.c_send input { width:400px; height:42px; vertical-align:top;}
+.alert_text { color:#f00;}
+.send_import {
+	.f_imp_contacts a { padding:10px 30px;}
+	.btn3{
+		font-size:12px;
+		line-height:18px;
+		height:18px;
+		overflow:hidden;
+	}
+}
+/* url:user/products/send; page:jtmpl_send_products_list */
+.scrollM {height:400px; overflow-y:scroll;}
+@media only screen and (min-width:400px) {
+	.min_w6aXL { 
+		width:490px; 
+	}
+	.textarea_emial {
+		width:385px;
+	}
+}
+@media only screen and (min-width:1020px) {
+	.min_w6aXL { 
+		width:680px;
+	}
+	.textarea_emial {
+		width:575px;
+	}
+}
+
+.dashPrimary .inner{ background-color: #EBFBFF; border: 1px solid #85DCFF;}
+.follow_textarea {padding: 3px 5px 5px;}

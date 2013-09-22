@@ -1,0 +1,208 @@
+/* **************** CONTENT OBJECTS ***************** */
+/* ====== Elements ====== */
+img { 
+	display:block;
+}
+em { 
+	font-style:italic; 
+}
+strong, 
+.strong { 
+	font-weight:bold; 
+}
+hr { 
+	border:5px solid #e2e2e2; 
+	border-width:0 0 5px 0; 
+	margin:20px 10px 10px 10px; 
+}
+code { 
+	color:#0B8C8F; 
+}
+.important a { 
+	font-weight:bold; 
+}
+/* ====== Type ====== */
+.large { 
+	font-size:110%; 
+}
+.small { 
+	font-size:90%; 
+}
+.xsmall { 
+	font-size:85%; 
+}
+/* links */
+a { 
+	color:#447eab; 
+	text-decoration:none; 
+	cursor:pointer; 
+	&:focus, 
+	&:hover { 
+		text-decoration:underline; 
+	}
+	&:visited { 
+		color:#005a9c; 
+	}
+}
+.bold { 
+	font-weight:bold; 
+}
+.pre { 
+	white-space:pre; 
+	white-space:pre-wrap; 
+}
+/* ====== blockquote ====== */
+cite { 
+	display:block; 
+	text-align:right; 
+	padding-top:10px; 
+}
+/* ====== callout ====== */
+.callout { 
+	color: rgb(90,90,90); 
+	font-family: Georgia, Times, serif; 
+	font-size: 115%; 
+	font-style: italic; 
+	line-height:22px; 
+	width:80%; 
+	cite { 
+		display: block; 
+		font-size: 69.25%; 
+		padding-top: 30px; 
+		text-align: right; 
+	}
+	span.quot { 
+		color: #1D9BCC; 
+		font-size: 150%; 
+		font-weight: bold; 
+		vertical-align: sub; 
+	}
+	span.quotLast { 
+		vertical-align: middle; 
+	}
+}
+/* ====== image treatments ====== */
+.caption { 
+	font-size:90%; 
+	color:#666666; 
+	font-style:italic; 
+	padding-top:0; 
+}
+/* ====== special formatting classes ====== */
+.detail { 
+	color:rgb(120,120,120); 
+}
+.hl { 
+	color:rgb(255,0,0); 
+}
+/* ====== floats + clear ===== */
+.fl_l { 
+	float:left;
+}
+.ie6 .fl_l, 
+.ie7 .fl_l { 
+	display:inline;
+}
+.fl_r { 
+	float:right; 
+}
+.cl { 
+	clear:both; 
+}
+/* ====== Display ===== */
+.block { 
+	display:block !important; 
+}
+.inline {
+	display:inline; 
+}
+.inl-blk {
+	display:inline-block; 
+	float:left;
+}
+.none { 
+	display:none;
+}
+.strong_none{
+	display:none !important;
+}
+.hidden { 
+	overflow:hidden; 
+}
+.scroll { 
+	overflow:scroll; 
+}
+.flow_auto { 
+	overflow:auto; 
+}
+.break-all {
+	word-break:break-all !important;
+	word-wrap:break-all;
+}
+.fixed {
+	table-layout:fixed;
+}
+/* ====== text-align ====== */
+.text_l { 
+	text-align:left; 
+}
+.text_c { 
+	text-align:center; 
+}
+.text_r { 
+	text-align:right; 
+}
+.vert_t {
+	vertical-align:top !important;
+}
+.nowrap { 
+	white-space:nowrap; 
+}
+.pre-wrap { 
+	white-space:pre-wrap; 
+}
+.break-word { 
+	word-wrap:break-word !important;
+}
+.break-word_a a { 
+	float:none;
+}
+
+.pointer { 
+	cursor:pointer;
+}
+/* ====== loading ====== */
+.loading { 
+	background:white url('images/ui-anim_basic_16x16.gif') right center no-repeat; 
+	height:16px !important; 
+}
+/* ====== border ====== */
+.bordertb { 
+	border-top:1px $c_br_grey3 solid; 
+	border-bottom:1px $c_br_grey3 solid; 
+}
+/* ====== Opacity transforms ======*/
+a.working { 
+	opacity:0.5; 
+}
+ul.working { 
+	opacity:0.5; 
+}
+.lightWork { 
+	opacity:0.4; 
+}
+.cl8 { 
+	clear:both; 
+	width:800px; 
+}
+.fix_posi { 
+	position:relative; 
+	zoom:1;
+}
+.v_top { 
+	vertical-align:top !important;
+}
+.loading { 
+	/*Todo: Check url*/
+	background:url('images/ui-anim_basic_16x16.gif') bottom center no-repeat; 
+}

@@ -1,0 +1,140 @@
+.pan{padding:0}
+.pas{padding:5px}
+.pam{padding:10px}
+.pal{padding:20px}
+.ptn{padding-top:0}
+.pts{padding-top:5px}
+.ptm{padding-top:10px}
+.ptl{padding-top:20px}
+.prn{padding-right:0}
+.prs{padding-right:5px}
+.prm{padding-right:10px}
+.prl{padding-right:20px}
+.pbn{padding-bottom:0}
+.pbs{padding-bottom:5px}
+.pbm{padding-bottom:10px}
+.pbl{padding-bottom:20px}
+.pln{padding-left:0}
+.pls{padding-left:5px}
+.plm{padding-left:10px}
+.pll{padding-left:20px}
+.phn{padding-left:0;padding-right:0}
+.phs{padding-left:5px;padding-right:5px}
+.phm{padding-left:10px;padding-right:10px}
+.phl{padding-left:20px;padding-right:20px}
+.pvn{padding-top:0;padding-bottom:0}
+.pvs{padding-top:5px;padding-bottom:5px}
+.pvm{padding-top:10px;padding-bottom:10px}
+.pvl{padding-top:20px;padding-bottom:20px}
+.man{margin:0}
+.mas{margin:5px}
+.mam{margin:10px}
+.mal{margin:20px}
+.mtn{margin-top:0}
+.mtxs{margin-top:2px}
+.mts{margin-top:5px}
+.mtm{margin-top:10px}
+.-mtm{margin-top:-10px}
+.mtl{margin-top:20px}
+.mrn{margin-right:0}
+.mrs{margin-right:5px}
+.mrm{margin-right:10px}
+.mrl{margin-right:20px}
+.mbn{margin-bottom:0}
+.mbs{margin-bottom:5px}
+.mbm{margin-bottom:10px}
+.mbl{margin-bottom:20px}
+.mln{margin-left:0}
+.mls{margin-left:5px}
+.mlm{margin-left:10px}
+.mll{margin-left:20px}
+.mhn{margin-left:0;margin-right:0}
+.mhs{margin-left:5px;margin-right:5px}
+.mhm{margin-left:10px;margin-right:10px}
+.mhl{margin-left:20px;margin-right:20px}
+.mvn{margin-top:0;margin-bottom:0}
+.mvs{margin-top:5px;margin-bottom:5px}
+.mvm{margin-top:10px;margin-bottom:10px}
+.mvl{margin-top:20px;margin-bottom:20px}
+/* ====== Widths ======*/
+.w10bXL { width:620px; }
+.w10XL { width:600px; }
+.w9gXL { width:570px; }
+.w9eXL { width:556px; }
+.w9XL  { width:520px; }
+.w8XL  { width:500px; }
+.w7iXL { width:492px !important; }
+.w7XL  { width:465px; }
+.w6bXL { width:440px; }
+.w6XL  { width:400px; }
+.w5bXL { width:340px; }
+.w5XL  { width:320px; }
+.w4XL  { width:280px; }
+.w3bXL { width:270px; }
+.w3XL  { width:240px; }
+.w2XL  { width:200px; }
+.wXLb  { width:195px; }
+.wXL   { width:180px; }
+.wL    { width:160px; }
+.wM    { width:150px; }
+.wS    { width:140px; }
+.wXS   { width:110px; }
+.w2XS  { width:100px; }
+.w3XS  { width:90px;  }
+.w4XS  { width:70px;  }
+/* ====== Text Rows ====== */
+.row1{height:20px;}
+.row2{height:40px;}
+.row3{height:60px;}
+.row4{height:80px;}
+.row5{height:100px;}
+.row6{height:120px;}
+.row7{height:140px;}
+.row8{height:160px;}
+.row9{height:180px;}
+.row10{height:200px;}
+.row11{height:220px;}
+.maxrow5{max-height:100px}
+/* ====== Border Radius ====== */
+.bn{border:0 !important;}
+.bsS{border:1px solid #d7d7d7;}
+.bsbS{border-bottom:1px solid #d7d7d7;}
+/* --- Border Radius All --- */ 
+.brN { -moz-border-radius:0; -webkit-border-radius:0; border-radius:0; }
+.brS { -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; }
+.brM { -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; }
+.brL { -moz-border-radius:20px; -webkit-border-radius:20px; border-radius:20px; }
+/* --- Border Radius Top Left --- */ 
+.brtlN, .brlN, .brtN { -moz-border-radius-topleft:0; -webkit-border-radius-topleft:0; border-top-left-radius:0; }
+.brtlS, .brlS, .brtS { -moz-border-radius-topleft:5px; -webkit-border-radius-topleft:5px; border-top-left-radius:5px; }
+.brtlM, .brlM, .brtM { -moz-border-radius-topleft:10px; -webkit-border-radius-topleft:10px; border-top-left-radius:10px; }
+.brtlL, .brlL, .brtL { -moz-border-radius-topleft:20px; -webkit-border-radius-topleft:20px; border-top-left-radius:20px; }
+/* --- Border Radius Top Right --- */ 
+.brtrN, .brrN, .brtN { -moz-border-radius-topright:0; -webkit-border-radius-topright:0; border-top-right-radius:0; }
+.brtrS, .brrS, .brtS { -moz-border-radius-topright:5px; -webkit-border-radius-topright:5px; border-top-right-radius:5px; }
+.brtrM, .brrM, .brtM { -moz-border-radius-topright:10px; -webkit-border-radius-topright:10px; border-top-right-radius:10px; }
+.brtrL, .brrL, .brtL { -moz-border-radius-topright:20px; -webkit-border-radius-topright:20px; border-top-right-radius:20px; }
+/* --- Border Radius Bottom Left --- */ 
+.brblN, .brlN, .brbN { -moz-border-radius-bottomleft:0; -webkit-border-radius-bottomleft:0; border-bottom-left-radius:0; }
+.brblS, .brlS, .brbS { -moz-border-radius-bottomleft:5px; -webkit-border-radius-bottomleft:5px; border-bottom-left-radius:5px; }
+.brblM, .brlM, .brbM { -moz-border-radius-bottomleft:10px; -webkit-border-radius-bottomleft:10px; border-bottom-left-radius:10px; }
+.brblL, .brlL, .brbL { -moz-border-radius-bottomleft:20px; -webkit-border-radius-bottomleft:20px; border-bottom-left-radius:20px; }
+/* --- Border Radius Bottom Right --- */ 
+.brbrN, .brrN, .brbN { -moz-border-radius-bottomright:0; -webkit-border-radius-bottomright:0; border-bottom-right-radius:0; }
+.brbrS, .brrS, .brbS { -moz-border-radius-bottomright:5px; -webkit-border-radius-bottomright:5px; border-bottom-right-radius:5px; }
+.brbrM, .brrM, .brbM { -moz-border-radius-bottomright:10px; -webkit-border-radius-bottomright:10px; border-bottom-right-radius:10px; }
+.brbrL, .brrL, .brbL { -moz-border-radius-bottomright:20px; -webkit-border-radius-bottomright:20px; border-bottom-right-radius:20px; }
+
+/* ====== Border ====== */
+.radius_als { /*for all*/ padding:5px; }
+.radius_als { /*for moz*/ -moz-border-radius-topleft:5px; -moz-border-radius-bottomleft:5px; }
+.radius_als { /*for webkit*/ -webkit-border-radius-topleft:5px; -webkit-border-radius-bottomleft:5px; }
+.radius_als { /*for ie*/ border-top-left-radius:5px; border-bottom-left-radius:5px; }
+.radius_alm { /*for all*/ padding:5px; }
+.radius_alm { /*for moz*/ -moz-border-radius-topleft:10px; -moz-border-radius-bottomleft:10px; }
+.radius_alm { /*for webkit*/ -webkit-border-radius-topleft:5px; -webkit-border-radius-bottomleft:10px; }
+.radius_alm { /*for ie*/ border-top-left-radius:10px; border-bottom-left-radius:10px; }
+.radius_all { /*for all*/ padding:5px; }
+.radius_all { /*for moz*/ -moz-border-radius-topleft:15px; -moz-border-radius-bottomleft:15px; }
+.radius_all { /*for webkit*/ -webkit-border-radius-topleft:5px; -webkit-border-radius-bottomleft:15px; }
+.radius_all { /*for ie*/ border-top-left-radius:15px; border-bottom-left-radius:15px; }

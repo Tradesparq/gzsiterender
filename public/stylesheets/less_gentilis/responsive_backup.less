@@ -1,0 +1,666 @@
+/*!
+ * Bootstrap Responsive v2.0.2
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+// Responsive.less
+// For phone and tablet devices
+// -------------------------------------------------------------
+
+
+// REPEAT VARIABLES & MIXINS
+// -------------------------
+// Required since we compile the responsive stuff separately
+
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+
+// RESPONSIVE CLASSES
+// ------------------
+
+// Hide from screenreaders and browsers
+// Credit: HTML5 Boilerplate
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+// Visibility utilities
+
+// For desktops
+.visible-phone     { display: none; }
+.visible-tablet    { display: none; }
+.visible-desktop   { display: block; }
+.hidden-phone      { display: block; }
+.hidden-tablet     { display: block; }
+.hidden-desktop    { display: none; }
+
+// Phones only
+@media (max-width: 767px) {
+  // Show
+  .visible-phone     { display: block; }
+  // Hide
+  .hidden-phone      { display: none; }
+  // Hide everything else
+  .hidden-desktop    { display: block; }
+  .visible-desktop   { display: none; }
+}
+
+// Tablets & small desktops only
+@media (min-width: 768px) and (max-width: 979px) {
+  // Show
+  .visible-tablet    { display: block; }
+  // Hide
+  .hidden-tablet     { display: none; }
+  // Hide everything else
+  .hidden-desktop    { display: block; }
+  .visible-desktop   { display: none; }
+}
+
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+
+@media (max-width: 480px) {
+
+  .container-fluid {
+    // min-width:400px;
+  }
+  
+  .table th, .table td {
+  	padding: 7px;
+  }
+  
+  // Smooth out the collapsing/expanding nav
+  .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0); // activate the GPU
+  }
+
+  // Block level the page header small tag for readability
+  .page-header h1 small {
+    display: block;
+    line-height: @baseLineHeight;
+  }
+
+  // Update checkboxes for iOS
+  input[type="checkbox"],
+  input[type="radio"] {
+    border: 1px solid #ccc;
+  }
+
+  // Remove the horizontal form styles
+  .form-horizontal .control-group > label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left;
+  }
+  // Move over all input controls and content
+  .form-horizontal .controls {
+    margin-left: 0;
+  }
+  // Move the options list down to align with labels
+  .form-horizontal .control-list {
+    padding-top: 0; // has to be padding because margin collaspes
+  }
+  // Move over buttons in .form-actions to align with .controls
+  .form-horizontal .form-actions {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  // Modals
+  .modal {
+    position: absolute;
+    top:   10px;
+    left:  10px;
+    right: 10px;
+    width: auto;
+    margin: 0;
+    &.fade.in { top: auto; }
+  }
+  .modal-header .close {
+    padding: 10px;
+    margin: -10px;
+  }
+
+  // Carousel
+  .carousel-caption {
+    position: static;
+  }
+	
+	// Remove chatbar for phones
+	.chat-bottombar{
+		display:none;
+	}
+
+}
+
+
+// LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
+// --------------------------------------------------
+
+@media (max-width: 767px) {	
+	
+  // Padding to set content in a bit
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navbar-fixed-top {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  
+  .nav-tabs {
+  	margin: 0 0 10px 0;
+  }
+
+  // GRID & CONTAINERS
+  // -----------------
+  // Remove width from containers
+  .container {
+    width: auto;
+  }
+  // Fluid rows
+  .row-fluid {
+    width: 100%;
+  }
+  // Undo negative margin on rows
+  .row {
+    margin-left: 0;
+  }
+  // Make all columns even
+  // .row > [class*="span"],
+  // .row-fluid > [class*="span"] {
+  //   float: none;
+  //   display: block;
+  //   width: auto;
+  //   margin: 0;
+  // }
+
+  // THUMBNAILS
+  // ----------
+  .thumbnails [class*="span"] {
+    width: auto;
+  }
+
+  // FORM FIELDS
+  // -----------
+  // Make span* classes full width
+  input[class*="span"],
+  select[class*="span"],
+  textarea[class*="span"],
+  .uneditable-input {
+    .input-block-level();
+  }
+  // But don't let it screw up prepend/append inputs
+  .input-prepend input[class*="span"],
+  .input-append input[class*="span"] {
+    width: auto;
+  }
+  
+  .push-user-block{
+    margin-left:94px;
+  }
+  .app-tutorial {
+  	margin:0 -15px;
+		border-left:0;
+		border-right:0;
+  }
+	.appHead {
+		.hd {
+			margin-bottom:0;
+		}
+		.globalSearch {
+			float:none;
+			clear:left;
+			margin-bottom:20px;
+			.input-xlarge {
+				width:92%;
+			}
+		}
+	}
+	
+	
+	.well-sidebar {
+		margin:0 0 20px 0;
+		border: 1px solid #eee;
+		border: 1px solid rgba(0,0,0,.05);
+		.border-radius(4px);
+		.box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
+		input {
+			width: 98%;
+		}
+	}
+	
+}
+
+@media (max-width: 800px) {
+  // Make all columns even
+  .row > [class*="span"],
+  .row-fluid > [class*="span"] {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0;
+  }  
+
+}
+
+
+
+// PORTRAIT TABLET TO DEFAULT DESKTOP
+// ----------------------------------
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  // Fixed grid
+  #grid > .core(42px, 20px);
+
+  // Fluid grid
+  #grid > .fluid(5.801104972%, 2.762430939%);
+
+  // Input grid
+  #grid > .input(42px, 20px);
+  
+  .container-fluid {
+    padding-left: @gridGutterWidth;
+    padding-right: @gridGutterWidth;
+  }	
+}
+
+
+
+// TABLETS AND BELOW
+// -----------------
+@media (max-width: 979px) {
+
+  // UNFIX THE TOPBAR
+  // ----------------
+  // Remove any padding from the body
+  body {
+    padding-top: 0;
+  }
+  
+  html, body {
+	background-image: none;
+	background-color: @white;
+  }
+  
+  .template-main {
+	background:none;
+	padding: 0;
+	box-shadow:0 0 0 !important;
+	.border-radius(0);
+  }
+  
+  // Unfix the navbar
+  .navbar-fixed-top {
+    position: static;
+    margin-bottom: @baseLineHeight;
+  }
+  .navbar-fixed-top .navbar-inner {
+    padding: 5px;
+  }
+  .navbar .container-fluid {
+    width: auto;
+    padding: 0;
+	clear:both;
+	
+  }
+  // Account for brand name
+  .navbar .brand {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 0 10px -5px;
+  }
+  // Nav collapse clears brand
+  .navbar .nav-collapse {
+    clear: left;
+	
+  }
+  // Block-level the nav
+  .navbar .nav {
+    float: none;
+    margin: 0 0 (@baseLineHeight / 2);
+		display:block;
+		min-height:40px;
+  }
+  .navbar .nav-main {
+		padding:0 5px;
+		.nav > li, .nav > .active {
+			float:left;
+			margin:0 10px 10px 0;
+			height:50px;
+			:hover {
+				background:@blue;
+			}
+			> a {
+				height:20px;
+				padding:10px 15px;
+				background-color:@grayLighter;
+				.border-radius(4px 4px 4px 4px);
+			}
+		}
+		.sep {
+			clear:both;
+		}
+	} 
+ 
+  .navbar .nav > .divider-vertical {
+    display: none;
+  }
+  .navbar .nav .nav-header {
+    color: @navbarText;
+    text-shadow: none;
+  }
+  // Nav and dropdown links in navbar
+  .navbar .nav > li > a,
+  .navbar .dropdown-menu a {
+    padding: 6px 5px;
+    font-weight: bold;
+    color: @navbarLinkColor;
+    .border-radius(3px);
+  }
+  .navbar .dropdown-menu li + li a {
+    margin-bottom: 2px;
+  }
+  .navbar .nav > li > a:hover,
+  .navbar .dropdown-menu a:hover {
+    background-color: @navbarBackground;
+  }
+  // Dropdowns in the navbar
+  .navbar .dropdown-menu {
+    position: static;
+    top: auto;
+    left: auto;
+    float: none;
+    display: block;
+    max-width: none;
+    margin: 5px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    .border-radius(0);
+    .box-shadow(none);
+  }
+	.navbar .nav .dropdown-menu {
+		clear:both;
+		margin-top:10px;
+		padding:0 5px;	
+		> li {
+			float:left;
+			margin:0 10px 10px 0;
+			height:40px;
+			> a {
+				background:@grayLighter;
+				.border-radius(5px);
+				padding:10px 15px;	
+				&:hover {
+					background:@blue;
+					color:@white;
+				}	
+			}
+		}
+		.sep {
+			clear:both;
+		}
+	}
+	.navbar .nav .dropdown {
+		.dropdown-toggle {
+			display:none;
+		}
+		.dropdown-menu {
+			margin:0;
+		}
+	}
+  .navbar .dropdown-menu:before,
+  .navbar .dropdown-menu:after {
+    display: none;
+  }
+  .navbar .dropdown-menu .divider {
+    display: none;
+  }
+  // Forms in navbar
+  .navbar-form,
+  .navbar-search {
+    float: none;
+    padding: (@baseLineHeight / 2) 15px;
+    margin: (@baseLineHeight / 2) 0;
+    border-top: 1px solid @navbarBackground;
+    border-bottom: 1px solid @navbarBackground;
+    @shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
+    .box-shadow(@shadow);
+  }
+  // Pull right (secondary) nav content
+  .navbar .nav.pull-right {
+    float: none;
+    margin-left: 0;
+  }
+  // Static navbar
+  .navbar-static .navbar-inner {
+    padding-left:  10px;
+    padding-right: 10px;
+  }
+  // Navbar button
+  .btn-navbar {
+    display: block;
+  }
+
+  // Hide everything in the navbar save .brand and toggle button */
+  .nav-collapse {
+    overflow: hidden;
+    height: 0;
+  }
+  .nav-clear {
+  	margin-top:70px
+  }
+  .appHead {
+  	margin-bottom: 10px;
+  }
+}
+
+
+
+// DEFAULT DESKTOP
+// ---------------
+
+@media (min-width: 980px) {
+  .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
+  
+  .container-fluid {
+    padding-left: @gridGutterWidth;
+    padding-right: @gridGutterWidth;
+  }
+  
+  .nav-clear {
+  	margin-top:70px;
+  }
+	
+	.multi-column { 
+		p, span {
+			-webkit-column-count: 2; /* Saf3, Chrome*/
+	  	-webkit-column-gap: 4%; /* Saf3, Chrome*/
+	  	-moz-column-count: 2; /* FF3.5+ */
+	  	-moz-column-gap: 4%; /* FF3.5+ */
+	  	column-count: 2; /* Opera 11+*/
+	  	column-gap: 4%; /* Opera 11+*/
+		}
+	}
+}
+
+
+
+// LARGE DESKTOP & UP
+// ------------------
+
+@media (min-width: 1200px) {
+
+  .container-fluid {
+    padding-left: @gridGutterWidth;
+    padding-right: @gridGutterWidth;
+    max-width:1400px;
+    margin:0 auto;
+  }
+  .nav-clear {
+  	margin-top:70px;
+  }
+
+  // Fixed grid
+  #grid > .core(70px, 30px);
+
+  // Fluid grid
+  #grid > .fluid(5.982905983%, 2.564102564%);
+
+  // Input grid
+  #grid > .input(70px, 30px);
+
+  // Thumbnails
+  .thumbnails {
+    margin-left: -30px;
+  }
+  .thumbnails > li {
+    margin-left: 30px;
+  }
+	
+}
+
+
+
+// Meganizr Responsive Classes
+
+@media only screen and (max-width: 979px) {
+	.nav-clear {
+		margin-top:20px;
+	}
+	
+	.meganizr-container {
+		position:relative;
+		top:0;
+		left:0;
+		clear:both;
+		border-bottom:1px solid @grayLight;
+	}
+	
+	.mzr-responsive {
+		height: auto;
+		float: left;
+		clear: both;
+		margin: 0;
+		
+		background: -webkit-linear-gradient(top, #fefefe 0%, #ededed 100%);
+		background: -moz-linear-gradient(top, #fefefe 0%, #ededed 100%);
+		background: -o-linear-gradient(top, #fefefe 0%, #ededed 100%);
+		background: -ms-linear-gradient(top, #fefefe 0%, #ededed 100%);
+		background: linear-gradient(top, #fefefe 0%, #ededed 100%); 
+		
+		.meganizr .mzr-content {
+			border-left:0;
+			border-right:0;
+		}
+		
+		> li,
+		> li.mzr-align-right {
+			display: inline-block;
+			float: left;
+			position: static;
+			border: none;
+			width: 33.2%;
+		}
+		> li.mzr-drop { background: url(../img/arrow-down.png) no-repeat right center; }
+		.drop-two-columns,
+		.drop-three-columns,
+		.drop-four-columns,
+		.drop-five-columns,
+		.drop-six-columns { width: 100%; }
+		.one-col,
+		.two-col,
+		.three-col {
+			width: 45.5%;
+			margin: 2%;
+		}
+		.four-col,
+		.five-col,
+		.six-col,
+		.mzr-contact {
+			.one-col,
+			.two-col,
+			.three-col,
+			.four-col,
+			.five-col,
+			.six-col {
+				width: 95.5%;
+				margin: 2%;
+			}
+		}	
+	}
+	
+	.mzr-responsive.mzr-slide > li > div,
+	.mzr-responsive.mzr-slide > li > ul,
+	.mzr-responsive.mzr-slide > li > ul li > ul,
+	.mzr-responsive.mzr-fade > li > div,
+	.mzr-responsive.mzr-fade > li > ul,
+	.mzr-responsive.mzr-fade > li > ul li > ul { top: auto; }
+	
+	.mzr-responsive.mzr-slide > li.mzr-drop:hover > div,
+	.mzr-responsive.mzr-slide > li.mzr-drop:hover > ul,
+	.mzr-responsive.mzr-slide > li > ul li.mzr-drop:hover > ul,
+	.mzr-responsive.mzr-fade > li.mzr-drop:hover > div,
+	.mzr-responsive.mzr-fade > li.mzr-drop:hover > ul,
+	.mzr-responsive.mzr-fade > li > ul li.mzr-drop:hover > ul { top: auto;	}
+	
+	.mzr-responsive {
+		> li.mzr-search input { width: 90%; }
+		> li.mzr-search input:focus { width: 90%; }
+		> li.mzr-search input[type=text] { border: 1px solid #ccc; padding-left: 5px; }
+		.mzr-content input[type=text],
+		.mzr-content input[type=email],
+		.mzr-content textarea {
+			width: 80%;
+			max-width: 80%;
+			padding: 9px 4% 8px 15%;
+		}
+		li.mzr-drop.mzr-levels,
+		li.mzr-drop.mzr-contact { position: relative; }
+		> li.mzr-drop > ul,
+		> li.mzr-drop > ul li > ul { width: 100%; padding: 0;}
+		> li > ul li > ul,
+		> li > ul li.mzr-align-left > ul,
+		> li.mzr-align-right > ul { left: -1px; }
+		> li > ul a { margin-left: 10px; margin-right: 10px; }
+		> li > ul li.mzr-drop > a,
+		> li > ul li.mzr-align-left.mzr-drop > a { background: url(../img/arrow-down.png) no-repeat 100% center; }
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.mzr-responsive > li,
+	.mzr-responsive > li.mzr-align-right { width: 49.5%; }
+}
+
+@media only screen and (max-width: 479px) {
+	.mzr-responsive > li,
+	.mzr-responsive > li.mzr-align-right {
+		display: block;
+		width: 100%;
+	}
+	.mzr-responsive .one-col,
+	.mzr-responsive .two-col,
+	.mzr-responsive .three-col,
+	.mzr-responsive .four-col,
+	.mzr-responsive .five-col,
+	.mzr-responsive .six-col {
+		width: 95.5%;
+		margin: 2%;
+	}
+}

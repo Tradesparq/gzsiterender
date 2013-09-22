@@ -1,0 +1,258 @@
+/* ====== Button Defaults-Sizes + Designs ====== */
+$btn-color1: rgb(133,220,255) !important;
+$btn-color2: $c_br_grey2 !important;
+$btn-color3: rgb(100,200,255) !important;
+
+@mixin btn-hover-common {
+	text-decoration: none;
+	background-image: none;
+}
+@mixin btn12-hover {
+ 	text-decoration: none;
+	background-image: none;
+	background-color: #85dcff !important;
+}
+a.btn1 {
+    font-weight: bold;
+    color: rgb(50, 50, 50) ! important;
+    font-size: 200% !important;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 0 rgb(255, 255, 255);
+    background-color: rgb(185, 235, 255);
+    background-image: -moz-linear-gradient(top, rgb(226, 247, 255), rgb(185, 235, 255));
+    background-image: -webkit-gradient(linear, top, bottom, from(rgb(226, 247, 255)), to(rgb(185, 235, 255)));
+    background-image: linear-gradient(top, rgb(226, 247, 255), rgb(185, 235, 255));
+    border: 1px solid rgb(133, 220, 255);
+    padding: 12px 20px 12px 20px;
+    display: inline-block;-moz-border-radius: 10px;-webkit-border-radius: 10px;
+    border-radius: 10px;
+	&:hover { 
+		@include btn-hover-common;
+		background-color: $btn-color1;
+	}
+}
+a.btn1_unread {
+	background-color: rgb(240, 240, 240);
+    background-image: -moz-linear-gradient(top, rgb(250, 250, 250), rgb(230, 230, 230));
+    background-image: -webkit-gradient(linear, top, bottom, from(rgb(250, 250, 250)), to(rgb(230, 230, 230)));
+    background-image: linear-gradient(top, rgb(250, 250, 250), rgb(230, 230, 23));
+    border: 1px solid rgb(200, 200, 200);
+    color: #666 ! important;
+    &:hover {
+		background-color: rgb(240, 240, 240) !important;
+    }
+}
+@mixin btn2{
+    font-weight: bold;
+    color: rgb(50, 50, 50) ! important;
+    font-size: 130% !important;
+    _font-size: 110% ;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 0 rgb(255, 255, 255);
+    background-color: rgb(185, 235, 255);
+    background-image: -moz-linear-gradient(top, rgb(226, 247, 255), rgb(185, 235, 255));
+    background-image: -webkit-gradient(linear, top, bottom, from(rgb(226, 247, 255)), to(rgb(185, 235, 255)));
+    background-image: linear-gradient(top, rgb(226, 247, 255), rgb(185, 235, 255));
+    border: 1px solid rgb(133, 220, 255);-moz-border-radius: 5px;-webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 6px 10px 6px 10px;
+    display: inline-block;
+	&:hover { 
+		@include btn-hover-common;
+		background-color: $btn-color1;
+	}
+}
+a.btn2 {
+	@include btn2;
+}
+a.btn3 {
+    font-weight: normal;
+    color: rgb(50, 50, 50) ! important;
+    font-size: 105% !important;
+    background-color: rgb(240, 240, 240);
+    background-image: -moz-linear-gradient(top, rgb(250, 250, 250), rgb(230, 230, 230));
+    background-image: -webkit-gradient(linear, top, bottom, from(rgb(250, 250, 250)), to(rgb(230, 230, 230)));
+    background-image: linear-gradient(top, rgb(250, 250, 250), rgb(230, 230, 23));
+    border: 1px solid rgb(200, 200, 200);-moz-border-radius: 5px;-webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px 7px 3px 7px ! important;
+    display: inline-block;
+	&:hover { 
+		@include btn-hover-common;
+		background-color: $btn-color2;
+	}
+}
+
+a.btn4 {
+    font-weight: normal;
+    color: rgb(50, 50, 50) ! important;
+    font-size: 95% !important;
+	*font-size: 11px;
+    background-color: rgb(240, 240, 240);
+    background-image: -moz-linear-gradient(top, rgb(250, 250, 250), rgb(230, 230, 230));
+    background-image: -webkit-gradient(linear, top, bottom, from(rgb(250, 250, 250)), to(rgb(230, 230, 230)));
+    background-image: linear-gradient(top, rgb(250, 250, 250), rgb(230, 230, 23));
+    border: 1px solid rgb(180, 180, 180);-moz-border-radius: 5px;-webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 1px 5px 1px 5px;
+    display: inline-block;
+	&:hover { 
+		@include btn-hover-common;
+
+		background-color: $btn-color2;
+	}
+}
+a.btn5 {
+    font-weight: normal;
+    color: rgb(50, 50, 50) ! important;
+    font-size: 85% !important;
+    background-color: rgb(240, 240, 240);
+    background-image: -moz-linear-gradient(top, rgb(250, 250, 250), rgb(230, 230, 230));
+    background-image: -webkit-gradient(linear, top, bottom, from(rgb(250, 250, 250)), to(rgb(230, 230, 230)));
+    background-image: linear-gradient(top, rgb(250, 250, 250), rgb(230, 230, 23));
+    border: 1px solid rgb(200, 200, 200);-moz-border-radius: 3px;-webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 1px 4px 1px 4px;
+    display: inline-block;
+	&:hover { 
+		@include btn-hover-common;
+
+		background-color: $btn-color2;
+	}
+}
+a.btn6 {
+    color: rgb(50, 50, 50) ! important;
+    font-size: 85% !important;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgb(255, 255, 255);
+    padding: 0 4px 0 4px;
+    display: inline-block;
+	&:hover { 
+		@include btn-hover-common;
+		color: $btn-color3;
+	}
+}
+/* ====== Custom Styles ====== */
+
+a.btn_switch_ON {
+    color: rgb(50, 50, 50) ! important;
+    background-color: rgb(230, 230, 230);
+    background-image: -moz-linear-gradient(top, rgb(245, 245, 245), rgb(220, 220, 220));
+    background-image: -webkit-gradient(linear, top, bottom, from(rgb(245, 245, 245)), to(rgb(220, 220, 220)));
+    background-image: linear-gradient(top, rgb(245, 245, 245), rgb(220, 220, 220));
+    border: 1px solid rgb(180,180,180);
+}
+a.btn_switch_OFF {
+    color: rgb(150, 150, 150) ! important;
+    background-color: rgb(255, 255, 255);
+    background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(245, 245, 245));
+    background-image: -webkit-gradient(linear, top, bottom, from(rgb(255, 255, 255)), to(rgb(245, 245, 245)));
+    background-image: linear-gradient(top, rgb(255, 255, 255), rgb(245, 245, 245));
+    border: 1px solid rgb(180,180,180);
+}
+a.btn_caution { 
+	background-color: #fff;
+	background-image: none !important;
+	border: 1px solid rgb(229,218,97);
+	&:hover { background-color: rgb(248,241,165) !important;
+	background-image: none;
+	color: rgb(0,0,0) !important;
+	border: 1px solid rgb(202,189,51);
+}
+}
+a.btn_cancel { 
+	color: #fff !important;
+	background-color: rgb(255,0,0);
+	background-image :-moz-linear-gradient(top, rgb(255,0,0), rgb(190,0,0));
+	background-image :-webkit-gradient(linear, top, bottom, from(rgb(255,0,0)), to(rgb(190,0,0)));
+	background-image :linear-gradient(top, rgb(255,0,0), rgb(190,0,0));
+	border: 1px solid rgb(150,0,0);
+	&:hover { 
+		background-image: none;
+		background-color: rgb(220,0,0) !important;
+	}
+}
+a.btn_bright { 
+	color: rgb(50,50,50) !important;
+	background-image: none;
+	background-color: #fff;
+	border: 1px solid rgb(181,233,253);
+	&:hover { 
+		background-color: rgb(181,233,253) !important;
+	}
+}
+a.btn_fire { 
+	color: rgb(50,50,50) !important;
+	background-color: #fff;
+	background-image:none;
+	background-image :-moz-linear-gradient(top, rgb(255,237,206), rgb(255,192,93));
+	background-image :-webkit-gradient(linear, top, bottom, from(rgb(255,237,206)), to(rgb(255,192,93)));
+	background-image :linear-gradient(top, rgb(255,237,206), rgb(255,192,93));
+	border: 1px solid rgb(255,155,0);
+	&:hover { 
+		background-color: rgb(255,184,73) !important;
+	}
+}
+a.btn_invite { 
+	color: rgb(50,50,50) !important;
+	background-image: none;
+	background-color: #fff;
+	border: 1px solid rgb(255,135,135);
+	&:hover { 
+		background-color: rgb(255,213,213) !important;
+		border-color: rgb(255,0,0);
+		color:#000 !important;
+	}
+}
+a.btn_hot { 
+	color: #fff !important;
+	text-shadow:0 0 0;
+	background-image: none;
+	background-color: rgb(0,184,255);
+	border: 0;
+	&:hover {
+		background-color: rgb(0,100,255) !important;
+	}
+}
+a.btn_dark { 
+	border:0;
+	background-image:none;
+	background-color:rgba(0, 0, 0, 0.7);
+	border-radius:0;
+	color:rgb(255,155,0) !important;
+	text-shadow:1px 1px 0 rgb(0,0,0);
+	&:hover { 
+		background-color:rgb(0,0,0) !important;
+	}
+}
+/* Button Grouping */
+a.btnL { 
+	margin-right:0;
+	border-right:0 solid;
+	-moz-border-radius-topright:0;
+	-moz-border-radius-bottomright:0;
+	-webkit-border-radius-topright:0;
+	-webkit-border-radius-bottomright:0;
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+}
+a.btnC { 
+	margin-left:0;
+	margin-right:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
+	border-right:0 solid;
+	-webkit-box-shadow :0 0 0;
+	-moz-box-shadow :0 0 0;
+	box-shadow :0 0 0;
+}
+a.btnR {
+	margin-left:0;
+	-moz-border-radius-topleft:0;
+	-moz-border-radius-bottomleft:0;
+	-webkit-border-radius-topleft:0;
+	-webkit-border-radius-bottomleft:0;
+	border-top-left-radius:0;
+	border-bottom-left-radius:0;
+}

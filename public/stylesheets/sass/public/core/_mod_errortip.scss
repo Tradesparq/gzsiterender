@@ -1,0 +1,21 @@
+/* Maps to ts-errortip.js */
+.dialog_error, .dialog_caution, .dialog_confirm, .dialog_notify { padding:20px; margin:0px; }
+.dialog_error .inner, .dialog_caution .inner, .dialog_confirm .inner, .dialog_notify .inner { box-shadow:0px 0px 20px rgb(0,0,0); }
+.ie6, .ie7 {
+	.dialog_error .inner, .dialog_caution .inner, .dialog_confirm .inner, .dialog_notify .inner { border:#333 solid 20px; }
+}
+.dialog_error .inner .hd, .dialog_caution .inner .hd, .dialog_confirm .inner .hd, .dialog_notify .inner .hd { background-color:rgba(255, 255, 255, 0.4); padding:20px; text-align:left;}
+.dialog_error .inner .bd, .dialog_caution .inner .bd, .dialog_confirm .inner .bd, .dialog_notify .inner .bd { padding:20px; text-align:left; font-size:140%; line-height:200%;}
+.dialog_error .inner .ft, .dialog_caution .inner .ft, .dialog_confirm .inner .ft, .dialog_notify .inner .ft { background-color:rgba(255, 255, 255, 0.4); padding:10px; text-align:right;}
+.ie6, .ie7 {
+	.dialog_error .inner .hd, .dialog_caution .inner .hd, .dialog_confirm .inner .hd, .dialog_notify .inner .hd {padding:10px;}
+	.dialog_error .inner .bd, .dialog_caution .inner .bd, .dialog_confirm .inner .bd, .dialog_notify .inner .bd {padding:10px;}
+}
+.ie7 {
+	.dialog_error .inner, .dialog_caution .inner, .dialog_confirm .inner, .dialog_notify .inner { border:#333 solid 20px;}
+	.dialog_error .inner .ft, .dialog_caution .inner .ft, .dialog_confirm .inner .ft, .dialog_notify .inner .ft { zoom:normal !important;}
+}
+.dialog_error .inner { background:url(core/skin/universe_error.png) repeat left top; } 	/* Red background - severe failure, process failed*/
+.dialog_caution .inner { background:url(core/skin/universe.png) repeat left top; } 			/* Yellow Background - mild errors, usually with try again */
+.dialog_confirm .inner { background:url(core/skin/universe_confirm.png) repeat left top; } 	/* Blue Background - when user needs to confirm something*/
+.dialog_notify .inner { background:url(core/skin/universe_notify.png) repeat left top; } 	/* Green Background - a notification, process succeeded */

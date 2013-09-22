@@ -1,0 +1,27 @@
+/*
+Copyright (c) 2009,Nicole Sullivan. All rights reserved.
+Code licensed under the BSD License:version:0.2
+*/
+/* **************** BLOCK STRUCTURES ***************** */
+/* mod */
+.mod{margin:10px;
+	.bd a{color:#447eab;
+		&:hover{background-color:transparent;}
+	}
+}
+.mod_fix{margin-top:20px;}
+.modb0{margin-bottom:0;}
+.mod_static .inner{position:static !important;}
+.ie6, .ie7{
+ 	.inner, .bd, .ft {zoom:1;}
+}
+.inner, .hd, .bd, .ft {
+	&:after {clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;content:" x x x ";}
+}
+.innerAfter {
+	.inner, .hd, .bd, .ft {
+		&:after {content:normal;}
+	}
+}
+.inner{position:relative;}
+.inner_static{position:static;}

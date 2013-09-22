@@ -1,0 +1,18 @@
+/* ====== Headings ====== */
+/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
+h1, .h1 { font-size:280%; color:rgb(0,0,0); font-weight:bold; font-style: normal;  line-height: 45px; text-shadow: 0px 1px 1px rgb(255,255,255); -webkit-text-stroke:0px;}
+h2, .h2 { font-size:220%; color:rgb(0,0,0); font-weight:bold; font-style: normal; line-height:36px; }
+h3, .h3 { font-size:160%; color:rgb(0,0,0); font-weight:bold; font-style: normal; line-height:26px; }
+h4, .h4 { font-size:120%; color:rgb(0,0,0); font-weight:bold; font-style: normal; line-height:20px; }
+h5, .h5 { font-size:108%; color:rgb(0,0,0); font-weight:bold; font-style: normal; line-height:20px; }
+h6, .h6 { font-size:108%; color:rgb(0,0,0); font-weight:normal; font-style: italic; line-height:20px; }
+/* if additional headings are needed they should be created via additional classes, never via location dependant styling */
+.category { font-size:108%; font-weight:normal; font-style: normal; text-transform:uppercase; color: #333; }
+.category a { color: #333; }
+.pageTitle { font-family: Helvetica, Arial, Sans-serif; text-shadow: 1px 1px 0px rgb(255,255,255); margin-bottom:20px; padding-top:10px; }
+/* ====== fontArvo ====== */
+.fontArvo { }
+.fontArvo h1 { font-size: 370%; line-height: 70px; font-weight:bold; color: rgb(0,91,128); text-shadow: 3px 3px 0px rgb(255,155,0); }
+.fontArvo h2 { }
+.fontArvo h3 { color:#006791; font-style:italic; font-size:20px; line-height:20px; }
+.fontb { color:#447eab; }

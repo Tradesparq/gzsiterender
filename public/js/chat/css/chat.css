@@ -1,0 +1,86 @@
+.chatbox {
+	position:fixed;
+	position:expression("absolute");
+	width: 225px;
+	display:none;
+}
+
+.chatboxhead {
+	background-color: rgb(80,80,80);
+	padding:7px;
+	color: #ffffff;
+	font-size:95%;
+}
+
+.chatboxblink {
+	background-color: #176689;
+	border-right:1px solid #176689;
+	border-left:1px solid #176689;
+}
+.chatboxcontent {
+	color: #333333;
+	height:200px;
+	width:209px;
+	overflow-y:auto;
+	overflow-x:auto;
+	padding:7px;
+	border-left:1px solid rgb(120,120,120);
+	border-right:1px solid rgb(120,120,120);
+	border-bottom:0;
+	background-color: #ffffff;
+	font-size:95%;
+}
+
+.chatboxinput {
+	padding:0px;
+	background-color: #ffffff;
+	border:0;
+}
+
+.chatboxtextarea {
+	width: 213px;
+	height:44px;
+	padding:5px;
+	border-radius:0;
+	margin: 0;
+	overflow:hidden;
+	border:1px solid rgb(120,120,120);
+}
+
+.chatboxtextareaselected {
+	background-color:rgb(240,240,240);
+	margin:0;
+}
+
+.chatboxmessage {
+	margin-left:1em;
+	text-align:left !impartant;
+}
+
+.chatboxinfo {
+	margin-left:-1em;
+	color:#666666;
+
+}
+
+.chatboxmessagefrom {
+	margin-left:-1em;
+	font-weight: bold;
+}
+
+.chatboxmessagecontent {
+}
+
+.chatboxoptions {
+	float: right;
+}
+
+.chatboxoptions a {
+	text-decoration: none;
+	color: white;
+	font-weight:bold;
+}
+
+.chatboxtitle {
+	float: left;
+}

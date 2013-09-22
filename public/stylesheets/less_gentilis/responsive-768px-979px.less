@@ -1,0 +1,104 @@
+// PORTRAIT TABLET TO DEFAULT DESKTOP
+// ----------------------------------
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+	// Fixed grid
+	#grid > .core(42px, 20px);
+
+	// Fluid grid
+	#grid > .fluid(5.801104972%, 2.762430939%);
+
+	// Input grid
+	#grid > .input(42px, 20px);
+
+}
+
+
+// MODIFY ROW BEHAVIOR
+// -------------------
+
+// @media (max-width: 800px) {
+// 	// Make all columns even
+// 	.row > [class*="span"],
+// 	.row-fluid > [class*="span"] {
+// 	float: none;
+// 	display: block;
+// 	width: auto;
+// 	margin: 0;
+// 	}	
+// 
+// }
+
+
+// TABLETS AND BELOW
+// -----------------
+
+@media (max-width: 979px) {
+
+	// UNFIX THE TOPBAR
+	// ----------------
+	// Remove any padding from the body
+	body {
+		padding-top: 0;
+		margin-top:0;
+	}
+
+	html, body {}	
+	.nav-tabs {
+		margin: 0 -1.5em 1.5em -1.5em;
+		padding-left:1.5em;
+		padding-top: 1.5em;
+	}
+	
+	.nav-clear {
+		padding-top: 69px;
+	}
+	.container-fluid {
+		background-color:@white;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+	.template-main {
+		background:none;
+		padding: 0;
+		box-shadow:0 0 0 !important;
+		.border-radius(0);
+	}
+	.appHead {
+		margin:0 -1.5em;
+		padding:1.5em 1.5em 0;
+		background:#e6e6e6;
+	}
+}
+
+
+// DEFAULT DESKTOP
+// ---------------
+
+@media (min-width: 980px) {
+	.nav-collapse.collapse {
+	height: auto !important;
+	overflow: visible !important;
+	}
+
+	.container-fluid {
+	padding-left: @gridGutterWidth;
+	padding-right: @gridGutterWidth;
+	}
+	.multi-column { 
+		> p {
+			-webkit-column-count: 2; /* Saf3, Chrome*/
+				-webkit-column-gap: 4%; /* Saf3, Chrome*/
+				-moz-column-count: 2; /* FF3.5+ */
+				-moz-column-gap: 4%; /* FF3.5+ */
+				column-count: 2; /* Opera 11+*/
+				column-gap: 4%; /* Opera 11+*/
+		}
+		> p table {
+			-webkit-column-count: 1; /* Saf3, Chrome*/
+			-moz-column-count: 1; /* FF3.5+ */
+			column-count: 1; /* Opera 11+*/
+		}
+	}
+}

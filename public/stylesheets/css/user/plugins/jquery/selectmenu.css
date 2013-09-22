@@ -1,0 +1,27 @@
+/* ====== UI Select Menu ======*/
+.ui-selectmenu{display:block;position:relative;margin:0 5px 0 0;text-decoration:none;overflow:hidden;outline:0 none;}
+.ui-selectmenu-icon{position:absolute;right:6px;margin-top:-8px;top:50%;}
+.ui-selectmenu-menu{padding:0;margin:0;list-style:none;position:absolute;top:0;visibility:hidden;overflow:auto;}
+.ui-selectmenu-open{visibility:visible;}
+.ui-selectmenu-menu-popup{margin-top:0;}
+.ui-selectmenu-menu-dropdown{margin:1px 0 0 0;}
+.ui-selectmenu-menu li{padding:0;margin:0;display:block;border-top:1px dotted transparent;border-bottom:1px dotted transparent;_border-top:1px solid #fff;border-bottom:1px solid #fff;border-right-width:0 !important;border-left-width:0 !important;font-weight:normal !important;}
+.ui-selectmenu-menu li:last-child{border-bottom:0;}
+.ui-selectmenu-menu li:first-child{border-top:0;}
+.ui-selectmenu-menu li a,.ui-selectmenu-status{display:block;padding:1px 0 0 6px;_padding:0 0 0 6px;_margin-bottom:1px;outline:none;text-decoration:none;_text-align:left;_color:#555555 !important;text-align:left;}
+.ui-selectmenu-menu li.ui-selectmenu-hasIcon a,.ui-selectmenu-hasIcon .ui-selectmenu-status{padding-left:20px;position:relative;margin-left:5px;outline:none;}
+.ui-selectmenu-menu li .ui-icon,.ui-selectmenu-status .ui-icon{position:absolute;top:1em;margin-top:-8px;left:0;}
+.ui-selectmenu-status{color:#555555;padding-left:5px;}
+.ui-selectmenu-status:hover,.ui-selectmenu-status:focus{text-decoration:none;}
+.ui-selectmenu-open li.ui-selectmenu-item-focus a{}
+.ui-selectmenu-open li.ui-selectmenu-item-selected{}
+.ui-selectmenu-menu li span,.ui-selectmenu-status span{display:block;margin-bottom:.2em;}
+.ui-selectmenu-menu li .ui-selectmenu-item-header{font-weight:bold;}
+.ui-selectmenu-menu li .ui-selectmenu-item-content{}
+.ui-selectmenu-menu li .ui-selectmenu-item-footer{opacity:.8;}
+/*for optgroups*/
+.ui-selectmenu-menu .ui-selectmenu-group{font-size:1em;}
+.ui-selectmenu-menu .ui-selectmenu-group .ui-selectmenu-group-label{display:block;padding:.6em .5em 0;font-weight:bold;}
+.ui-selectmenu-menu .ui-selectmenu-group ul{margin:0;padding:0;}
+/*for scroll*/
+.scroll_h_l{height:500px;overflow-y:scroll;}

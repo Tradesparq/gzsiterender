@@ -1,0 +1,52 @@
+/* ====== Lists ======*/
+/* inline list */
+ul.inlineList li { display: inline; margin-right: 10px; }
+/* numbered list */
+ol.simpleList li { list-style-type: decimal; margin-left:20px; }
+/* standard list */
+ul.simpleList li { list-style-type:disc; margin-left:20px; }
+/*===== ul_fl_l ======*/
+.ul_fl_l li { float:left; }
+.ul_fl_l_fs90 li { float:left; font-size:90%; white-space:nowrap; }
+.ul_fl_mrm li { float:left; margin-right:10px; }
+.ul_fl_size1of2 li { float:left; width:50%; }
+.ul_mrm li { margin-right:10px; }
+.ul_mrs li { margin-right:5px; }
+.ul_bb li { border-bottom:1px solid #ccc; }
+.bang_li { border-left:5px solid rgb(29,155,204); margin-top:20px; }
+.ul_fl_item { margin:auto 20px 20px auto; float:left; }
+/* ====== reasons2 ====== */
+.reasons2{
+	div { margin:0 20px 20px 0; }
+	li { float:left; width:50%; }
+	li h2, .reasons2 h4 { float:left; }
+	h2 { padding: 0 5px 0 0; font-size: 140%; display:inline-block; color:rgb(0,0,0); font-weight:bold; }
+	h4 { padding: 10px 0 0 0; font-size: 100%; display:inline-block; color:rgb(80,80,80); }
+	img { -moz-box-shadow: 1px 1px 0px rgb(200,200,200); -webkit-box-shadow: 1px 1px 0px rgb(200,200,200); box-shadow: 1px 1px 0px rgb(200,200,200); clear:both; }
+}
+.ul_line { float:left; width:100%; text-align:left; }
+dl.contacts {
+	dd{
+		font-weight:bold;
+	}
+	dt{ 
+		margin-bottom:10px;
+	}
+}
+dl.points {
+	margin:10px 0 0 0;
+	dt {
+		float:left;
+		width:12%;
+		img {
+			padding:0;
+			margin:0 0 0 10px;
+		}
+	}
+	dd {
+		float:left;
+		padding:5px 0 0 0;
+		width: 88%;
+		height:40px;
+	}
+}

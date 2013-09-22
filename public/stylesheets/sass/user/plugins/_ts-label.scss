@@ -1,0 +1,11 @@
+/* Product label section */
+.label-edit-container { 
+	position: absolute; display: none; z-index: 1000; background-color: rgba(255, 255, 255, 0.7); width:131px !important; padding:5px; -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; 
+	textarea { width:122px !important; /*Some border is required for the textarea autoresizing to work properly.*/ border: 1px solid #AAAAAA; background:#fff; padding: 3px; }
+}
+.label-container { 
+	position: absolute; z-index: 1000; 
+	.label-select { border: 2px dashed rgb(145,242,13); -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; /* Do not change / delete the following code */ background-color: #FFFFFF\9; filter: alpha(opacity=30)\9; background-color: rgba(255, 255, 255, 0.0); }
+	.label-text { display: none; background: rgb(238,255,213); background: rgba(238, 255, 213, 0.8); padding:3px 6px; white-space: pre-wrap; word-break: break-all; word-wrap: break-word; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; margin-top:5px; min-width: 150px; }
+}
+.ie6 .label-container .label-select, ie7 .label-container .label-select { background-color: #FFFFFF; }

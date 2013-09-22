@@ -1,0 +1,69 @@
+/* ====== Extends Image ====== */
+/* img2 */
+.media {
+	.img2 .img_box { padding:3px; border:1px solid transparent; background-color: transparent; }
+	a.img2:hover { background-color:#fff; border:1px solid rgb(174,232,255); }
+}
+/* ADDED BY EDWARD: To be used for the real time preview of the image */
+.media .img div.border { display:block; border:1px solid #d3d3d3; padding:3px; background-color:#eaeaea; 
+	img { display:block; border:0 none; padding:0; }
+}
+/* ====== Extends Media ====== */
+/* Soldier - Extends Media */
+.soldier { margin:0; padding:20px; background-color:$c_blue1; -moz-border-radius-topleft:10px; -moz-border-radius-topright:10px; -webkit-border-radius-topleft:10px; -webkit-border-radius-topright:10px; border-top-left-radius:10px; border-top-right-radius:10px; }
+/* extends media */
+.carrera { width:220px; margin:7px 10px 0 0; }
+.chevelle { background-color:$c_grey2; margin:5px 10px 5px 0; padding:0 5px 5px 5px; }
+/* For Dashboard Feed */
+.feed_default { margin:0 0 0 10px; padding-top:10px;
+	a.img .img_box { height:60px; line-height:60px; width:60px; margin:0 10px 10px 0; overflow:hidden; }
+	.mainbd { width:352px; text-align:left;}
+	.bd {
+		span.subject { display:none; }
+		ul { padding:0; margin:0; width:100%; overflow:hidden;
+			li { float:left; width:50%;
+				.media { margin:5px 0 5px 0; 
+					a.img .img_box { height:26px; line-height:26px; margin:0 5px 0 0; padding:0; width:26px; overflow:hidden; }
+				}
+			}
+		}
+	}
+}
+.feed_prod .bd ul li .media a.img { height:40px; line-height:40px; margin:0 5px 0 0; padding:0 1px 1px 1px; width:40px; overflow:hidden;
+	.img_box { height:40px; line-height:40px; margin:0 5px 0 0; padding:0; width:40px; overflow:hidden; }
+}
+.feed_mess .bd {
+	ul { display:none;
+		li .media a.img .img_box { height:30px; line-height:30px; width:30px; }
+	}
+	span.subject { display:block; border:none; }
+}
+.feed_messList .bd ul li { float:none; clear:both; }
+.ie6, .ie7 {
+	.feed_default .mainbd { width:332px;}
+}
+.ie6 .feed_default .bd ul { width:auto;}
+
+/* using in the case which one has three pic in media */
+.mediaHdLS { width:175px; }
+/* Limits BD width */
+.limit { max-height:90px; overflow:hidden; }
+.dialog_ad {
+	.resImg { 
+		float:left; width:118px; overflow:hidden;
+		.imgS { 
+			height:41px; width:41px; 
+		}
+	}
+	.bd { 
+		width:435px; float:left; text-align:left; max-height:108px; content:normal; overflow:hidden; padding:0 !important; 
+		p {
+			word-wrap: break-word; text-align:left; 
+		}
+	}
+}
+.ie6 .dialog_ad {
+	.resImg { float:left; }
+	.bd { width:400px; height:108px; }
+}
+.ie7 .dialog_ad .bd { width:400px; }

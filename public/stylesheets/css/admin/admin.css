@@ -1,0 +1,63 @@
+.main table {
+  background-color: #f0f0f0;
+  border-top: 1px solid #d2d2d2;
+  border-left: 1px solid #d2d2d2; }
+
+.main table td, .main table th {
+  padding: 5px 10px;
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  border-collapse: collapse; }
+
+.main table thead th {
+  font-size: 110%;
+  padding: 10px; }
+
+li {
+  /*
+  list-style-type: disc;
+  */
+  list-style-position: inside;
+  padding-bottom: 5px; }
+
+/* Temp css used in admin backend, add by Jimmy start */
+body {
+  margin: 0;
+  height: 100%; }
+
+html {
+  height: 100%; }
+
+.main {
+  padding: 0px; }
+
+.adminmain {
+  margin: 10px 0px; }
+
+.admin_mod {
+  margin: 0px; }
+
+.admin_mod .hd {
+  background-color: #dcf5ff;
+  padding: 10px; }
+
+.admin_mod h1, .admin_mod h2 {
+  color: #000; }
+
+.admin_mod .bd {
+  padding: 20px; }
+
+/* Temp css used in admin backend, add by Jimmy end */
+.pagination a {
+  margin: 0 5px; }
+
+.pagination a:hover {
+  background: #dcdcdc !important;
+  padding: 5px;
+  margin: 0px;
+  border-radius: 5px; }
+
+.pagination .current {
+  background: #dcdcdc;
+  padding: 5px;
+  border-radius: 5px; }

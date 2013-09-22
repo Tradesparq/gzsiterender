@@ -1,0 +1,196 @@
+// TS Navbar CLASSES
+// ---------------
+
+// Basic style
+.ts-navbar {
+	background-color: #252531;
+	#gradient .vertical(#252531, darken(#252531, 5%));
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index: @zindexFixedNavbar;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+// Container
+.ts-navbar-container {
+	margin: 0 auto;
+	max-width: 1240px;
+	min-width: 860px;
+}
+// Logo
+.ts-navbar-brand {
+	display: block;
+	padding: 6px 20px 5px 20px;
+	width: 110px;
+	float: left;
+}
+// Search
+.ts-navbar-search {
+	float: left;
+	margin-bottom: 0;
+	> .form-control {
+		float: left;
+		width: 400px;
+		.border-radius(3px 0 0 3px);
+		margin-top: 9px;
+		margin-bottom: 0;
+		padding: 3px 10px 3px;
+		background-color: #fff;
+		border-width: 0;
+		font-size: 13px;
+		line-height: 17px;
+	}
+	> .input-group-btn {
+		float: left;
+	}
+	.btn-search {
+		.border-radius(3px);
+		padding: 4px 12px 4px;
+		border-width: 0;
+		background-image: none;
+		background-color: @btnPrimaryBackground;
+		#gradient .vertical(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
+		border: 1px solid @btnPrimaryBackground; 
+		box-shadow: 0 0 0;
+		font-size: 13px;
+		line-height: 17px;
+		color: #fff;
+		font-weight: normal;
+		margin-left: 7px;
+		margin-top: 9px;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.35);
+		background-color: #23639a;
+		
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+			#gradient .vertical(@btnPrimaryBackground, darken(@btnPrimaryBackground, 10%));
+			background-position: 0 0;
+		}
+	}
+	.btn-search-drop {
+		.border-radius(0 4px 4px 0);
+		margin-left: 0px;
+	}
+	.caret {
+		border-top-color: #fff;
+	}
+}
+.ts-navbar-drop {
+	.border-radius(3px);
+	a {
+		font-size: 12px;
+		line-height: 18px;
+		padding: 3px 10px;
+	}
+	// Hover state
+	li > a:hover,
+	li > a:focus {
+		background-color: #252531;
+		#gradient > .vertical(#252531, darken(#252531, 5%));
+	}
+}
+// Search Dropdown
+.ts-navbar-search-drop {
+	top: auto;
+	left: auto;
+	.border-radius(3px);
+	min-width: 130px;
+	a {
+		font-size: 12px;
+		line-height: 18px;
+		padding: 3px 10px;
+	}
+	// Hover state
+	li > a:hover,
+	li > a:focus {
+		background-color: #252531;
+		#gradient > .vertical(#252531, darken(#252531, 5%));
+	}
+}
+// Right
+.ts-navbar-right {
+	float: right;
+	padding-right: 20px;
+	> .name {
+		padding: 12px 0 0 0;
+		color: #fff;
+		font-size: 12px;
+		white-space: nowrap;
+		display: inline-block;
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+	.caret {
+		border-top-color: #fff;
+		margin: 10px 0 0 5px;
+	}
+	&:hover .ts-navbar-drop {
+		display: block;
+		margin-top: 0;
+	}
+}
+// Navbar List
+.ts-navbar-navlist {
+	//background-color: #252531;
+	//#gradient .vertical(lighten(#252531, 1%), lighten(#252531, 15%));
+	//#gradient .vertical(lighten(@grayDark, 1%), lighten(@grayDark, 15%));
+}
+.ts-navbar-apps {
+	margin: 5px 0 0 19px;
+	> li { 
+		float: left;
+		margin-right: 10px; 
+		list-style-type: none;
+		> a {	
+			display: block;
+			color: @grayLighter;
+			padding: 9px 10px;
+			font-size: 13px;
+			height: 13px;
+			line-height: 13px;
+			&:hover {
+				text-decoration: none;
+				background-color: rgba(255,255,255,0.1);
+				.border-radius(3px 3px 0 0);
+				//#gradient .vertical(#252531, lighten(#252531, 10%)); 
+			}
+		}
+	}
+	> li.active a {
+		background-color: rgba(255,255,255,0.1);
+		.border-radius(3px 3px 0 0);
+	}
+	.dropdown {
+		&:hover .dropdown-menu {
+			display: block;
+		}
+		.dropdown-menu {
+			margin-top: 0;
+			.border-radius(0);
+			li a {
+				font-size: 12px;
+				padding: 3px 10px;
+				&:hover,
+				&:focus {
+					background-color: #252531;
+					#gradient > .vertical(#252531, darken(#252531, 5%));
+				}
+				span.label {
+					display: inline-block;
+					float: right;
+					text-align: center;
+					width: 20px;
+					margin-top: 2px;
+				}
+			}
+		}
+	}
+}
+
+// Responsive
+@media (max-width: 1050px) {	
+	.ts-navbar-search > .form-control { width: 250px; }
+}

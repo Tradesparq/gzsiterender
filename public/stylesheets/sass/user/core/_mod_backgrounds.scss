@@ -1,0 +1,35 @@
+/* ====== Background blocks ====== */
+.universe .inner{background:url(core/skin/universe.png) repeat left top;}
+.foo .inner{background:url(core/skin/universe_gray.png) repeat left top;}
+.comment .inner{background:#e2e2e2 none;}
+/* ====== background & Border styles ====== */
+.slam{background:rgb(246,226,226);border-left:5px solid rgb(219,73,73);}
+.clap{background:rgb(226,246,235);border-left:5px solid rgb(73,219,140);}
+.bang{background:$c_blue1;border-left:5px solid rgb(29,155,204);}
+.crash{background:rgb(233,209,245);border-left:5px solid rgb(183,122,215);}
+.albino{background-color:#fff;border:1px solid rgb(220,220,220);}
+.normal{background-color:$c_grey2;border-top:1px solid rgb(220,220,220);border-bottom:1px solid rgb(220,220,220);}
+.abnormal{background-color:$c_grey2;border-bottom:1px solid rgb(220,220,220);}
+.not_normal{background-color:$c_grey2;}
+.edit_position{border:2px dashed rgb(68,128,171);background-color:#fff;}
+.pikeman{background:$c_grey1;}
+.paladin{background-color:rgb(221,248,232);}
+.ninja{border:0;border-bottom:1px solid $c_br_grey3;}
+.whitey{background-color:#fff;}
+/* ====== Mod Backgrounds ====== */
+.javelin .inner{border:0;background-color:$c_grey1;}
+.gremlin .inner{border:1px solid rgb(215,215,215);background-color:$c_grey1;}
+.cutlass .inner{background-color:$c_grey2; overflow:hidden;border:1px solid $c_br_grey2;-moz-box-shadow:3px 3px 0 rgb(100,200,255);-webkit-box-shadow:3px 3px 0 rgb(100,200,255);box-shadow:3px 3px 0 rgb(100,200,255);}
+.camino .inner{background-color:$c_grey1;}
+.mustang .inner{border:0;border-bottom:1px solid $c_br_grey3;}
+.pontiac .inner{border-left:5px solid rgb(183,122,215);}
+.packard .inner{border-left:5px solid rgb(219,73,73);}
+.rambler .inner{border:1px solid $c_br_grey3;-moz-border-radius:7px;-webkit-border-radius:7px;border-radius:7px;}
+.malibuII .inner .bd{border:1px solid $c_br_grey3;background-color:#ecf7fa;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecf7fa',endColorstr='#d6f4fc');/* for IE */ background:-webkit-gradient(linear,left top,left bottom,from(#ecf7fa),to(#d6f4fc));/* for webkit browsers */ background:-moz-linear-gradient(top,#ecf7fa,#d6f4fc);/* for firefox 3.6+ */}
+.charger .inner{background-color:rgb(234,255,243);border-left:none;border-bottom:1px solid rgb(73,219,140);}
+.interceptor .inner{background-color:rgb(208,242,255);padding:10px;}
+.chevelle .inner .bd{padding:0 10px 10px 10px;margin:10px 0 10px 0;background-color:$c_grey2;}
+.impala .inner .bd{background-color:$c_grey2;padding:0 10px 10px 0;}
+.gremlinII .inner .bd{border:1px solid rgb(215,215,215);background-color:$c_grey1;}
+.firebird .inner{padding:10px;border:1px solid $c_br_grey3;margin-bottom:20px;}
+.spitfire .inner .bd{background-color:#fff;padding:5px 0 0 5px;margin-bottom:10px;}

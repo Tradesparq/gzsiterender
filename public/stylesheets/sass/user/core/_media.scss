@@ -1,0 +1,146 @@
+/* ====== Media Example (requires mod.css) ====== */
+/*	<div class="media">
+/*		<a href="#" class="img {styles} {Spacing}">
+/*			<div class="img_box {Sizing}">
+/*				<img alt="{title} title="{title}" src="{URL}.{Tim Thumb Size}.jpg" />
+/*			</div>
+/*		</a>
+/*		<div class="bd">
+/*			Content Here
+/*		</div>
+/*	</div>
+
+/* ====== Basic Classes ====== */
+.media { 
+	overflow:hidden; 
+	overflow:visible; 
+	zoom:1; 
+	margin:5px 0 5px 5px; 
+	clear:both; 
+	.hd { 
+		overflow:hidden; 
+		float:left; 
+	}
+	.bd { 
+		display:table-cell;
+		-moz-display:block !important;
+		zoom:1;  
+		h1, h2, h3, h4, h5, h6, p { 
+			padding:0; 
+		}
+		> :first-child { 
+			margin-top:0; 
+		}
+		> :last-child { 
+			margin-bottom:0; 
+		}
+	}
+	.ft { 
+		clear:both; 
+	}
+	img { 
+		display:block; 
+		margin:0 auto; 
+		white-space: nowrap; 
+	} /* centers image horizontally + prevents alt tag from becoming 2 lines */
+	.img_box { 
+		display: table-cell; 
+		text-align:center; 
+		vertical-align:middle; 
+		overflow:hidden;
+		img { 
+			vertical-align:middle;
+		}
+	}
+}
+.ie6 .media .bd { 
+	display:inline; 
+	float:left; 
+}
+.ie6, .ie7 {
+	.media img { 
+		margin:0; 
+	}
+}
+.ie6, .ie7 {
+ 	.media .img_box { 
+		display: block; 
+		font-family:Arial;
+		img { 
+			display:inline-block;
+		}
+	}
+}
+/* ====== Image Styling ====== */ 
+.media {
+	.img { 
+		float:left; 
+		margin:0 10px 10px 0; 
+	}
+	.img_box { 
+		text-align:center; 
+		border:1px solid #d3d3d3; 
+		padding:3px; 
+		background-color:#fff;
+		&:hover { 
+			background-color:#eaf9ff; 
+			border:1px solid rgb(174,232,255); 
+		}
+	}
+}
+/* ====== Sizing ======*/
+.media {
+	.img_none 	{ border:0; padding:0; background:#FFF;}
+	.img5XL 	{ width:348px; height:348px; line-height:348px;}
+	.img4XL 	{ width:273px; height:273px; line-height:273px;}
+	.img3bXL	{ width:250px; height:250px; line-height:250px;}
+	.img3XL 	{ width:200px; height:200px; line-height:200px;}
+	.img2bXL 	{ width:180px; height:150px; line-height:180px;}
+	.img2XL 	{ width:158px; height:158px; line-height:158px;}
+	.imgXL 		{ width:140px; height:140px; line-height:140px;}
+	.imgProf 	{ width:50px; height:50px; margin:0 -5px -10px 5px; padding:0; line-height:50px;}
+	.imgXLb 	{ width:140px; height:115px; line-height:115px;}
+	.imgAD 		{ width:100px; height:100px; line-height:100px;}
+	.imgLb 		{ width:100px; height:80px; line-height:80px;}
+	.imgL 		{ width:100px; height:100px; line-height:100px;}
+	.imgML		{ width:80px; height:80px; line-height:80px;}
+	.imgM 		{ width:60px; height:60px; line-height:60px;}
+	.imgSM 		{ width:55px; height:55px; line-height:55px;}
+	.imgS 		{ width:40px; height:40px; line-height:40px;}
+	.imgXS 		{ width:30px; height:30px; padding:0 1px 1px 1px; margin:3px 5px 0 0; line-height:30px;}
+	.img2XS 	{ width:26px; height:26px; padding:0 1px 1px 1px; margin:0 5px 0 0; line-height:26px; }
+}
+.ie6 .media, .ie7 .media {
+	.img5XL 	{ font-size:305px;}
+	.img4XL 	{ font-size:225px;}
+	.img3bXL 	{ font-size:219px;}
+	.img3XL 	{ font-size:175px;}
+	.img2bXL	{ font-size:157.5px;}
+	.img2XL 	{ font-size:138.25px;}
+	.imgXL 		{ font-size:122.5px;}
+	.imgProf 	{ font-size:43.75px;}
+	.imgXLb 	{ font-size:100.625px;}
+	.imgAD 		{ font-size:122.5px;}
+	.imgLb 		{ font-size:70px;}
+	.imgML 		{ font-size:70px;}
+	.imgM 		{ font-size:52.5px;}
+	.imgSM 		{ font-size:48.125px;}
+	.imgS 		{ font-size:46px;}
+	.imgXS 		{ font-size:26.25px;}
+	.img2XS 	{ font-size:22.75px;}
+}
+/* ====== Spacing ====== */
+.media {
+	.img_mbn { margin-bottom:0; }
+	.img_mbxs { margin-bottom:3px; }
+	.img_mrs { margin-right:5px; }
+	.img_mrn { margin-right:0; }
+	.img_man { margin:0; }
+	.img_mtn { margin-top:0; }
+	.imgExt { float:right; margin-left:10px; }
+	.line-height-XS { line-height:30px; height:30px; vertical-align:middle; overflow:hidden; }
+}
+/* ====== Responsive Images ====== */
+.img_scale {
+	width:100%;
+}

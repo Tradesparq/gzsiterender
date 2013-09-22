@@ -1,0 +1,55 @@
+/* simple table @extends data table */
+.simpleTable{padding: 20px;/* doesn't this break stuff??? ok for win & mac on Safari, FF, chrome, opera. OK on IE6/7/8.   */ }
+.simpleTable table{border:1px solid #AE0345;}
+.simpleTable th, .simpleTable td{border:1px solid #AE0345;}
+.simpleTable thead tr{background-color: #fff0f8;}
+.simpleTable th{color: #000; font-weight:bold}
+/* specification table @extends data table */
+.spec{padding:10px;}
+.spec table{border-top: 1px solid rgb(180,180,180);}
+.spec th, .spec td{border-bottom:1px solid rgb(180,180,180); border-width:1px 0; padding:3px 0;}
+.spec .odd,.spec .even{background-color:0 none;}
+.spec2{padding:10px;}
+.spec2 table{border-top: 1px solid rgb(180,180,180);}
+.spec2 td { border-bottom:1px solid rgb(180,180,180); border-width:1px 0; padding:3px 0;}
+.spec2 th {width:150px; border-bottom:1px solid rgb(180,180,180); border-width:1px 0; padding:3px 0;}
+.spec2 .odd,.spec .even{background-color:0 none;}
+.spec3{padding:0;}
+.spec3 table{border-top: 1px solid rgb(180,180,180);}
+.spec3 th, .spec3 td{border-bottom:1px solid rgb(180,180,180); border-width:1px 0; padding:3px 0;}
+.spec3 .odd,.spec3 .even{background-color:0 none;}
+
+.spec4 table{border-top: 0; }
+.spec4 th, .spec4 td{border-bottom:1px solid rgb(180,180,180); border-width:1px 0; padding:10px;}
+.spec4 tbody th {text-align:right;}
+.spec4 tbody th .title-sub { color:rgb(120,120,120); font-size:12px;}
+.spec4 .odd td,.spec4 .odd th{background-color:rgb(240,240,240);}
+.spec4 td {border-left:1px solid rgb(180,180,180); text-align:center;}
+.spec4 td .light { color: rgb(120,120,120); }
+.spec4 thead th { text-align:center; padding:0 10px;}
+.spec4 thead th h4 { color:#fff; }
+.spec4 thead .status-basic .bg{
+	background-color: #bbbbbb;
+	padding: 10px 0;
+	color: #ffffff;
+	-webkit-border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+	border-radius: 2px 2px 0 0;
+}
+.spec4 thead .status-vip .bg{
+	background-color: #d47500;
+	padding: 10px 0;
+	color: #ffffff;
+	-webkit-border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+	border-radius: 2px 2px 0 0;
+}
+/* special class for sign_bg_home design */
+.sign_bg_home .inner .bd table { margin:auto; background:#fed895;}
+.sign_bg_home .inner .bd table th, .sign_bg_home .inner .bd table td { vertical-align:middle; color:#7f4d00; padding:5px; }
+.sign_bg_home .inner .bd table th { text-align:right; }
+.sign_bg_home .inner .bd table td { text-align:left; }
+.sign_bg_home .inner .bd table td input[type="text"], .sign_bg_home .inner .bd table td input[type="password"] { display: inline-block; border: 3px solid #ff9b00; -webkit-border-radius: 10px; -moz-border-radius: 10px; height: 28px; line-height: 28px; padding: 0 9px; text-decoration: none; color: #006791; font-size: 16px; text-shadow: 0px 0.5px 0.5px #FFFFFF; border-radius: 10px; }
+
+.ProD th { text-align:left; font-weight:bold; width:70px; white-space:nowrap; }
+.table_detailsList th { text-align:left; width:70px; white-space:nowrap; font-weight:bold; }

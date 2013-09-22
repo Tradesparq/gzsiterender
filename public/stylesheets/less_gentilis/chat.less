@@ -1,0 +1,116 @@
+// Chat Classes
+.chat-bottombar {
+	display:block;
+	font-size:@baseFontSize - 1px;
+	margin:0;
+	.main .icon-chevron-up {
+		display: none;
+	}
+	.icon-chevron-down {
+		display: block;
+	}
+	.inner {
+		z-index:999;
+		position: fixed;
+		bottom:0;
+		right:10px;
+		width:220px;
+		background:@white;
+		border:1px solid @grayLight;
+		border-bottom:0;
+		> .hd {
+			padding:10px;
+			border-bottom:1px solid @grayLight;
+			cursor:pointer;
+		}
+		> .bd {
+			padding:10px;
+			max-height:200px;
+			overflow-y:scroll;
+		}
+	}
+	.chat_time {
+		color:@gray;
+		font-size:11px;
+		line-height:15px;
+	}
+	
+	
+	// Conversation Unit
+	.conversation {
+		width:230px;
+		.hd {
+			background-color:@grayLighter;
+		}
+		> .bd {
+			min-height:220px;
+			max-height:220px;
+			padding:5px;
+		}
+		> .ft {
+			border-top:1px solid @grayLight;
+			textarea { 
+				width:208px;
+				padding:5px;
+				margin:5px;
+				height:60px;
+				font-size: 12px;
+				line-height: 18px;
+				color: @gray;
+			}
+		}
+	}
+	
+	// New conversations
+	.conv1 { right:212px; }
+	.conv2 { right:455px; }
+	.conv3 { right:795px; }
+	
+	// when there is a new message
+	.newMsg { 
+		background: lighten(@blue, 35%);
+		border: 1px solid @blue;
+		border-bottom:0;
+		> .hd {
+			border-bottom:1px solid @blue;
+			background-color: @blue;
+			color: @white;
+		}
+		> .bd {
+			background-color:@white;
+		}
+		> .ft {
+			border-top:1px solid @blue;
+			textarea {
+				border-color:@blue;
+			}
+		} 
+	}
+	
+	&.chat-contract {
+		.inner.main {
+			border:1px solid @grayLight;
+			border-bottom:0;
+		}
+		.newMsg.main {
+		border:1px solid @blue;
+		border-bottom:0;
+		}
+		.hd.main { 
+			padding-top:5px;
+			padding-bottom:5px;
+			border-bottom:0;	
+		}
+		.bd.main, .ft.main {
+			display:none;
+		}
+		.main .icon-chevron-down {
+			display: none;
+		}
+		.main .icon-chevron-up {
+			display: block;
+		}	
+	}
+	
+	
+}

@@ -1,0 +1,56 @@
+/* **************** TEMPLATE ***************** */ /* ====== Page Head,Body,and Foot ====== */
+body, html { background-color:rgb(235,235,235); margin:0; padding:0; height:100%; /* needed for container min-height */ }
+.ie6 body { text-align:center; }
+/* IE5.5 */
+.main { display:table-cell; width:auto; background:#fff; height:830px; min-height:830px; border:0 solid $c_br_grey1;}
+.ie7 .main { display:block; }
+.ie7 .main { display:block; height:auto;}
+.body, .main {zoom:1;
+ 	&:after { clear:both; display:block; visibility:hidden; overflow:hidden; height:0 !important; line-height:0; font-size:xx-large; content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x "; }
+}
+.page { padding:0; min-width:810px; }
+.ie6 .page { text-align:left; }
+.container { padding:0; margin:0;}
+/* ====== Columns ====== */
+.leftCol { float:left; }
+.ie6 .leftCol { margin-right:-3px;}
+.rightCol { float:right; width:147px; overflow: hidden; }
+.ie6 .rightCol { margin-left:-3px; }
+.navCol { width:160px; overflow:hidden; }
+.ie6, .ie7 {
+	.navCol { width:160px; }
+}
+/* ====== Head Styles ======*/
+.head { background-color:#fff; border:1px solid #7f7f7f; margin:0 0 20px 0;}
+.usrInfo { margin:15px 10px 0 15px;}
+.ie6 .usrInfo { margin:15px 0 0 8px; }
+.progBox { margin:0 10px 10px 0; width:100px; font-size:85%; line-height: 14px; }
+.progBar { width:100px; margin:3px 0 5px 0; }
+.progDesc { border-top:1px solid #b2b2b2; margin-top:5px; padding-top:5px; }
+/* ====== Metric List ====== */
+.metricList li { width:120px; margin:0 5px 5px 5px; }
+.metricNo { font-size:40px; line-height:30px; font-weight:bold; text-align:center; color:#447eab; }
+.metricTitle { text-align:center; }
+/* ====== Foot ====== */
+.foot { min-width:650px; margin-left:160px; font-size:90% }
+.disclaimer { padding:0 0 10px 0; text-align:left; }
+.ie6 .disclaimer { padding:0;}
+#container { position:relative; /* needed for footer positioning*/ margin:0 auto; /* center, not in IE5 */ height:auto !important; /* real browsers */ height:100%; /* IE6: treaded as min-height*/ min-height:100%; /* real browsers */ }
+/* ====== hdTop Styles ======*/
+.hdline { min-height:70px; background-color: #fff; margin-bottom:15px;  border-bottom: 1px solid $c_br_grey2; /*box-shadow:0 0 3px rgb(120,120,120);*/}
+.hdTop { min-width:810px; 
+	.hdLinks { margin:25px 10px 0 0; padding:0; 
+		li { display:inline; margin-left:15px; 
+			&:first-child { margin-left:0; }
+			a { font-size:12px; text-decoration:none; color:#4d4d4d; 
+				&:hover { text-decoration:underline; }
+			}
+		}
+	}
+}
+.ie6 .hdLinks { margin:15px 0 0 0; }
+.hdSearch { padding:9px 0 0 0; }
+.logo { width:120px; height:30px; padding:15px 0 0 10px;}
+.hdselect a { height:21px; }
+/* ====== Background ======*/
+.bgWhite { background:$c_grey1; }

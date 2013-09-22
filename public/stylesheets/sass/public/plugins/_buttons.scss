@@ -1,0 +1,82 @@
+/* ====== Button Defaults - Sizes + Designs ====== */
+a.btn1{
+	font-weight:bold;
+	color:rgb(255,255,255) !important;
+	font-size:200%;
+	background-color:rgb(50,50,50);
+	border:2px solid rgb(0,183,255);
+	-webkit-box-shadow :0 2px 4px rgba(0,0,0,.25);
+	-moz-box-shadow :0 2px 4px rgba(0,0,0,.25);
+	box-shadow :0 2px 4px rgba(0,0,0,.25);
+	padding:20px;
+	display:inline-block;
+}
+a.btn2{
+	font-weight:normal;
+	color:rgb(255,255,255) !important;
+	font-size:110%;
+	background-color:rgb(50,50,50);
+	border:2px solid rgb(0,183,255);
+	-webkit-box-shadow :0 2px 4px rgba(0,0,0,.25);
+	-moz-box-shadow :0 2px 4px rgba(0,0,0,.25);
+	box-shadow :0 2px 4px rgba(0,0,0,.25);
+	padding:6px 10px 5px 10px;
+	display:inline-block;
+}
+a.btn3{
+	font-weight:normal;
+	color:rgb(80,80,80) !important;
+	font-size:100%;
+	background-color:rgb(245,245,245);
+	border:1px solid rgb(180,180,180);
+	-webkit-box-shadow :0 1px 2px rgba(0,0,0,.25);
+	-moz-box-shadow :0 1px 2px rgba(0,0,0,.25);
+	box-shadow :0 1px 2px rgba(0,0,0,.25);
+	padding:2px 8px 2px 8px;
+	display:inline-block;
+}
+a.btn4{
+	font-weight:normal;
+	color:rgb(80,80,80) !important;
+	font-size:90%;
+	background-color:rgb(245,245,245);
+	border:1px solid rgb(180,180,180);
+	padding:1px 4px 1px 4px;
+	display:inline-block;
+	height:19px;
+}
+a.btn5{
+	font-weight:normal;
+	color:rgb(0,0,0) !important;
+	font-size:90%;
+	background-color:none;
+	border:1px solid rgb(0,183,255);
+	padding:0px 6px 0px 6px;
+	display:inline-block;
+}
+/* Hover States */
+a.btn1:hover,a.btn2:hover{
+	text-decoration:none;
+	background-image:none;
+	border:2px solid rgb(255,155,1) !important;
+	color:rgb(255,155,0) !important;
+}
+a.btn3:hover,a.btn4:hover{
+	text-decoration:none;
+	background-color:rgb(220,220,220) !important;
+}
+
+/* Custom Buttons */
+a.btn_form{font-weight:normal;color:rgb(0,0,0) !important;background-color:rgb(255,244,226);font-size:110%;border:0px solid rgb(255,155,0);border-left:5px solid rgb(255,155,0);padding:6px 10px 6px 10px;display:inline-block;}
+a.btn_form:hover{text-decoration:none;background-color:rgb(50,50,50) !important;color:rgb(255,255,255) !important;border-left:5px solid rgb(29,155,205);}
+a.btn_head{font-weight:normal;color:rgb(255,255,255) !important;font-size:100%;border:1px solid rgb(29,155,205);-webkit-box-shadow :0 1px 2px rgba(0,0,0,.25);-moz-box-shadow :0 1px 2px rgba(0,0,0,.25);box-shadow :0 1px 2px rgba(0,0,0,.25);padding:0px 4px 0px 4px;display:inline-block;}
+a.btn_head:hover{text-decoration:none;color:rgb(255,155,0) !important;border:1px solid rgb(255,155,0);}
+
+/* Extends Button */
+a.btn_bright{background-color:#CAF0FF !important; border:1px solid #00B7FF; color:#000 !important;}
+a.btn_bright:hover{background-color:#00B7FF !important;}
+
+/* Button Grouping */
+a.btnL{margin-right:0px;border-right:0px solid ;-moz-border-radius-topright:0px;-moz-border-radius-bottomright:0px;-webkit-border-radius-topright:0px;-webkit-border-radius-bottomright:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;-webkit-box-shadow :0 0 0;-moz-box-shadow :0 0 0;box-shadow :0 0 0;}
+a.btnC{margin-left:0px;margin-right:0px;-moz-border-radius:0px;-webkit-border-radius:0px;border-radius:0px;border-right:0px solid ;-webkit-box-shadow :0 0 0;-moz-box-shadow :0 0 0;box-shadow :0 0 0;}
+a.btnR{margin-left:0px;-moz-border-radius-topleft:0px;-moz-border-radius-bottomleft:0px;-webkit-border-radius-topleft:0px;-webkit-border-radius-bottomleft:0px;border-top-left-radius:0px;border-bottom-left-radius:0px;-webkit-box-shadow :0 0 0;-moz-box-shadow :0 0 0;box-shadow :0 0 0;}

@@ -1,0 +1,138 @@
+/* Leeke:ie6 */
+.ie6{ 
+	.jtmpl_proA_demo_bd { 
+		margin:10px 0 0 0; 
+		width:238px; 
+		height:90px; 
+	}
+	.w6cxXL_ie6 { 
+		width:470px !important; 
+	}
+	/* Add Friend Alert */
+	.addFriendAlert { 
+		width:350px !important; 
+		textarea { 
+			padding:10px; 
+			width:330px; 
+			clear:both; 
+		}
+	}
+}
+
+/* Leeke:ie7 */
+.ie7{
+	.jtmpl_proA_demo_bd { 
+		margin:10px 0 0 0; 
+	}
+	/* Filterbox */
+	.filterBox .inner {
+		input { 
+			height:18px; 
+		}
+		ul li a { 
+			margin-top:1px; 
+		}
+	}
+}
+/* Leeke:ie6, ie7 */
+.ie6,.ie7{
+
+	.vip_container{
+		width:700px;
+		margin:auto;
+		text-algin:center;
+	}
+	.vip1 { 
+		float:left;
+		width:60%;
+		.mod {
+			padding:0 10px;
+			margin:0;
+		}
+	}
+	.vip2 {
+		float:right;
+		width:40%;
+		.mod {
+			padding:0 10px;
+			margin:0;
+		}
+	}
+	.upgradebox{
+		width:680px;
+		height:425px;
+		h3 {
+			margin:20px 20px 0 330px;
+			font-size:190%;
+			width:310px;
+		}
+		.btn_list{
+			margin: 180px 0 0 340px;
+			width:340px;
+		}
+	}
+	.s_size1of2 {
+		width:100%;
+		float:none;
+	}
+ 	.node { 
+		border:1px solid #DDD; 
+		padding:1px 3px; 
+		background-color:$c_grey1; 
+	}
+	.hdselect { 
+		padding-top:1px; 
+	}
+	 .f_dash_sch input { 
+		width:200px; 
+	}
+	 .w5xl_ie6 { 
+		width:260px;
+		overflow:hidden;
+	}
+	.cate_sele_double{ 
+		width:298px; 
+	}
+ 	.feed_groups_bd { 
+		width:331px; 
+	}
+	.working_area { 
+		border:0; 
+	}
+	.page_login li {
+		width:115px; overflow:hidden; text-align:center;
+		a img {
+			border:0px !important; width:50px;
+		}
+				        		
+	}
+}
+
+.ie6, .ie7, .ie8 {
+	/* User In user/products/send */
+	.min_w6aXL { 
+		width:650px !important;
+		overflow:hidden;
+	}
+	.textarea_emial {
+		width:550px !important;
+	}
+	.send_import .btn3 {float:left; }
+	/* End: User In user/products/send */
+	
+	.head_search {
+		input {
+			line-height:30px; 
+			vertical-align:middle;
+		}
+		.public_search { 
+			height:30px; 
+			overflow:hidden; 
+			line-height:30px; 
+			vertical-align:middle; 
+		}
+	}
+}
+.ie6, .ie7 {
+	.line { text-align:left !important; }
+}

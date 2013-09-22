@@ -1,0 +1,51 @@
+/* ====== General Icons ====== */
+
+/* icon image */
+.unread .icon, .icon { background:transparent url(plugins/images/icon_v2.png) no-repeat 0 0; width:14px; height:14px; overflow:hidden; }
+/* context dependant spacing */
+.unread .iconNav, .iconNav { margin:2px 5px 0 0; float:left; }
+.unread .iconStatBar, .iconStatBar { margin:0 5px 0 0; }
+.unread .iconSection, .iconSection { margin:-2px 5px 0 -5px; }
+.unread .iconInline, .iconInline { margin:2px 3px; }
+.unread .iconAd, .iconAd { margin:0; }
+.unread .iconBtn, .iconBtn { margin:2px 5px 0 0; }
+/* Icons List */
+.unread .iconHome, .iconHome { background-position:0 0; }
+.unread .iconMess, .iconMess { background-position:0 -14px; }
+.ie6 .unread .iconMess, .ie6 .iconMess { background-position: 0 -15px; height:13px; margin-top:3px }
+.unread .iconProf, .iconProf { background-position:0 -28px; }
+.unread .iconConn, .iconConn { background-position:0 -42px; }
+.unread .iconProd, .iconProd { background-position:0 -56px; }
+.unread .iconRefe, .iconRefe { background-position:0 -70px; }
+.unread .iconAdve, .iconAdve { background-position:0 -84px; }
+.unread .iconGrou, .iconGrou { background-position:0 -98px; }
+.unread .iconEven, .iconEven { background-position:0 -112px; }
+.unread .iconMore, .iconMore { background-position:0 -126px; }
+.unread .iconComm, .iconComm { background-position:0 -140px; }
+.unread .iconConn, .iconConn { background-position:0 -154px; }
+.unread .iconLike, .iconLike { background-position:0 -168px; }
+.unread .iconPost, .iconPost { background-position:0 -182px; }
+.unread .iconRemo, .iconRemo { background-position:0 -196px; }
+.unread .iconPrem, .iconPrem { background-position:0 -210px; width:24px; }
+.unread .iconMove, .iconMove { background-position:0 -224px; }
+.unread .icon_1st, .icon_1st { background-position:0 -238px; width:19px; }
+.unread .icon_2nd, .icon_2nd { background-position:0 -252px; width:26px; }
+.unread .iconTrad, .iconTrad { background-position:0 -266px; }
+.unread .iconAdvt, .iconAdvt { background-position:0 -280px; }
+/* Navigation unread Number */
+.navValue { /* position:relative; top:5px; left:0px; margin:0; padding:3px 3px 2px 3px; background-color:#447eab; font-size:11px; line-height:12px; color:#deebf0; */ }
+.navValue2 { /* background:#DB4949; */ }
+/* Importer Icons */
+.sign_icon2 { padding:15px; background-color:#fff; }
+.sign_icon li, .sign_icon2 li { background-repeat:no-repeat; line-height:20px; vertical-align:middle; float:left; padding:0 10px 0 0; }
+.sign_icon li.last { padding:0; }
+.sign_icon_common { background: url(plugins/images/signup_logos.png); width:20px; height:20px; float:left; margin:auto 5px auto auto; }
+.sign_icon_facebook { background-position: -0px -0px; }
+.sign_icon_twitter { background-position: -25px -0px; }
+.sign_icon_google { background-position: -50px -0px; }
+.sign_icon_yahoo { background-position: -75px -0px; }
+.sign_icon_qq { background-position: -100px -0px; }
+.sign_icon_linkedin { background-position: -125px -0px; }
+.sign_icon_hotmail { background-position: -150px -0px; }
+.sign_bg_login { background: url(plugins/images/bg_signup-here1.gif); }
+.iconPremNone .iconPrem { display:none; }

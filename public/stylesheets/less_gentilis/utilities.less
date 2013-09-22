@@ -1,0 +1,458 @@
+// UTILITY CLASSES
+// ---------------
+
+//put the p tag long word in under-line
+p{
+	break-word:break-all;
+	word-wrap:break-word;
+}
+// Quick floats
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+
+// Toggling content
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.break-word {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+// Text Align
+.text_l { text-align: left; }
+.text_r { text-align: right; }
+.text_c { text-align: center; }
+
+// Visibility
+.invisible {
+  visibility: hidden;
+}
+
+// Full width elements
+.full {
+	width:100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+textarea.full, input.full, select.full {
+	width:97%;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+// Selection
+::-moz-selection { background: #f29300; color: #fff; text-shadow: none; }
+::selection { background: #f29300; color: #fff; text-shadow: none; }
+
+.similar_product_active {
+	background-color:@grayLighter;
+}
+
+// Navbar Logo Right
+.dropdown .logo-right .caret {
+  margin-top: 8px;
+	margin-left: 5px;
+}
+
+.control_hover {
+	margin-bottom:5px;
+}
+.no-touch { 
+	// only functions in non-touch brouwsers
+	.control_hover {
+		padding:6px 6px 5px 6px;
+		margin-bottom:5px;
+		background-color: lighten(@grayLighter, 3%);
+		
+		.control_toggle { 
+			margin-bottom:5px;
+			a, .creation_time {
+				color:lighten(@gray, 10%);
+				margin-right:10px;
+			}
+		}
+		&:hover, &:focus { 
+			.control_toggle { visibility: visible; }
+		}
+	}
+}
+.comments {
+	padding:5px 10px 10px 10px;
+	.mts;
+	background-color:#f5f5f5;
+	.border-radius(4px);
+}
+
+/*Advertising*/
+.size1of2 { width:50%; }
+.text_h { height: 25px; }
+.title-strong { font-size:60px; line-height:40px; }
+.title-normal { font-size:13px; }
+.font-primary { color:@blue; }
+.font-danger { color:@errorText;}
+.info_colorful { background-color: #fcf8e3; border: 5px dashed #fbeed5; border-radius: 10px; } 
+
+/*Group*/
+.liFl_lMrm { 
+	clear:both; float:left; width:100%; 
+	li { float:left; margin-right:10px; list-style:none; }	
+}
+.line { overflow:hidden; *overflow:visible; *zoom:1;}
+
+.wid_full_area { width:96%;}
+
+.tab-content-border {background:@white; border:1px #dddddd solid; border-top:0px;}
+
+.scroll-y { overflow-y:scroll;}
+.bg_light { background:@white;}
+
+.radius {
+  // margin-bottom: 20px;
+	.radius-group {
+		// border: 1px solid #E5E5E5;
+		// margin-bottom: 2px;
+	}
+	.radius-heading {
+		border-bottom: 0 none;
+	}
+	.radius-heading .radius-toggle {
+		display: block;
+		padding:2px 8px;
+	}
+	.radius-inner {
+		// border-top: 1px solid #E5E5E5;
+		// padding: 9px 15px;
+		article {
+			padding:10px;
+			margin-bottom:5px;
+			background:@white;
+			&:hover { cursor:pointer; }
+		}
+		.active {
+			background-color:@blue;
+			color:@white;
+		}
+	}
+}
+
+.treeview {
+	li {
+		line-height:@baseLineHeight - 4;
+		font-size:@baseFontSize - 1;
+	}
+	input[type="checkbox"] {
+		margin-right:5px;
+		margin-top:0;
+	}
+}
+
+.compose_to {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    color: #555555;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 9px;
+    padding: 4px;
+	background:#fff;
+}
+.to_person {
+    background-color: #EDFAFF;
+    border: 1px solid #0083B8;
+    border-radius: 2px 2px 2px 2px;
+    color: #006791;
+    display: block;
+    float: left;
+    font-size: 90%;
+    line-height: 14px;
+    margin: 0 5px 5px 0;
+    padding: 2px 3px;
+}
+.to_removeIcon {
+    background-image: url("img/remove.png");
+    cursor: pointer;
+    display: inline-block;
+    height: 11px;
+    margin: 2px 0 -2px 5px;
+    outline: medium none;
+    padding: 0;
+    width: 11px;
+}
+.input-hidden { 
+	border:none; 
+	padding:0px; 
+	background:none; 
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset; 
+	margin:0px;
+	width:auto;
+}
+.name-area{
+	border:1px solid @grayLighter;
+	background:@white;
+	padding:0px;
+	.search {
+		border-bottom: 1px solid @grayLighter;
+		.line;
+		padding:5px;
+		input {
+			display:block;
+			float:left;
+			background: @grayLighter;
+			width: 340px;
+			.box-shadow(0 0 0);
+			.border-radius(0);
+			margin-bottom: 0;
+		}
+		a {
+			display:block;
+			text-align:right;
+			padding: 7px 13px 0 0;
+		}
+	}
+	.imported {
+		height:403px;
+	}
+	.invited {
+		height:338px;
+	}
+	.name-list {
+		overflow-y:scroll;
+		margin:0;
+		li {
+			list-style-type:none;
+			padding:5px 10px;
+			border-top:1px solid @grayLighter;
+			cursor:pointer;
+			.email {
+				.small;
+			}
+			.icon {
+				display:none;
+				margin-top:4px;
+				.pull-right;
+			}
+			&:hover, &.active {
+				background:@blue;
+				color:@white;
+				.icon {
+					display:block;
+				}
+			}
+		}
+	}
+}
+
+#footer {margin-bottom:10px;}
+
+.spec-block {
+	background-color:@white;
+	margin-bottom:0;
+	.border-radius(3px);
+	> .inner {
+		// height:180px;
+		// overflow-y: scroll;
+	}
+	table { 
+		margin-bottom:0;
+		tr:first-child {
+			th, td {
+				border-top-width:0;
+			}
+		}
+	}
+}
+
+/*
+First Page: 	jtmpl_profile_import_connection.html
+Objective: 		Set common fixed width
+Todo:			Set different num in different response
+*/
+
+.wid12 { width: 940px; }
+.wid11 { width: 860px; }
+.wid10 { width: 780px; }
+.wid9 { width: 700px; }
+.wid8 { width: 620px; }
+.wid7 { width: 540px; }
+.wid6 { width: 460px; }
+.wid5 { width: 380px; }
+.wid4 { width: 300px; }
+.wid3 { width: 220px; }
+.wid2 { width: 140px; }
+.wid1 { width: 60px; }
+
+/*
+First Page:		jtmpl_profile_import_connection.html
+Objective:		don't have overflow hidden before (maybe)
+*/
+.hidden-all { overflow:hidden;}
+.hidden-x { overflow-x:hidden;}
+.hidden-y { overflow-y:hidden;}
+
+/*
+First Page:		jtmpl_profile_import_connection.html
+Objective:		icon close media style
+Todo:			Need more standard
+*/
+
+/* some tags like div need look like tag i */
+.icon2-size img {	width:20px; height:20px; overflow:hidden;}
+/* tag i looks a little up with after words, but mts is a little big, so create a new margin-top */
+.icon2-fix-margin { margin-top:4px; }
+/* like media bd */
+.icon2-bd {margin-left:19px;}
+.icon2-bd-m { margin-left:54px; }
+/*
+1st Page:		jtmpl_static_product_overlay_detail.html
+Objective:		Common;
+*/
+.nowrap { white-space:nowrap; }
+
+/*
+1st Page:		jtmpl_vm_contact_us.html
+Objective:		When use form-horizontal, the label's width is set. Use this could let it fluid.
+*/
+.fluid_form_label { text-align:right; font-weight:bold; padding-top:5px; }
+
+@media (max-width: 767px) {
+	.fluid_form_label {text-align:left;}
+}
+
+/*
+1st Page:		jtmpl_vm_chat.html
+Objective:		clear border
+*/
+.btn-bn {border-bottom:0 !important;}
+.btn-tn {border-top:0 !important;}
+.btn-ln {border-left:0 !important;}
+.btn-rn {border-left:0 !important;}
+
+/*
+1st Page:		jtmpl_messages_table.html
+Objective:		sub title
+*/
+.subtitle {color:#666;}
+
+/*
+1st Page:		jtmpl_ui_reportabuse.html
+Objective:		the form-honziontal label part so huge.
+*/
+.form-horizontal-half {
+	.control-label {width:70px;}
+	.controls {margin-left:80px;}
+}
+
+/*
+1st Page:	jtmpl_vm_messagescompose.html
+Objective:		normal controls height
+*/
+.controls-normal-height { height:30px; }
+
+/*
+1st Page:	
+Objective:		jquery ui loading 	
+*/
+.ui-typeahead-loading { background: white url(img/ui-anim_basic_16x16.gif) right center no-repeat; }
+
+/*
+1st Page:		jtmpl_vm_suggpeople.html
+Objective:		set 3 line rows, work with class"hidden-all";
+*/
+.max-row3 { max-height:60px; }
+.small-row3 { height:48px;}
+.row3 { height:60px;}
+
+/*
+1st Page:		jtmpl_vm_messagesdetail.html
+Objective:		let the link looks not Obviously
+*/
+.tinge_font { color:#ccc; }
+
+/*
+1st Page:		jtmpl_vm_register_supplier_personal.html
+Objective:		Let the text looks better;	
+*/
+.justify {text-align:justify;}
+
+.close-opacity-none .close {opacity:0;}
+/*
+1st Page:		jtmpl_products_myproducts_unit.html
+Objective:		fix text line-height
+*/
+.float-text { margin-top:1px;}
+
+/*
+1st Page:		jtmpl_common_product_view_photo.html
+Objective:		fix the old img size problem;
+*/
+.carousel-table-img {
+	td { 
+		width:400px; height:400px; vertical-align:middle; text-align:center; 
+		img { max-width:400px; max-height:400px;}
+	}
+}
+/*
+1st page:		jtmpl_profile_connections_manage_connection_unit.html
+Objective:		use in table td
+*/
+.nowrap {
+	white-space:nowrap;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*
+keyword-highlight
+*/
+.keyword-highlight {
+	font-weight:bold;
+	color:#B94A48;
+}
+
+.span-important {
+	font-weight:bold;
+	color:#eb1210;
+}
+.pull-none { float:none !important;}
+
+.user-info-rowTitle {
+	width: 140px;
+}
+
+.vip-price, .vip-date {
+	font-size: @baseFontSize * 2.2;
+	line-height: @baseLineHeight * 2;
+}
+
+.vip-expire-date {
+	color: @red;
+}
+.vip-amount {
+	font-size: 22px;
+}
+
+#map_canvas img {
+	max-width: inherit;
+}
+
+//Fixes Word - break
+.word-break{
+	word-wrap:break-word; 
+	word-break:break-all;
+}
+
+.btn-dashboard-helper {
+	width: 100px;
+}

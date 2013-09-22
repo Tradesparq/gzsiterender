@@ -1,0 +1,71 @@
+/* ====== Icons ====== */
+.icon { background:transparent url(images/icon.png) no-repeat 0 0; width:20px; height:20px; }
+.icon2 { background:transparent url(images/icon_v2.png) no-repeat 0 0; width:14px; height:14px; overflow:hidden; }
+.iconPrem2 { background-position:0 -210px; width:24px; }
+.iconBig { background:transparent url(images/icon.png) no-repeat 0 0; width:60px; height:60px; }
+.likeImg { border:4px solid #52b0f2; }
+.likeImg:hover { border:4px solid #447eab; }
+.iconStatBar { margin:-2px 4px 0 0; }
+.iconSection { margin:-2px 5px 0 -5px; }
+.iconInline {margin:4px 3px 2px 5px;}
+.iconInline2 { margin:8px 3px 2px 5px;}
+.iconAd { margin:2px 5px 0 -5px; }
+.iconMetr { background-position:-20px -200px; }
+.iconSwit { background-position:-20px 0px; }
+.iconFeed { background-position:0 -200px; }
+.iconProd { background-position:-20px -80px; }
+.iconPeop { background-position:-20px -40px; }
+.iconEven { background-position:-20px -160px; }
+.iconGrou { background-position:-20px -140px; }
+.iconPrem { background-position:0px -260px; }
+.iconConn { background-position:-40px -240px; }
+.iconLike { background-position:0px -240px; margin-right:0; }
+.iconRemo { background-position:0px -220px; margin-right:0; }
+.iconComm { background-position:-40px -220px; margin-right:0; }
+.iconPost { background-position:-20px -220px; margin-right:0; }
+.iconPost2 { background-position:-40px -260px; margin-right:0; }
+.iconShar { background-position:-20px -260px; }
+.iconImgAdd { background-position:0px -280px; }
+.iconEnqu { background-position:-40px -340px; }
+.iconImpr { background-position:-20px -340px; }
+.iconView { background-position:0px -340px; }
+.iconFoll { background-position:-40px -200px; }
+.iconMess { background-position:0px -360px; }
+.iconNav { background:transparent url(images/icon.png) no-repeat 0 0; width:20px; height:20px; margin:0 0 3px 0px; }
+.navValue { position:relative; top:5px; left:0px; margin:0; padding:3px 3px 2px 3px; background-color:#447eab; font-size:11px; line-height:12px; color:#deebf0; width:20px; }
+.navHome { background-position:0 0; }
+.navMess { background-position:-40px -20px; }
+.navProf { background-position:-40px -40px; }
+.navConn { background-position:-40px -60px; }
+.navProd { background-position:-40px -80px; }
+.navRefe { background-position:-40px -100px; }
+.navAdve { background-position:-40px -120px; }
+.navGrou { background-position:-40px -140px; }
+.navEven { background-position:-40px -160px; }
+.navMore { background-position:-40px -180px; }
+
+a:hover {
+	.navHome { background-position:-20px 0; }
+	.navMess { background-position:-20px -20px; }
+	.navProf { background-position:-20px -40px; }
+	.navConn { background-position:-20px -60px; }
+	.navProd { background-position:-20px -80px; }
+	.navRefe { background-position:-20px -100px; }
+	.navAdve { background-position:-20px -120px; }
+	.navGrou { background-position:-20px -140px; }
+	.navEven { background-position:-20px -160px; }
+	.navMore { background-position:-20px -180px; }
+}
+
+.navSelect {
+	.navHome { background-position:-20px 0; }
+	.navMess { background-position:-20px -20px; }
+	.navProf { background-position:-20px -40px; }
+	.navConn { background-position:-20px -60px; }
+	.navProd { background-position:-20px -80px; }
+	.navRefe { background-position:-20px -100px; }
+	.navAdve { background-position:-20px -120px; }
+	.navGrou { background-position:-20px -140px; }
+	.navEven { background-position:-20px -160px; }
+	.navMore { background-position:-20px -180px; }
+}

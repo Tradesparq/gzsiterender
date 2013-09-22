@@ -1,0 +1,204 @@
+/* **************** CONTENT OBJECTS ***************** */
+
+/* ====== Elements ====== */
+img {
+	display: block;
+}
+
+em {
+	font-style: italic;
+}
+
+strong, .strong {
+	font-weight: bold;
+}
+
+hr {
+	border: 5px solid #e2e2e2;
+	border-width: 0 0 5px 0;
+	margin: 20px 10px 10px 10px;
+}
+
+code {
+	color: #0B8C8F;
+}
+
+.important a {
+	font-weight: bold;
+}  
+/* what is this? */ 
+
+/* ====== Type ====== */
+.fontS {
+	line-height: 15px;
+	font-size: 11px;
+	vertical-align: middle;
+}
+
+.large {
+	font-size: 110%;
+}
+
+.small {
+	font-size: 90%;
+}
+
+.xsmall {
+	font-size: 85%;
+}
+
+/* links */
+a {
+	color: #1d9bcc;
+	text-decoration: none;
+}
+
+a:focus,a:hover {
+	text-decoration: underline;
+}
+
+a:focus {
+	background-color: #FFFFCC;
+}
+
+a:visited {
+	color: #1d9bcc;
+}
+
+/* ====== blockquote ====== */
+cite {
+	display: block;
+	text-align: right;
+	padding-top: 10px;
+}
+
+/* ====== callout ====== */
+.callout {
+	color: #646464;
+	font-family: Georgia, Times, serif;
+	font-size: 105%;
+	font-style: italic;
+}
+
+.callout cite {
+	display: block;
+	font-size: 69.25%;
+	padding-top: 30px;
+	text-align: right;
+}
+
+.callout span.quot {
+	color: #1D9BCC;
+	font-size: 220%;
+	font-weight: bold;
+	vertical-align: sub;
+}
+
+.callout span.quotLast {
+	vertical-align: middle;
+}
+
+/* ====== image treatments (get more from jason santa maria) ====== */
+.caption {
+	font-size: 13px;
+	color: #666666;
+	font-style: italic;
+	padding-top: 0;
+}
+
+/* will need to either
+1. find a way to capture the width of the caption in the width of the image or flash
+2. Set some default widths, mby use flickr widths?
+*/ /* ====== special formatting classes ====== */
+.detail {
+	color: #777;
+	font-size: 11px;
+	display: block;
+}
+
+/* ====== images ====== */
+.icon {
+	margin-right: 5px;
+}
+
+/* ====== text-align ====== */
+.text_l {
+	text-align: left;
+}
+
+.text_c {
+	text-align: -moz-center;
+	text-align: -webkit-center;
+	text-align: center !important;
+}
+
+.text_r {
+	text-align: right;
+	text-align: -moz-right;
+	text-align: -webkit-right;
+}
+
+/* ====== Display ======*/
+.block {
+	display: block;
+}
+
+.inline {
+	display: inline;
+}
+
+.inl-blk {
+	display: inline-block;
+}
+
+.none {
+	display: none;
+}
+
+.hidden {
+	overflow: hidden;
+}
+
+.scroll {
+	overflow: scroll;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.pre-wrap {
+	white-space: pre-wrap;
+}
+
+.break-word {
+	word-wrap: break-word;
+}
+
+.default {
+	cursor: default;
+}
+
+/* ====== floats + clear ===== */
+.fl_l {
+	float: left;
+}
+
+.fl_r {
+	float: right;
+}
+
+.fl_n {
+	float: none;
+}
+
+.cl { 
+	zoom: 1;
+	clear: both;
+}
+.h_auto { height:auto !important; }
+.loading {
+	background: white url('../images/ui-anim_basic_16x16.gif') center center
+		no-repeat;
+	height: 16px !important;
+}

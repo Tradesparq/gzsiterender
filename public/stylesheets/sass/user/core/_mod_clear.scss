@@ -1,0 +1,8 @@
+/* ------ Clears child modules (extends mod) ------ */
+.basic .inner,.basic_inner{border:0 none;background:0 none;box-shadow:0 0 0 #fff;}
+.border_n,.border_n .inner,.border_n .bd{border:0 none;}
+.background_n{background:0 none;}
+.noDeco{border-bottom:0 none;}
+.trabant .inner{-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;background-color:#fff;
+	.ft{background-color:$c_grey2;}
+}

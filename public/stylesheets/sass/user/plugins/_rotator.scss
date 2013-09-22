@@ -1,0 +1,15 @@
+/* ====== rotator ====== */
+#rotator { 
+	width:420px; 
+	> div { position:relative; -webkit-transition:all 0.5s ease; -moz-transition:all 2.5s ease; -o-transition:all 0.5s ease; }
+	.bigpic { padding:0; margin:0; display:block; background-color:#fff; margin:auto; }
+	.rotator-thumb { width:51px; height:51px; padding:3px; border:1px solid #d3d3d3; background-color:#eaeaea; }
+	.active .rotator-thumb { display:none; }
+	.active {/* top:10px; left:10px;*/ padding:3px; width:343px; height:343px; background-color:#fff; border:1px solid #d3d3d3; display:table-cell; vertical-align:middle; text-align:center; overflow:hidden; }
+	.non-active-1 { top:10px; left:365px; height:60px; width:60px; }
+	.non-active-2 { top:80px; left:365px; height:60px; width:60px; }
+	.non-active-3 { top:150px; left:365px; height:60px; width:60px; }
+	.non-active-4 { top:220px; left:365px; height:60px; width:60px; }
+	.non-active-5 { top:290px; left:365px; height:60px; width:60px; }
+	.non-active-1:hover,.non-active-2:hover,.non-active-3:hover,.non-active-4:hover, .non-active-5:hover, { cursor:pointer; -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.4); -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.4); box-shadow:0 0 10px rgba(0, 0, 0, 0.4);}
+}

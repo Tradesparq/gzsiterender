@@ -1,0 +1,104 @@
+.input { display:block; border:1px solid #b2b2b2; margin:0px 5px 0 0; padding:1px 0 0px 3px;/* height:18px;*/ background-color:#fff; font-size:12px; color:#666666; -moz-border-radius:5px; border-radius:5px; }
+.textarea { display:block; border:1px solid #b2b2b2; margin:0px 5px 0 0; padding:1px 0 0px 3px; background-color:#fff; font-size:12px; color:#666666; -moz-border-radius:5px; border-radius:5px; }
+input[type=text], input[type=password], textarea { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border: 1px solid #D7D7D7; padding: 3px; -webkit-appearance: none;}
+/* ====== Search ====== */
+.titleSch { margin:11px 10px 0 10px; padding:0; }
+.modSch { margin:0px 5px 0 10px; padding:0; }
+.schBox { margin-top:10px; }
+.schSubmitbox { padding:0; margin:-7px 0 0 0; }
+.schSelect { width:145px; }
+.schSubmit { }
+/* ====== Search "???" (Search bar near application title)====== */
+.appSch { padding:0 0 8px 0; background:rgb(240,240,240); }
+/* form table */
+.form {
+	tr { /*border-bottom:1px solid rgb(220,220,220);*/ /*display:block;*/ }
+	th { font-weight:bold; padding:5px 0; width: 130px; padding:10px 0 0 10px; }
+	td { padding:10px 10px 0 0; }
+	input[type=text], textarea { border:1px solid rgb(180,180,180); -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; line-height:18px; margin:0px; display:inline-block; }
+	textarea { width: 100%; padding: 3px 5px 5px 5px; }
+	input { /*width:100%;*/ height:20px; padding: 3px 5px 0 5px; }
+	input.input_web { width:235px; margin-right:5px; }
+	input[type=checkbox] { width:16px; height:16px; line-height:18px; margin:1px 5px 0 0; float:left; }
+	input[type=radio]{width:16px; height:16px; line-height:18px; margin:1px 5px 0 0; float:left;}
+	li { margin-bottom:5px; }	
+}
+
+/* inviter: Compose - extends form */
+.compose_form { 
+	margin-bottom:10px; 
+	th { 
+		width: 145px; vertical-align:top; white-space:nowrap !important; vertical-align:middle; padding-right:10px;
+		span { float:left; padding-top:5px; }
+	}
+	input.compose_subject { width: 497px; *border:1px solid rgb(180,180,180); *width:447px; *padding:5px;}
+	input.compose_short { width: 210px; *border:1px solid rgb(180,180,180); *padding:5px; border-color:#b4b4b4;}
+	select { height:24px; padding:3px; text-align:left; line-height:18px; width:300px; }
+	textarea.compose_message { width: 497px; height:80px; *width:447px;  *border:1px solid rgb(180,180,180);}
+	.compose_to { width: 340px; padding:5px; background-color:rgb(245,245,245); border:1px solid rgb(180,180,180); -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; max-height: 120px; overflow-x: hidden; overflow-y: auto; *height:25px;}
+	input.to_inputName { background-color: transparent; border: 0 none; outline: 0 none; width:100%; height:18px; padding:1px; margin-left:5px; float:left; }
+	.inc_msg { border:1px dashed #85DCFF; padding:10px; margin:0 3px 0 0; background-color:#EBFBFF; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; }
+	.media .bd { padding:0px; }
+	input.import_input { width:257px; }
+}
+
+
+/* Dialog Compose */
+.compose { width:700px; }
+.to_person { border:1px solid rgb(0,131,184); padding:2px 3px; background-color:rgb(237,250,255); font-size:90%; border-radius: 2px 2px 2px 2px; line-height:14px; color:rgb(0,103,145); float:left; display:block; margin:0 5px 5px 0; }
+.to_removeIcon { background-image: url("../../images/remove.png"); height: 11px; margin-top: 1px; width: 11px; cursor: pointer; display: inline-block; padding:0; margin:2px 0 -2px 5px; outline: medium none; }
+.f_default-value { font-size:16px; }
+.ui-autocomplete .ui-menu-item { width:250px !important; }
+.to_person_img { float:left; margin:2px 5px 0 0 !important; }
+.to_person_name { float:left; }
+
+/* edit form - extends form */
+.edit_form { margin:10px 0 20px 0; background-color:rgb(245,245,245); }
+/* add product form - extends form */
+.addprod_form { 
+	margin:0; 
+	textarea { 
+		width: 90%; 
+	}
+}
+
+/* terms form - extends form */
+.terms_form{
+	th {  width: 90px; }
+	input { width: 90px;}
+	input.mid {margin-right:58px;}
+}
+
+/* sponge form - extends form */
+.sponge_form {
+	th {  width: 90px; }
+	input { width: 230px;}
+}
+
+/* add products - normal - extends form */
+.text9of10 input[type="text"]{ width:90%;}
+
+/* add products - specifications form - extends form */
+.spec_form { 
+	margin:0; 
+	input { width: 162px !important; margin:0 5px 0 0; }
+}
+.txt_dialog { width: 818px; resize:none; }
+
+/* Wide Form - extends form */
+.wide_form textarea { height: 100px;}
+
+/* inviter - extends form */
+.inviter_form {
+	tr {margin:10px 0 10px 0;}
+	input { width: 565px;}
+	textarea { width: 565px;}
+}
+
+.txt_dialog {width: 818px; resize:none;}
+
+
+.formNormal input[type=text], .formNormal textarea {padding:3px 5px 0 0;}
+.checkbox_fix{
+	width:20px !important; background:none !important; border:none !important; padding:0px !important; margin:0px !important;
+}

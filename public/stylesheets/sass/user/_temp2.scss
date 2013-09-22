@@ -1,0 +1,162 @@
+.vip_container {
+	padding:10px;
+	h1 {
+		color:#000;
+	}
+}
+.vip1 { 
+	float:none;
+	width:100%;
+}
+.vip2 {
+	float:none;
+	width:100%;
+}
+.upgradebox{
+	margin:10px;
+	width:455px;
+	height:270px;
+	position:relative;
+	.testimonial_man {
+		width: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+		margin: 0;
+	}
+	h1 {
+		display:none;
+	}
+	h3 {
+		position: absolute;
+		z-index:9999;
+		margin:20px 0 0 230px;
+	}
+	.btn_list{
+		position: absolute;
+		z-index:9999;
+		margin: 160px 0 0 240px;
+		a {
+			width: 170px;
+			text-align: center;
+			margin-bottom:10px;
+		}
+		span {
+			display:none;
+		}
+	}
+}
+.improved_sch {
+	max-width: 480px;
+}
+@media screen and (min-width: 920px) {
+
+	.upgradebox{
+	
+		width:555px;
+		height:330px;
+		h3 {
+			margin:20px 0 0 270px;
+			font-size:170%;
+		}
+		.btn_list{
+			margin: 170px 0 0 280px;
+			width: 300px;
+			a {
+				margin:0 5px 10px 0;
+				float:left;
+			}
+			span {
+				display:block;
+				float:left;
+				margin-top:4px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1024px) {
+
+	.vip1 { 
+		float:left;
+		width:60%;
+		.mod {
+			padding:0 10px;
+			margin:0;
+		}
+	}
+	.vip2 {
+		float:right;
+		width:40%;
+		.mod {
+			padding:0 10px;
+			margin:0;
+		}
+	}
+	.upgradebox{
+		width:655px;
+		height:400px;
+		h3 {
+			margin:20px 20px 0 330px;
+			font-size:190%;
+		}
+		.btn_list{
+			margin: 180px 0 0 340px;
+		}
+	}
+	.s_size1of2 {
+		width:100%;
+		float:none;
+	}
+}
+@media screen and (min-width: 1100px) {
+
+	.vip_container h1 {
+		display:none;
+	}
+	.upgradebox{
+		width:740px;
+		height:460px;
+		h1 {
+			position: absolute;
+			z-index:9999;
+			display:block;
+			margin:20px 0 0 390px;
+			font-size:320%;
+		}
+		h3 {
+			margin:120px 20px 0 390px;
+		}
+		.btn_list{
+			margin: 270px 0 0 400px;
+		}
+	}
+}
+
+
+@media screen and (min-width: 1250px) {
+
+	.vip_container {
+		width:900px;
+		margin:0 auto;
+		h1 {
+			display:none;
+		}
+	}
+	.upgradebox{
+		width:880px;
+		height:540px;
+		h1 {
+			display:block;
+			margin:20px 0 0 450px;
+			font-size:380%;
+			color:#000;
+		}
+		h3 {
+			margin:120px 20px 0 450px;
+			font-size:210%;
+		}
+		.btn_list{
+			margin: 300px 0 0 460px;
+		}
+	}
+}

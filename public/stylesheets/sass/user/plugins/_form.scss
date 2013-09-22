@@ -1,0 +1,458 @@
+/* ====== Default Form Styles ====== */
+
+.form { 
+	margin:0; 
+	padding:10px; 
+	th { 
+		font-weight:bold; 
+		padding:5px 0; 
+		width:130px; 
+		padding:10px 0 0 10px; 
+	}
+	td { 
+		padding:10px 10px 0 0; 
+	}
+	li { 
+		margin-bottom:5px; 
+	}
+	select {
+		line-height:18px; 
+		font-size:12px; 
+		padding:3px; 
+		width: 300px;
+		height:24px;
+	}
+}
+input.normal_checkbox { 
+	width:16px !important; 
+	height:16px !important; 
+	margin:1px 5px 0 0 !important; 
+	padding:0px !important;
+}
+.inputTextL { 
+	border-radius:5px 0 0 5px !important; 
+	-moz-border-radius:5px 0 0 5px !important; 
+	-webkit-border-radius:5px 0 0 5px !important;
+	margin:0; 
+	border-right:0px !important;
+	border-left:1px solid #b4b4b4 ;
+	border-top:1px solid #b4b4b4;
+	border-bottom:1px solid #b4b4b4;
+	padding:4px !important;
+}
+input[type=text], 
+input[type=password], 
+textarea { 
+	border:1px solid rgb(170,170,170); 
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px; 
+	border-radius:5px; 
+	/*line-height:20px;*/ 
+	font-size:110%; 
+	margin:0px; 
+	display:inline-block; 
+	padding:5px; 
+}
+input[type=checkbox], 
+.frm_checkbox { 
+	width:16px; 
+	height:16px; 
+	line-height:18px; 
+	margin:1px 5px 0 0; 
+	float:left; 
+}
+input[type=radio], 
+.form_r { 
+	width:16px; 
+	height:16px; 
+	line-height:18px; 
+	margin:1px 5px 0 0; 
+	float:left; 
+}
+textarea { 
+	width:100%; 
+	padding:3px 5px 5px 5px; 
+}
+/* ====== Inline Form Styles - Used in Page head ====== */
+.inl_form { 
+	width:auto !important; 
+	margin:0; 
+	li { 
+		float:left 
+	}
+	input[type=text] {
+		/*ie6 ie7*/
+		-moz-border-radius:5px 0 0 5px; 
+		-webkit-border-radius:5px 0 0 5px; 
+		border-radius:5px 0 0 5px; 
+		margin:0px; 
+		height:14px; 
+		line-height:18px; 
+		padding:4px 0 3px 3px; 
+		width:200px; 
+	}
+	.hdselect a { 
+		border-radius:0px; 
+		border-left:0px; 
+		border-right:0px; 
+		margin:0px; 
+		width:90px !important; 
+	}
+	.btn4 { 
+		border-radius:0 5px 5px 0; 
+		height:19px; 
+		background:#B9EBFF;
+	}
+}
+.ie6 .inl_form .input {
+	height:21px;
+	line-height:21px;
+	padding:0 0 0 5px;
+	border: 1px solid #AAAAAA;
+	margin:0px;
+}
+.ie7 .inl_form .input {
+	margin-top:-1px;
+}
+
+.head_form {
+	margin:15px 0 0 15px;
+}
+/* ====== Extends: Form ====== */ 
+/* create form - extends form */
+.create_form {
+	background-color:#fff; 
+	-moz-border-radius:10px; 
+	-webkit-border-radius:10px; 
+	border-radius:10px; 
+	input { 
+		width:230px 
+	}
+	textarea { 
+		width:230px; 
+	}
+	th { 
+		padding:10px; 
+		width:150px; 
+	}
+	td { 
+		padding:10px 10px 10px 0; 
+	}
+}
+/* Pay method form - extends form */
+.pay_method_form { 
+	background-color:#fff; 
+	-moz-border-radius:10px; 
+	-webkit-border-radius:10px; 
+	border-radius:10px; 
+	textarea { 
+		width:230px; 
+	}
+	th { 
+		padding:10px 10px 10px 130px; 
+		width:30px; 
+	}
+	td { 
+		padding:10px 10px 10px 0; 
+	}
+}
+/* dialog form - extends form */
+.dialog_form {
+	background-color:#fff; 
+	-moz-border-radius:10px; 
+	-webkit-border-radius:10px; 
+	border-radius:10px; 
+	textarea { 
+		width:230px; 
+	}
+	th { 
+		padding:10px 10px 10px 40px; 
+		width:30px; 
+	}
+	td { 
+		padding:10px 10px 10px 0; 
+	}
+	input, 
+	input[type=text] { 
+		width:230px 
+	}
+}
+
+/* edit form - extends form */
+.edit_form { 
+	margin:10px 0 20px 0; 
+	padding:0; 
+	background-color:$c_grey2; 
+}
+/* add product form - extends form */
+.addprod_form { 
+	padding:0; 
+	textarea { 
+		width:90%; 
+	}
+}
+/* add products - normal - extends form */
+.text9of10 input[type="text"] { 
+	width:90%; 
+}
+/* add products - specifications form - extends form */
+.spec_form {
+	padding:0; 
+	input { 
+		width:150px !important; 
+		margin:0 5px 0 0; 
+	}
+}
+/* inviter - extends form */
+.inviter_form {
+	tr { 
+		margin:10px 0 10px 0; 
+	}
+	input { 
+		width:565px; 
+	}
+	textarea { 
+		width:565px; 
+	}
+}
+/* inviter: Compose - extends form */
+.compose_form { 
+	margin-bottom:10px; 
+	th { 
+		width:145px; 
+		vertical-align:top; 
+		span { 
+			float:left; 
+			padding-top:5px; 
+		}
+	}
+	input.compose_subject { 
+		width:500px; 
+	}
+	input.compose_short { 
+		width:200px; 
+	}
+	select { 
+		height:24px; 
+		padding:3px; 
+		text-align:left; 
+		line-height:18px; 
+		width:300px; 
+	}
+	textarea.compose_message { 
+		width:500px; 
+		height:120px; 
+		*border:1px solid $c_br_grey1;
+	}
+	th { 
+		width:auto; 
+		white-space:nowrap !important; 
+		vertical-align:middle; 
+		padding-right:10px; 
+	}
+	select { 
+		height:24px; 
+		padding:3px; 
+		text-align:left; 
+		line-height:18px; 
+		width:300px; 
+	}
+	textarea.compose_message { 
+		width:500px; 
+		height:120px; 
+		*border:1px solid $c_br_grey1;
+	}
+	.compose_to { 
+		width:340px; 
+		padding:5px; 
+		background-color:#FFF; 
+		border:1px solid $c_br_grey1; 
+		-moz-border-radius:5px; 
+		-webkit-border-radius:5px; 
+		border-radius:5px; 
+		max-height:120px; 
+		overflow-x:hidden; 
+		overflow-y:auto; 
+	}
+	input.to_inputName { 
+		background-color:transparent; 
+		border:0 none; 
+		outline:0 none; 
+		width:100%; 
+		height:18px; 
+		padding:1px; 
+		margin-left:5px; 
+		float:left; 
+	}
+	.inc_msg { 
+		border:1px dashed #85DCFF; 
+		padding:10px; 
+		margin:0 3px 0 0; 
+		background-color:$c_blue1; 
+		-moz-border-radius:5px; 
+		-webkit-border-radius:5px; 
+		border-radius:5px; 
+	}
+	.inc_msg_row4 { 
+		height:102px; 
+		overflow:hidden; 
+	}
+	.media .bd { 
+		padding:0px; 
+	}
+	input.import_input { 
+		width:257px; 
+	}
+}	
+.ie6 .compose_form .compose_to, 
+.ie7 .compose_form .compose_to { 
+	height:25px; 
+}
+.ie6 .compose_form input.compose_subject, 
+.ie7 .compose_form input.compose_subject, 
+.ie6 .compose_form input.compose_short, 
+.ie7 .compose_form input.compose_short { 
+	border:1px solid $c_br_grey1; 
+	padding:5px; 
+}
+.ie6 .compose_form .compose_to, 
+.ie7 .compose_form .compose_to { 
+	height:25px; 
+}
+.compose_form1 th { 
+	width:auto; 
+	white-space:nowrap !important; 
+	vertical-align:middle; 
+	padding-right:10px; 
+}
+/* Compose Extras */
+.compose { 
+	width:700px; 
+}
+.to_person { 
+	border:1px solid rgb(0,131,184); 
+	padding:2px 3px; 
+	background-color:rgb(237,250,255); 
+	font-size:90%; 
+	border-radius:2px 2px 2px 2px; 
+	line-height:14px; 
+	color:rgb(0,103,145); 
+	float:left; 
+	display:block; 
+	margin:0 5px 5px 0; 
+}
+.to_removeIcon { 
+	background-image:url("images/remove.png"); 
+	height:11px; 
+	margin-top:1px; 
+	width:11px; 
+	cursor:pointer; 
+	display:inline-block; 
+	padding:0; 
+	margin:2px 0 -2px 5px; 
+	outline:medium none; 
+}	
+.f_default-value { 
+	font-size:16px; 
+}
+.ui-autocomplete .ui-menu-item { 
+	width:250px !important; 
+}
+.to_person_img { 
+	float:left; 
+	margin:2px 5px 0 0 !important; 
+}
+.to_person_name { 
+	float:left; 
+}
+/* Register - extends form */
+.reg_form {
+	th span { 
+		float:right; 
+		padding:5px 10px 0 0; 
+	}
+	td select { 
+		width:135px; 
+		float:left; 
+		margin:3px 10px 0 0; 
+		padding:3px 0 0 0; 
+	}
+	input { 
+		width:345px; 
+		padding:6px; 
+	}
+	input:focus { 
+		border-color:rgb(29,155,204); 
+		background-color:rgb(208,242,255); 
+	}
+	input.short { 
+		width:200px; 
+	}
+	.website input { 
+		width:270px;
+		margin-right:5px; 
+	}
+	.big_website input { 
+		width:333px;
+		margin-right:5px; 
+	}
+	textarea.area { 
+		width:345px; 
+		padding:6px; 
+		height:100px; 
+	}
+	textarea.bigarea { 
+		width:500px; 
+		height:150px; 
+		padding:6px; 
+	}
+	textarea.area:focus { 
+		border-color:rgb(29,155,204); 
+		background-color:rgb(208,242,255); 
+	}
+}
+/* Company Profile*/
+.form_mod .inner .bd { 
+	padding:10px; 
+}
+.edit_form tbody tr {
+	th { 
+		padding-left:10px; 
+	}
+	td { 
+		padding-right:15px; 
+		text-align:left; 
+		.ipt_newWebsites { 
+			width:170px !important; 
+		}
+		textarea { 
+			margin:5px 15px 15px 15px; 
+			width:355px; 
+		}
+	}
+}
+
+.ie6 .edit_form tbody tr td .input0, 
+.ie7 .edit_form tbody tr td .input0 { 
+	width:16px !important; 
+	padding:0px !important; 
+}
+.edit_form tbody tr td input, 
+.edit_form tbody tr td textarea { 
+	width:90%; 
+	padding:3px 5px; 
+}
+/* ====== Misc ====== */
+.appSch { 
+	padding:0 0 8px 0; 
+	background:$c_grey1; 
+} /* Apps Search Box */
+.form_textarea td { 
+	padding-left:10px; 
+}
+.text_style1 { 
+	border:1px solid $c_br_grey3; 
+	padding:3px; 
+} /* Review all locations where text_style1 is used */
+
+

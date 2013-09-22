@@ -1,0 +1,136 @@
+html {
+  color: #4D4D4D;
+  background: #fff; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+input, textarea, select {
+  *font-size: 100%; }
+
+legend {
+  color: #000; }
+
+img, div {
+  /*behavior:url(core/iepngfix.htc);*/ }
+
+body {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  *font-size: small;
+  *font: x-small;
+  color: black; }
+
+select, input, button, textarea {
+  font: 99% helvetica, arial, clean, sans-serif; }
+
+table {
+  font-size: inherit;
+  font: 100%; }
+
+pre, code, kbd, samp, tt {
+  font-family: monospace;
+  *font-size: 108%;
+  line-height: 100%; }
+
+.mod {
+  margin: 10px; }
+
+.mod_fix {
+  margin-top: 20px; }
+
+.modb0 {
+  margin-bottom: 0; }
+
+.inner, .bd, .ft {
+  *zoom: 1; }
+
+.inner:after, .hd:after, .bd:after, .ft:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+  content: " x x x "; }
+
+.inner {
+  padding: 10px;
+  position: relative; }
+
+h3 {
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0 0 10px 0;
+  padding-top: 10px; }
+
+p {
+  margin: 0; }
+
+.hd {
+  border-bottom: 3px solid #1d9bcc; }
+
+.messageblock {
+  padding: 10px;
+  margin: 10px 0 0 0;
+  border: 1px solid #d2d2d2; }
+
+.user {
+  font-size: 80%;
+  margin-top: 5px; }
+
+.name {
+  color: #1d9bcc;
+  font-style: normal; }
+
+.date {
+  color: #505050;
+  font-style: normal; }
+
+.fl_r {
+  float: right; }
+
+.fl_l {
+  float: left; }

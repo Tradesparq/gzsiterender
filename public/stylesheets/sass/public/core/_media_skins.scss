@@ -1,0 +1,42 @@
+/* ====== Extends Imgage Styles ====== */
+.media .resImg {overflow:hidden; height:104px !important; width:104px; }
+.ie6, .ie7{
+	.media .resImg { padding-bottom:10px; }
+}
+.media .resImg img { }
+.media_s_user { 
+	margin:5px 0 0 0; padding:5px 5px 0 10px; background-color:rgb(240,240,240);
+	.bd { width: 450px; float:left; } 
+	.img { 
+		margin:0 10px 5px 0; border-color:#fff; 
+		.img_box { 
+			background-color:#fff; 
+		}
+	}
+}
+.medi_simi { 
+	margin:0; clear:both; 
+	.img { 
+		width:140px; overflow:hidden; 
+		img {width:auto;}
+	}
+	.bd { 
+		float:left !important; 
+		width:450px; 
+		overflow:hidden;
+		margin:10px 0 0 0; 
+		h4 {
+			margin:0; 
+			padding:0; 
+			height:20px; 
+			line-height:20px; 
+			overflow:hidden; 
+		}
+		.bd_cont { 
+			word-wrap:break-word; 
+			width:452px;
+		}
+	}
+}
+.ie6 .medi_simi .bd .bd_cont{ width:200px; }
+.medi_simi2 .medi_simi .bd { width:375px !important; }

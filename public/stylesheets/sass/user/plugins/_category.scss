@@ -1,0 +1,40 @@
+.dialog-no-title.ui-dialog-titlebar {
+    display: none;
+}
+.category-wrapper {
+    width: 810px;
+    height: 560px;
+    overflow: hidden;
+}
+.category-select {
+    width: 1310px;
+    height: 570px;
+    overflow: hidden;
+    margin: -10px;
+    margin-left: -420px;
+    margin-right: -200px;
+    font-family: arial;
+    div.node {
+        width: 120px;
+        cursor: pointer;
+        color: #333;
+        font-size: 0.8em;
+        line-height: 12px;
+        text-align: center;
+        padding-top: 3px;
+    }
+}
+#category-selected {
+    margin-left: -680px;
+    width: 1500px;
+}
+#category-search {
+    margin-left: -680px;
+    width: 1500px;
+}
+a.disabled {
+    color: #ccc !important;
+}
+a.enabled {
+    color: #222;
+}

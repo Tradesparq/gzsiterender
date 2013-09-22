@@ -1,0 +1,19 @@
+//
+// Layouts
+// Fixed-width and fluid (with sidebar) layouts
+// --------------------------------------------
+
+
+// Container (centered, fixed-width layouts)
+.container {
+  .container-fixed();
+}
+
+// Fluid layouts (left aligned, with sidebar, min- & max-width content)
+.container-fluid {
+  .clearfix();
+  padding-left: @gridGutterWidth;
+  padding-right: @gridGutterWidth;
+  max-width:1200px;
+  margin:0 auto;
+}

@@ -1,0 +1,95 @@
+// Media Block Example */
+
+/*	<div class="media">
+/*		<a href="#" class="img {space.less classes here}">
+/*			<div class="img_box {image size class here}">
+/*				<img alt="{title}" title="{title}" src="#" />
+/*			</div>
+/*		</a>
+/*		<div class="bd">
+/*			Content Here
+/*		</div>
+/*	</div>
+
+// Basic Classes */
+.media {  
+	overflow:visible; 
+	zoom:1; 
+	margin:0; 
+	clear:both;
+	.img { 
+		float:left;  	
+		.img_box { 
+			display: table-cell; 
+			text-align:center; 
+			vertical-align:middle; 
+			overflow:hidden; 
+			padding:0; 
+			border:2px solid @white;
+			background-color:@white;
+			word-wrap:break-word;
+			line-height:12px !important;
+			font-size: 11px;
+			&:hover { 
+				border-color:@blue;
+				background-color:@blue; 
+			}
+			img { 
+				display:block; 
+				margin:0 auto; 
+				vertical-align:middle;
+			}
+		}
+	}
+	.bd { 
+		display:table-cell;
+		-moz-display:block !important;
+		zoom:1;  
+		> :first-child { margin-top:0; }
+		> :last-child  { margin-bottom:0; }
+	}
+}
+.img {
+	margin:0 10px 10px 0;
+}
+// Image Size 
+.media .img {
+	.img_none 	{ border:0; padding:0; background:#FFF;}
+	.imgXL 		{ width:320px; height:320px; line-height:320px;}
+	.imgL 		{ width:160px; height:160px; line-height:160px;}
+	.imgML		{ width:120px; height:120px; line-height:120px;}
+	.imgM 		{ width:80px; height:80px; line-height:80px;}
+	.imgMS		{ width:60px; height:60px; line-height:60px;}
+	.imgS 		{ width:40px; height:40px; line-height:40px;}
+	.imgXS 		{ width:20px; height:20px; line-height:20px;}
+}
+// Media Inline - A small inline media block. used in feeds.
+.media_inline {
+	.img_box {
+		float:left;
+		margin:0 10px 10px 0;
+		a {
+			img { 
+				border:2px solid @white;
+				background-color:@white;
+				.border-radius(5px);
+				&:hover { 
+					border-color:@blue;
+					background-color:@blue; 
+				}
+			}
+		}
+	}
+}
+.media_XSinline {
+	.imgXS { width:20px; height:20px; line-height:20px;}
+	.bd { line-height:24px; vertical-align:middle;}
+}
+/* ====== Misc Classes ====== */
+.img_scale {
+	width:100%;
+}
+.media .img .user {
+	.border-radius(5px);
+}
+

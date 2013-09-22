@@ -1,0 +1,49 @@
+@charset "utf-8";
+.bread-crambs {
+	font-size: 12px;
+	padding: 10px;
+	margin:0px;
+	list-style:none;
+	line-height:20px;
+	display:block;
+	background-color:#e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+}
+.white{
+	background-color:#FFF;
+}
+
+.bread-crambs li {
+	color: #bbb;
+	display:block;
+	float:left;
+	background:url(images/breadcrambs-icon-next.png) right center no-repeat;
+	padding-right:10px;
+	margin-right:5px;
+	text-shadow:0 1px 0 rgba(255,255,255,.5);
+}
+.bread-crambs li:last-child{
+	background:none;
+}
+.bread-crambs li a {
+	text-decoration: none;
+	color: #666;
+	display:block;
+	height:20px;
+}
+.bread-crambs li a:hover{
+	color:#0078ff;
+}
+.bread-crambs li:first-child a{
+	font-weight:bold;
+	color:#333;
+}
+.products li:first-child a{
+	font-weight:bold;
+	color:#333;
+	background:url(images/breadcrambs-icon-products_directory.png) left center no-repeat;
+	padding-left:22px;
+}
+.bread-crambs li:last-child a{
+	color:#0078ff;
+}

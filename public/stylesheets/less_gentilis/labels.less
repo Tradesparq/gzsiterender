@@ -1,0 +1,38 @@
+// LABELS
+// ------
+
+// Base
+.label {
+  padding: 1px 4px 2px;
+  font-size: @baseFontSize * .846;
+  font-weight: bold;
+  line-height: 13px; // ensure proper line-height if floated
+  color: @white;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  background-color: @grayLight;
+  .border-radius(3px);
+}
+
+// Hover state
+.label:hover {
+  color: @white;
+  text-decoration: none;
+}
+
+// Colors
+.label-important        { .buttonBackground(@btnDangerBackground, @btnDangerBackgroundHighlight); }
+.label-important:hover  { .buttonBackground(@errorText, @errorText); }
+
+.label-warning          { .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight); }
+.label-warning:hover    { .buttonBackground(@warningText, @warningText); }
+
+.label-success          { .buttonBackground(@btnSuccessBackground, @btnSuccessBackgroundHighlight); }
+.label-success:hover    { .buttonBackground(@successText, @successText); }
+
+.label-info             { .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight); }
+.label-info:hover       { .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackground); }
+
+.label-inverse          { background-color: @grayDark; }
+.label-inverse:hover    { background-color: darken(@grayDark, 10%); }

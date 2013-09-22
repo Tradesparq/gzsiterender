@@ -1,0 +1,52 @@
+/* ====== Block headers and footers ====== */
+.hd {
+	h1, h2, h3, h4, h5, h6{padding:5px 10px;}
+}
+.h_pan {
+	h1, h2, h3, h4, h5, h6{padding:0;}
+}
+.h_pal {
+	h1, h2, h3, h4, h5, h6{padding-left:0;}
+}
+.crash { 
+	h1, h2, h3, h4, h5, h6{padding:12px 0 8px 10px;color:rgb(80,80,80);}
+}
+.bang, .clap, .slam, .corvette {
+	h1, h2, h3, h4, h5, h6{padding:8px 0 8px 8px;}
+}	
+.camino {
+	h1{color:#000;padding:10px 0 10px 20px;background-color:#fff;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+	h2{color:rgb(50,50,50);padding:10px 0 0 0;}
+}
+.interceptor { 
+	h1, h2, h3{color:#000;}
+	h2{font-size:180%;font-weight:bold;}
+}
+.thunderbolt .inner .hd h5{font-size:18px;padding:0;margin:0;color:#457AA4;}
+.ads h1{color:#000;}
+.benefit_unit h2{color:rgb(50,50,50);text-transform:normal;font-size:170%;line-height:140%;letter-spacing:0;font-weight:normal;padding:5px 10px 5px 10px;}
+.narrow_list .inner .hd h5{padding:0 0 10px 0;}
+.dialog_bg h6{background-color:$c_grey2;padding:5px;margin:10px;}
+.upsell_mod .inner h3{font-size:170%;text-shadow:1px 1px 0 #fff;color:rgb(0,0,0);}
+.vip_mod .inner h3{font-size:170%;color:rgb(0,0,0);text-shadow:0 none;}
+.vip {
+	h1{color:#fff;font-weight:normal;font-size:300%;letter-spacing:1px;}
+	h3{color:rgb(0,0,0);}
+	h6{background-color:$c_grey2;padding:5px;margin:10px;}
+}
+.dialog_alert h6{background-color:$c_grey2;padding:5px;margin:10px;}
+.robotly h6{background-color:$c_grey2;padding:5px;margin:10px;}
+.upsell h2{font-size:200%;color:rgb(0,0,0);font-weight:normal;}
+.up {
+	h1{color:#000;}
+	h2{font-size:300%;text-transform:uppercase;font-weight:bold;padding:0;}
+	h3{color:#000;font-size:110%;text-transform:uppercase;}
+}
+.regbox h2{width:670px;float:left;padding:0;}
+.modal_upsell .inner h3{color:rgb(0,0,0);text-shadow:0 none;}
+.upBasic .inner {
+	h3{color:rgb(80,80,80);font-size:120%;}
+	h2{color:rgb(80,80,80);font-size:240%;padding:0 0 5px 0;}
+}
+.upVIP .inner h2{color:rgb(0,0,0);}
+.SuggList .inner .hd h3{color:#828282;font-size:85%;line-height:14px;padding:0 0 0 3px;}

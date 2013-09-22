@@ -1,0 +1,25 @@
+.mod{
+	margin:10px;
+	.inner, .hd, .bd, .ft {
+		overflow:hidden; 
+		*overflow:visible; zoom:1;
+		&:after {
+			clear:both;
+			display:block;
+			visibility:hidden;
+			overflow:hidden;
+			height:0 !important;
+			line-height:0;
+			font-size:xx-large;
+		}
+	}
+	.inner{
+		position:relative;
+	}
+}
+.ie6, .ie7{
+ 	.inner, .bd, .ft {
+		zoom:1;
+	}
+}
+

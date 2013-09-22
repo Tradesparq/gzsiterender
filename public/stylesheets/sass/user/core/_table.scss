@@ -1,0 +1,62 @@
+/* ====== Tables ====== */
+.data { padding:20px; position:relative; zoom:1; vertical-align:top; border-right:solid 1px transparent;/* border fixes a FF2 bug which causes the data table to overlay its borders*/ 
+	table { width:100%; border:1px solid #AE0345;
+		thead tr { background-color:#fff0f8; }
+		th, td { padding:3px 20px }
+		th { color:#000; font-weight:bold }
+	}
+}
+/* th,td{vertical-align:top;border:1px solid #7d7d7d;} */
+table { width:100%; 
+	th { font-weight:bold; text-align:left; width:1%; white-space:nowrap; padding-right:10px; vertical-align:middle; }
+}
+.txtC, .data .txtC td, .data .txtC th { text-align:center; }
+.txtL, .data .txtL td, .data .txtL th { text-align:left; }
+.txtR, .data .txtR td, .data .txtR th { text-align:right; }
+.txtT, .data .txtT td, .data .txtT th { vertical-align:top; }
+.txtB, .data .txtB td, .data .txtB th { vertical-align:bottom; }
+.txtM, .data .txtM td, .data .txtM th { vertical-align:middle; }
+
+/* specification table - extends data table */
+.spec { padding:10px; _border:none;
+	table { border-top:1px solid #e2e2e2; border-bottom-color:#fff; border-left:none; border-right:none; 
+		th, td { border:1px solid $c_br_grey1; border-width:1px 0; padding-left:0; }
+		.odd, .even { background-color:0 none; }
+		.specRight { width: 100px; text-align:center; }
+	}
+}
+/* specification table 2 - extends data table */
+.spec2 { padding:10px; 
+	table { border-top:1px solid #4d4d4d; border-bottom:1px solid $c_br_grey1; border-left:0 none; border-right:0 none; 
+		th, td { border-top:1px solid $c_br_grey1; border-bottom:1px solid $c_br_grey1; border-left:0 none; border-right:0 none; }
+		.odd, .even { background-color:0 none; }
+	}
+}
+/* specification table 3 - extends data table */
+.spec3 { padding:10px 20px 20px 20px; border:1px solid rgb(220,220,220); 
+	table { border:0 none; 
+		td { border:0 none; padding: 10px; }
+		td img { margin:0 auto;}
+		.odd { background-color:0 none; }
+		.even { background-color:$c_grey1; }
+		.choose { background-color:$c_blue1; }
+	}
+}
+/* specification table 4 - extends data table */
+.spec4 { padding:0; border:0 none; 
+	table { border:0 none; 
+		tr { border-bottom:1px solid #85DCFF; 
+			&:last-child { border-bottom:0 none; }
+		}
+		th { padding: 1px 0; width:100px; }
+		td { padding: 1px 0; width:280px; border:0 none; }
+	}
+}
+/* 临时 */
+.tdth_ptrm {
+	td, th { padding:10px 10px 0 0; }
+}
+.dialog2_form tr {
+	th { vertical-align:top; text-align:left; white-space:nowrap; }
+ 	td textarea { width:280px; height:120px; }
+}

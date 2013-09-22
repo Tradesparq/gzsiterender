@@ -1,0 +1,27 @@
+.main table{background-color:rgb(240,240,240); border-top:1px solid rgb(210,210,210); border-left:1px solid rgb(210,210,210);}
+.main table td, .main table th{padding:5px 10px;border-bottom: 1px solid rgb(210,210,210); border-right: 1px solid rgb(210,210,210); border-collapse: collapse;}
+.main table thead th { font-size:110%; padding:10px; } 
+
+li {
+	/*
+	list-style-type: disc;
+	*/
+	list-style-position: inside;
+	padding-bottom: 5px;
+}
+
+/* Temp css used in admin backend, add by Jimmy start */
+body{ margin:0; height:100% }
+html{ height:100% }
+.main{padding:0px;}
+.adminmain {margin:10px 0px;}
+.admin_mod {margin:0px;}
+.admin_mod .hd {background-color:rgb(220,245,255); padding:10px;}
+.admin_mod h1,.admin_mod h2 {color:#000;}
+.admin_mod .bd {padding:20px;}
+.admin_mod .ft {}
+/* Temp css used in admin backend, add by Jimmy end */
+
+.pagination a {margin:0 5px;}
+.pagination a:hover {background: rgb(220,220,220)!important; padding:5px;  margin:0px; border-radius:5px;}
+.pagination .current { background: rgb(220,220,220); padding:5px; border-radius:5px;}

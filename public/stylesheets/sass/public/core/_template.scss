@@ -1,0 +1,24 @@
+/* **************** TEMPLATE ***************** */
+/* ====== Page Head, Body, and Foot ====== */
+.ie6 body { text-align:center; } /* IE5.5 */
+.ie6, .ie7 {
+	.main { display:block; }
+	.body, .main { zoom:1; }
+}
+.body:after, .main:after { clear:both; display:block; visibility:hidden; overflow:hidden; height:0 !important; line-height:0; font-size:xx-large; content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x "; }
+.page { margin:0 auto; width:950px; } /* wraps other template elems to set width */ /* text-align IE5.5 */
+.ie6 .page { text-align:left; }
+/* "old school" and "liquid" extend page to allow for different page widths */
+.oldSchool { width:750px; }
+.gs960 { width:960px; }
+.liquid { width:auto; margin:0; }
+/* ====== Columns ====== */
+.leftCol { float:left; width:250px;  }
+.ie6 .leftCol { margin-right:-3px;}
+.rightCol { float:right; width:300px; }
+.ie6 .rightCol { margin-left:-3px; }
+/* extend columns to allow for common column widths */
+.gMail { width:160px; }
+.gCal { width:180px; }
+.yahoo { width:240px; }
+.myYahoo { width:300px; }

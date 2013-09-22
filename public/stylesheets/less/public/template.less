@@ -1,0 +1,323 @@
+// TEMPLATE
+// ---------
+
+// Global Template
+html, body {
+	background: @white;
+	min-width: 800px;
+	margin:0 auto;
+}
+.content-area {
+	background-image:url('img/texture-bg.jpg');
+}
+.nav-clear {
+	// margin-top:60px;
+	height:60px;
+}
+
+// Header Section
+.header {
+	position:fixed;
+	z-index:999;
+	width:100%;
+	overflow:hidden;
+	background-color: none;
+	.box-shadow(0px 0px 5px rgba(0,0,0,0.6));
+	background-color:@white;
+	.man;
+	.pan;
+	.inner {
+		min-width:760px;
+		max-width:1200px;
+		padding: 0 20px;
+		height:70px;
+		margin:0 auto;
+		
+		.logo {
+			display:block;
+			float:left;
+			padding:15px 0 0 0;
+		}
+		.controls {
+			width:auto;
+			padding:15px 0 0 0;
+			.pull-right;
+			.signups {
+				.pull-right;
+				.pan;
+				.btn { 
+					padding: 7px 9px 7px 9px;
+				}
+			}
+			.log {
+				.pull-right;
+				padding:10px 0 0 15px;
+			}
+			.btn.signupBtn {
+				.pull-right;
+				.mlm; 
+				font-weight:bold;
+				line-height:24px;
+				height:23px;
+				font-size:20px;
+				line-height:23px;
+				padding:8px 20px 7px 20px;
+				text-shadow:0 0 0;
+			}
+		}	
+	}
+}
+// Video Section
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.homepage {
+	min-width:730px;
+	max-width:1200px;
+	margin:0 auto;
+	font-size:14px;
+	line-height:26px;
+	
+	// Hero Section
+	.heroSection {
+		z-index:9999;
+		.inner {
+			.heroImage {
+				.buttonBackground(lighten(@blue, 20%), darken(@blue, 10%));
+				.box-shadow(0 0 5px @grayDark inset);
+				margin-bottom:30px;
+				.border-radius(20px);
+				
+				h1, h2, h3, h4, h5, h6 { 
+					color:@white;
+					text-shadow:1px 1px 0px #000;
+				}
+				
+				.buyerPic { 
+					float:left;
+					img {
+						width:401px;
+						margin:-60px 20px -30px 13%;
+						overflow:hidden;
+					}
+				}
+				.heroTitle h1 {
+					font-size:40px;
+					line-height:45px;
+					padding:25px 25px 25px 0;
+					
+				}
+				.heroJoinUnit{
+					margin:0 0 0 0;
+					.videoPic {
+						margin:0 auto;
+						width:300px;
+						.border-radius(6px);
+						display:block;
+					}
+				}	
+				.heroJoin {
+					font-weight:bold;
+					&:hover {
+				  	color: @grayDark;
+				  	text-decoration: none;
+				  	.buttonBackground(@btnWarningBackgroundHighlight, @btnWarningBackground);
+				  	background-position: 0 0px;
+				  	// transition is only when going to hover, otherwise the background
+				  	// behind the gradient (there for IE<=9 fallback) gets mismatched
+				  	.transition(background-position .1s linear);
+					}	
+				}	
+			}
+			.headline {
+				background: darken(@blue, 30%);
+				color:@white;
+				padding:20px;
+				.border-radius(20px 20px 0 0);
+				margin:0;
+				position:relative;	
+				h2 {
+					font-size:26px;
+					padding:2px 0 0 0;
+				}
+			}
+		}
+	}
+	// Search Bar
+	.homeSearch {
+		.mbn;
+		input[type="text"]{
+			width:68%;
+			font-size:14px;
+			line-height:22px;
+			height:25px;
+			padding:5px 10px;
+			.border-radius(5px 0 0 5px);
+			background-color:@grayLighter;
+			border-right:0;
+		}
+		.btn {
+			font-size:14px;
+			line-height:22px;
+			height:37px;
+			padding:5px 15px;
+			.border-radius(0 5px 5px 0);
+			.mln;			
+		}			
+	}
+	// Content Blocks
+	.contentBlocks{
+		background-color:@white;
+		.mbl;
+		.border-radius(0 0 0 0);
+		z-index:1;
+		// Sections Shared Styles
+		.section {
+			float:left;
+			width:33.333%;
+			.man;
+			.inner {
+				overflow:hidden;
+				.hd {
+					text-align:center;
+					padding:10px;
+				}
+				.bd {
+					img { width:100%; }
+				}
+			}
+		}
+		
+		// Supplier Styles
+		.supplier .inner {
+			.hd { color:lighten(@red, 10%); }
+			.bd { border-bottom:5px solid lighten(@red, 10%); }
+		}
+		
+		// Enterprise Styles
+		.enterprise .inner {
+			.hd { color:@orange; }
+			.bd { border-bottom:5px solid @orange; }
+		}
+		
+		// Services Styles
+		.services .inner {
+			.hd { color:@blue; }
+			.bd { border-bottom:5px solid @blue; }
+		}
+	}
+	.slogan {
+		font-style:italic;
+		font-weight:normal;
+		font-size:16px;
+		line-height:22px;
+		padding:0 20px;
+		margin-bottom:20px;	
+		height:90px;
+	}
+	// News and Search Section
+	.news {
+		.border-radius(20px);
+		background:@white;
+		.mbl;	
+		// News
+		.newsBlock {
+			border-bottom:1px solid darken(@grayLighter, 10%);
+			padding:20px 20px 0 20px;
+			.newsArticles img { margin:0 8px 20px 0; } // Changed by edwardrf for putting 5 news in one row.
+		}
+		// Search
+		.search {
+			padding:20px 20px 0 20px;
+		}
+	}
+	// Products Section
+	.products {
+		.border-radius(20px);
+		background:@white;
+		padding:20px 0 0 0;
+		.category {
+			padding:20px 20px 0 20px;
+			border-bottom:5px solid darken(@grayLighter, 2%);
+			.cl;
+			.head { 
+			 	margin-bottom:15px;
+			 }
+			
+			// Category Lists
+			.categoryList {
+				.pan;
+				.man;
+				li {
+					list-style-type:none;
+					margin:0 5px 5px 0;
+					width:180px;
+					overflow:hidden;
+					.pull-left;
+					.title {
+						.block;
+						margin-bottom:4px;
+					}
+					img {
+						.man;
+						.pull-left;
+						border-top:1px solid darken(@grayLighter, 10%);
+					}
+				}
+			}
+		}
+	}
+}
+.service-logos {
+	margin-bottom:10px;
+	a {
+		img{
+			width:110px;
+			padding:3px 0px;
+			height:35px;
+		}
+	}
+}
+.customs-header {
+	height: 526px;
+	background-image: url('img/customs_header2.jpg');
+	color: @white;
+	.inner {
+		float: right;
+		text-align: right;
+		padding: 210px 40px 0 0;
+		width: 720px;
+	}
+	.customs-subhead {
+		font-size: 35px;
+		line-height: 45px;
+		font-weight: normal;
+		text-shadow: 1px 1px 8px @black;
+	}
+	.customs-head {
+		font-size: 75px;
+		line-height: 90px;
+		font-weight: bold;
+		text-shadow: 1px 1px 8px @black;
+	}
+	.customs-description {
+		font-size:16px;
+		line-height: 22px;
+		margin-bottom:20px;
+	}
+	.btn {
+		.buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight);
+	}
+}

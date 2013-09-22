@@ -1,0 +1,138 @@
+// ALERT STYLES
+// ------------
+
+// Base alert styles
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: @baseLineHeight;
+  background-color: @warningBackground;
+  border: 1px solid @warningBorder;
+  .border-radius(4px);
+  color: @warningText;
+	a {
+		color:rgba(0,0,0,0.8);
+		border-bottom:1px dotted @white;
+		&:hover{
+			border-bottom:1px solid @white;
+			text-decoration:none;
+		}
+	}
+}
+.alert-heading {
+  color: inherit;
+}
+
+// Adjust close link position
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+
+// Alternate styles
+// ----------------
+
+.alert-success {
+  background-color: @successBackground;
+  border-color: @successBorder;  
+  color: @successText;
+}
+.alert-danger,
+.alert-error {
+  background-color: @errorBackground;
+  border-color: @errorBorder;
+  color: @errorText;
+}
+.alert-info {
+  background-color: @infoBackground;
+  border-color: @infoBorder;
+  color: @infoText;
+}
+.alert-tutorial {
+	background-color: @tutorialBackground;
+	border:1px solid @tutorialBorder;
+	color: @tutorialText;
+	.border-radius(0);
+	.table tbody {
+		tr:hover {
+			td, th {
+				background-color: @tutorialBorder;
+			}
+		}
+		td, th {
+			border-color: @tutorialBorder;
+			del {
+				color: darken(@tutorialBorder, 10%);
+			}
+		}
+	}
+}
+.app-tutorial {
+	margin:0 -20px 0 -20px;
+}
+
+
+
+// Block alerts
+// ------------------------
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+.alert-block p + p {
+  margin-top: 5px;
+}
+
+// Alert Buttons
+.alert .btn {
+  text-shadow:0 0 0;
+}
+.alert-info {
+  .btn {
+	color: darken(@blue,20%);
+	.buttonBackground(@white, @white);
+	border-color:@blue;
+  }
+  .btn-primary {
+	color: @white;
+	.buttonBackground(lighten(@blue, 20%), @blue);
+  }
+}
+.alert-error, .alert-danger {
+  .btn {
+	color: darken(@red, 20%);
+	.buttonBackground(lighten(@red, 80%), lighten(@red, 50%));
+	border-color:@red;
+  }
+  .btn-primary {
+	color: @white;
+	.buttonBackground(lighten(@red, 20%), @red);
+  }
+}
+.alert-warning {
+  .btn {
+	color: @orange;
+	.buttonBackground(lighten(@orange, 80%), lighten(@orange, 50%));
+	border-color:@orange;
+  }
+  .btn-primary {
+	color: @white;
+	.buttonBackground(lighten(@orange, 20%), @orange);
+  }
+}
+.alert-success {
+  .btn {
+	color: darken(@green, 20%);
+	.buttonBackground(lighten(@green, 80%), lighten(@green, 40%));
+	border-color:@green;
+  }
+  .btn-primary {
+	color: @white;
+	.buttonBackground(lighten(@green, 20%), @green);
+  }
+}
